@@ -8,8 +8,17 @@
     @include minBreakpoint('md'){font-size: 4.5rem;}
 
     .num-text {
-        font-size: 1.75rem;
-        @include minBreakpoint('sm'){font-size: 2rem;}
-        @include minBreakpoint('md'){font-size: 2.25rem;}
+        .sm {
+            text-transform: uppercase;
+            font-size: 1.75rem;
+            @include minBreakpoint('sm'){font-size: 2rem;}
+            @include minBreakpoint('md'){font-size: 2.25rem;}
+        }
+
+        i {
+            font-size: 1.5rem;
+            @include minBreakpoint('sm'){font-size: 1.75rem;}
+            @include minBreakpoint('md'){font-size: 2rem;}
+        }
     }
 }
