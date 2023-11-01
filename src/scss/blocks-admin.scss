@@ -1,0 +1,286 @@
+@use 'helpers' as *;
+
+*{box-sizing: border-box;}
+
+#widgets-editor .edit-widgets-main-block-list > [data-type="core/widget-area"],
+#widgets-editor .edit-widgets-main-block-list > [data-type="core/widget-area"] .editor-styles-wrapper{
+    max-width: 100%;
+}
+
+.editor-styles-wrapper{  
+    @import 'base/typography';
+    @import 'components';
+    @import 'layout';
+    @import 'blocks';
+    @include containerXPad(true);
+
+    .block-editor-block-list__layout{
+        font-family: $body_font;
+        line-height: $body_font_line_height;
+        @each $size, $val in $body_font_size{
+            @if $size == 'mobile'{
+                font-size: $val;
+            }
+            @else{
+                @include minBreakpoint($size){font-size: $val;}
+            }
+        }
+    }
+
+    p{
+        font-family: $body_font;
+        line-height: $body_font_line_height;
+        @each $size, $val in $body_font_size{
+            @if $size == 'mobile'{
+                font-size: $val;
+            }
+            @else{
+                @include minBreakpoint($size){font-size: $val;}
+            }
+        }
+
+        &[data-empty="true"]{
+            color: #777;
+        }
+    }
+
+    .block-button{
+        text-decoration: none;
+    }
+
+    h1.editor-post-title{
+        font-size: 3rem;
+        margin: 2rem 0 !important;
+    }
+
+    img{
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .acf-block-body .acf-block-preview{
+        min-height: 3rem;
+    }
+
+    .theme-button,
+    .full-link,
+    .block-image-gallery > a,
+    iframe,
+    video{
+        pointer-events: none;
+    }
+
+    .block-list-appender{
+        z-index: 9 !important;
+    }
+}
+
+.admin-block-label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0.5rem;
+    background: #F2F2F2;
+    border: 1px solid #CCC;
+    box-shadow: 0 2px 5px rgb(0 0 0 / 10%);
+    color: #000;
+    font-size: .625rem;
+    line-height: 1;
+    z-index: 999;
+}
+
+.block-spacer{
+    border-width: 1px 0;
+    border-style: solid;
+    border-color: #ccc;
+    color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:after{
+        content: "SPACER";
+    }
+}
+
+.wp-block-acf-divider{
+    min-height: initial !important;
+    position: relative;
+    display: flex;
+}
+
+.wp-block{
+    margin-bottom: 0 !important;
+    max-width: 100%;
+}
+
+.block-section{
+    border: 1px solid lightblue;
+    min-height: 3rem;
+
+    .custom-content-row{
+        margin: 0;
+        position: relative;
+    }
+
+    .wp-block:not(:first-child){
+
+        &.wp-block-acf-column{
+            margin: 0 !important;
+        }
+    }
+}
+
+.block-wrapper{
+    border: 1px solid lightgreen;
+
+    &.pad-none{
+        padding-top: 2.5rem !important;
+    }
+}
+
+.block-button-group{
+    border: 1px solid #CCC;
+    padding-top: 2.5rem;
+
+    a,button{
+        text-decoration: none !important;
+    }
+
+    .wp-block-acf-button:has(.fw-button){
+        width: 100%;
+    }
+    .wp-block-acf-button:has(.size-lg){
+        width: 100%;
+        max-width: 20rem;
+    }
+}
+
+.block-slider{
+    border: 1px solid paleturquoise;
+    padding-top: 2.5rem !important;
+
+    .swiper-wrapper{
+        display: block;
+        width: 100%;
+    }
+
+    .swiper-slide{
+        padding-top: 2.5rem;
+        border: 1px solid palegreen;
+    }
+}
+
+.wp-block-acf-fw-text-media-cols{
+    position: relative;
+    padding-top: 2.5rem;
+    border: 1px solid lavender;
+
+    .wp-block-acf-fw-media-col,
+    .wp-block-acf-fw-content-col{
+        border: 1px solid lightcoral;
+        padding-top: 2.5rem;
+    }
+
+    .img-right{
+
+        .wp-block-acf-fw-content-col{
+            @include minBreakpoint('md'){order: 0;}
+        }
+
+        .wp-block-acf-fw-media-col{
+            @include minBreakpoint('md'){order: 1;}
+        }
+    }
+}
+
+.theme-button{
+    text-decoration: none !important;
+}
+
+.wp-block-heading:not(:first-child),
+.wp-block-list:not(:first-child),
+.wp-block-paragraph:not(:first-child),
+.wp-block[data-type="gravityforms/form"]:not(:first-child){
+    margin-top: 1.5rem;
+}
+
+//Space Above for admin area to exclude first child
+.acf-innerblocks-container,
+.block-fw-media-col,
+.block-fw-content-col{
+    & > .wp-block:first-child{
+        margin-top: 0 !important;
+    }
+    & > .wp-block:not(:first-child){
+        & > .mt-xs{
+            @each $size, $val in $spaceXS{
+                @if $size == 'mobile'{
+                    margin-top: $val !important;
+                }
+                @else{
+                    @include minBreakpoint($size){margin-top: $val !important;}
+                }
+            }
+        }
+        & > .mt-sm{
+            @each $size, $val in $spaceSM{
+                @if $size == 'mobile'{
+                    margin-top: $val !important;
+                }
+                @else{
+                    @include minBreakpoint($size){margin-top: $val !important;}
+                }
+            }
+        }
+        & > .mt-md{
+            @each $size, $val in $spaceMD{
+                @if $size == 'mobile'{
+                    margin-top: $val !important;
+                }
+                @else{
+                    @include minBreakpoint($size){margin-top: $val !important;}
+                }
+            }
+        }
+        & > .mt-lg{
+            @each $size, $val in $spaceLG{
+                @if $size == 'mobile'{
+                    margin-top: $val !important;
+                }
+                @else{
+                    @include minBreakpoint($size){margin-top: $val !important;}
+                }
+            }
+        }
+        & > .mt-xl{
+            @each $size, $val in $spaceXL{
+                @if $size == 'mobile'{
+                    margin-top: $val !important;
+                }
+                @else{
+                    @include minBreakpoint($size){margin-top: $val !important;}
+                }
+            }
+        }
+    }
+}
+
+//Custom sidebar width for easer field editing
+.interface-complementary-area{
+    @include minBreakpoint('sm'){width: 350px;}
+    @include minBreakpoint('md'){width: 450px;} 
+}
+
+.block-columns{
+    display: block !important;
+    width: 100% !important;
+    padding-top: 2.5rem;
+    border: 1px solid lavender;
+    
+    .block-columns-row > div[data-type="acf/column"]{
+        border: 1px solid lightcoral;
+        padding-top: 3rem;
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "name": "acf/image",
+    "title": "Image",
+    "description": "",
+    "apiVersion": 2,
+    "category": "theme",
+    "icon": "format-image",
+    "acf": {
+        "renderTemplate": "image.php",
+        "mode": "preview"
+    },
+    "supports": {
+        "align"    : false,
+        "anchor"   : true
+    }
+}

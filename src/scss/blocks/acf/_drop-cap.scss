@@ -1,0 +1,36 @@
+@use 'helpers' as *;
+
+.drop-cap-block {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+
+    h3 {
+        color: map-get($colors, 'sky-blue');
+        font-family: $body_font;
+
+        &.drop-cap {
+            font-size: 7.5rem;
+            font-weight: 700;
+            line-height: 0.8;
+            text-transform: uppercase;
+            margin-bottom: 0;
+        }
+
+        &.drop-cap-cont {
+            font-size: 1.625rem;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+        }
+    }
+
+    p {
+        color: map-get($colors, 'white-3');
+        font-size: 1.125rem;
+        line-height: 1.5em;
+        font-weight: 400;
+        font-family: $body_font;
+    }
+}

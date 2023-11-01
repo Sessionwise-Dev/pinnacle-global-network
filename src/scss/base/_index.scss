@@ -1,0 +1,73 @@
+@use 'normalize';
+@use 'typography';
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+// Sticky Footer
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+#content{
+    flex: 1 0 auto;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+
+    &.alignleft {
+        float: left;
+        margin-right: 1.5em;
+    }
+    
+    &.alignright {
+        float: right;
+        margin-left: 1.5em;
+    }
+    
+    &.aligncenter {
+        clear: both;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+// Custom Classes
+
+.logo-section.block-section  {
+    padding: 2rem 4rem;
+
+    .block-section-content {
+        max-width: 100%;
+    }
+
+    img {
+        opacity: 0.65;
+    }
+    
+}
+
+.width-translate-right {
+    transform: translateX(100%);
+}
+
+.border-radius-10 img {
+    border-radius: 10px;
+}
+
+.testimonial-slider h4 {
+    line-height: 1.4;
+}
+
+.text-xxs {
+    font-size: 0.75rem!important;
+}

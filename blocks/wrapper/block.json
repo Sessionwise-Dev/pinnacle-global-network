@@ -1,0 +1,16 @@
+{
+    "name": "acf/wrapper",
+    "title": "Wrapper",
+    "description": "",
+    "apiVersion": 2,
+    "category": "theme",
+    "icon": "align-full-width",
+    "acf": {
+        "renderTemplate": "wrapper.php",
+        "mode": "preview"
+    },
+    "supports": {
+        "align"    : false,
+        "anchor"   : true
+    }
+}

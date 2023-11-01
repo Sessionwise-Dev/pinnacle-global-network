@@ -1,0 +1,23 @@
+//Gloabl Fonts
+$fonts : (
+    'playfair' : ('Playfair Display', serif),
+    'raleway' : ('Raleway', sans-serif),
+    'bodoni' : ('Bodoni Moda', serif)
+);
+
+//Body Font
+$body_font: map-get($fonts, 'raleway');
+$body_font_line_height: 1.6;
+$body_font_size: (
+    'mobile' : 1rem,
+    'md' : 1.125rem
+);
+
+//Heading Font
+$heading_font: map-get($fonts, 'playfair');
+
+//Button Font
+$cta_font: map-get($fonts, 'raleway');
+
+//Paragraph Margin
+$paragraph_margin_bottom: 1.5rem;

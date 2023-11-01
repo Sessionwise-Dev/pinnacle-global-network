@@ -1,0 +1,16 @@
+{
+    "name": "acf/slider",
+    "title": "Slider",
+    "description": "",
+    "apiVersion": 2,
+    "category": "theme",
+    "icon": "leftright",
+    "acf": {
+        "renderTemplate": "slider.php",
+        "mode": "preview"
+    },
+    "supports": {
+        "align": false,
+        "anchor": true
+    }
+}

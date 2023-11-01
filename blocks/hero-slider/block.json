@@ -1,0 +1,16 @@
+{
+    "name": "acf/hero-slider",
+    "title": "Hero Slider",
+    "description": "",
+    "category": "theme",
+    "icon": "cover-image",
+    "apiVersion": 2,
+    "acf": {
+        "renderTemplate": "hero-slider.php",
+        "mode": "preview"
+    },
+    "supports": {
+        "align"    : false,
+        "anchor"   : true
+    }
+}

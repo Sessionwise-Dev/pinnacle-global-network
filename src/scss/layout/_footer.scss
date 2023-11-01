@@ -1,0 +1,8 @@
+@use 'helpers' as *;
+
+.site-footer{
+    width: 100%;
+    background: map-get($colors, 'navy-dark');
+    @include containerXPad;
+    @include containerYPad($yPadSM);
+}

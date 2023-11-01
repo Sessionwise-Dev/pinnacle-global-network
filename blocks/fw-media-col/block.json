@@ -1,0 +1,17 @@
+{
+    "name": "acf/fw-media-col",
+    "title": "Full Width Media Column",
+    "description": "",
+    "category": "theme",
+    "icon": "format-image",
+    "parent": ["acf/fw-text-media-cols"],
+    "apiVersion": 2,
+    "acf": {
+        "renderTemplate": "fw-media-col.php",
+        "mode": "preview"
+    },
+    "supports": {
+        "align": false,
+        "anchor": true
+    }
+}

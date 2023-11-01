@@ -1,0 +1,16 @@
+{
+    "name": "acf/drop-cap",
+    "title": "Drop Cap",
+    "description": "",
+    "apiVersion": 2,
+    "category": "theme",
+    "icon": "align-pull-left",
+    "acf": {
+        "renderTemplate": "drop-cap.php",
+        "mode": "preview"
+    },
+    "supports": {
+        "align"    : false,
+        "anchor"   : true
+    }
+}

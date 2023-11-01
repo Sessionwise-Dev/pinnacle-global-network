@@ -1,0 +1,18 @@
+{
+    "name": "acf/fw-content-col",
+    "title": "Full Width Content Column",
+    "description": "",
+    "category": "theme",
+    "icon": "tablet",
+    "usesContext": ["acf/fields"],
+    "parent": ["acf/fw-text-media-cols"],
+    "apiVersion": 2,
+    "acf": {
+        "renderTemplate": "fw-content-col.php",
+        "mode": "preview"
+    },
+    "supports": {
+        "align": false,
+        "anchor": true
+    }
+}

@@ -1,0 +1,83 @@
+{
+    "version": "1",
+    "settings": {
+        "typography": {
+            "customFontSize": false,
+            "fontSizes": [],
+            "fontWeight": false,
+            "fontStyle": false,
+            "textTransform": false,
+            "textDecoration": false,
+            "letterSpacing": false
+        },
+        "color": {
+            "defaultPalette": false,
+            "custom": true,
+            "background": false,
+            "defaultGradients": false,
+            "customGradient": false,
+            "palette": [
+                {
+                    "name": "White",
+                    "slug": "white",
+                    "color": "#FFFFFF"
+                },
+                {
+                    "name": "Off White",
+                    "slug": "white-2",
+                    "color": "#FCFBF8"
+                },
+                {
+                    "name": "Antique White",
+                    "slug": "antique-white",
+                    "color": "#f7e4d6"
+                },
+                {
+                    "name": "Alice Blue",
+                    "slug": "alice-blue",
+                    "color": "#d7e8ee"
+                },
+                {
+                    "name": "Sky Blue",
+                    "slug": "sky-blue",
+                    "color": "#2ebeef"
+                },
+                {
+                    "name": "Sky Blue 2",
+                    "slug": "sky-blue-2",
+                    "color": "#07a5db"
+                },
+                {
+                    "name": "Sky Blue Pale",
+                    "slug": "sky-blue-pale",
+                    "color": "#7ed4f1"
+                },
+                {
+                    "name": "Grey",
+                    "slug": "grey",
+                    "color": "#757575"
+                },
+                {
+                    "name": "Charcoal",
+                    "slug": "charcoal",
+                    "color": "#353434"
+                },
+                {
+                    "name": "Navy Dark",
+                    "slug": "navy-dark",
+                    "color": "#031122"
+                },
+                {
+                    "name": "Dark",
+                    "slug": "dark",
+                    "color": "#070504"
+                },
+                {
+                    "name": "Black",
+                    "slug": "black",
+                    "color": "#000000"
+                }
+            ]
+        }
+    }
+}

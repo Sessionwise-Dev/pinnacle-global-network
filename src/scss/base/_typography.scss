@@ -1,0 +1,236 @@
+@use 'helpers' as *;
+
+body{
+    font-family: $body_font;
+    line-height: $body_font_line_height;
+    color: $color_body_text;
+    @each $size, $val in $body_font_size{
+        @if $size == 'mobile'{
+            font-size: $val;
+        }
+        @else{
+            @include minBreakpoint($size){font-size: $val;}
+        }
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+	clear: both;
+	font-family: $heading_font;
+    color: $color_heading;
+    font-weight: 500;
+    line-height: 1.05;
+    margin-bottom: 1rem;
+    @include minBreakpoint('sm'){margin-bottom: 1.5rem;}
+
+    &.wp-block-heading{
+        margin-bottom: 0;
+    }
+}
+
+h1{
+	font-size: 3.25rem;
+    @include minBreakpoint('sm'){font-size: 4.25rem;}
+    @include minBreakpoint('sm'){font-size: 5rem;}
+}
+
+h2{
+	font-size: 2.75rem;
+    @include minBreakpoint('sm'){font-size: 3.5rem;}
+    @include minBreakpoint('sm'){font-size: 4rem;}
+}
+
+h3{
+	font-size: 2.25rem;
+    @include minBreakpoint('sm'){font-size: 3rem;}
+    @include minBreakpoint('md'){font-size: 3.25rem;}
+}
+
+h4{
+	font-size: 1.75rem;
+    @include minBreakpoint('sm'){font-size: 2rem;}
+    @include minBreakpoint('md'){font-size: 2.25rem;}
+}
+
+h5{
+	font-size: 1.5rem;
+    @include minBreakpoint('sm'){font-size: 1.75rem;}
+}
+
+h6{
+	font-size: 1.25rem;
+    @include minBreakpoint('sm'){font-size: 1.375rem;}
+}
+
+ul,ol{
+    margin: 1.5rem 0;
+    padding: 0 0 0 1.75rem;
+    @include minBreakpoint('sm'){padding: 0 0 0 2rem; margin: 2rem 0;}
+
+    li{
+        margin-bottom: .5rem;
+
+        ul{
+            margin: 1.25rem 0;
+        }
+
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+
+    &.wp-block-list{
+        margin: 0;
+    }
+}
+
+p{
+    &:not(:last-child){margin-bottom: $paragraph_margin_bottom;}
+    &.wp-block-paragraph{margin-bottom: 0;}
+}
+
+p,ul,ol,li,div,span{
+    &.is-style-xs{
+        font-size: .825rem !important;
+        @include minBreakpoint('sm'){font-size: .9rem !important;}
+    }   
+    &.is-style-sm{
+        font-size: 1rem !important;
+    }
+    &.is-style-md{
+        font-size: 1rem !important;
+        @include minBreakpoint('md'){font-size: 1.125rem !important;}
+    }
+    &.is-style-lg{
+        font-size: 1.125rem !important;
+        @include minBreakpoint('sm'){font-size: 1.25rem !important;}
+        @include minBreakpoint('md'){font-size: 1.5rem !important;}
+    }
+    &.is-style-xl{
+        font-size: 1.25rem !important;
+        @include minBreakpoint('sm'){font-size: 1.5rem !important;}
+        @include minBreakpoint('md'){font-size: 2rem !important;}
+    }
+}
+
+a{
+    color: $color_link;
+    transition: all .2s;
+    text-decoration: none;
+
+    @include minBreakpoint('sm'){
+        &:hover{
+        color: $color_link_hover;
+        }
+    }
+}
+
+blockquote{
+    padding: .625rem 1.25rem;
+    border-left: 5px solid #E2E2E2;
+    font-size: 1.125rem;
+    line-height: 1.2;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    @include minBreakpoint('sm'){margin-top: 2rem; margin-bottom: 2rem;}
+}
+
+hr{
+    width: 100%;
+    height: 1px;
+    background: map-get($colors, 'grey-light');
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    @include minBreakpoint('sm'){margin-top: 2rem; margin-bottom: 2rem;}
+    @include minBreakpoint('md'){margin-top: 3rem; margin-bottom: 3rem;}
+}
+
+//Helper Classes
+@each $color, $value in $colors{
+    .text-#{$color}{
+        color: $value !important;
+    }
+}
+.text-white{
+    color: #FFF !important;
+}
+
+@each $font,
+$value in $fonts {
+    .text-#{$font} {
+        font-family: $value !important;
+    }
+}
+
+.text-left{
+    text-align: left !important;
+}
+
+.text-center{
+    text-align: center !important;
+}
+
+.text-right{
+    text-align: right !important;
+}
+
+.mobile-text-left{
+    @include maxBreakpoint('sm'){text-align: left !important;}
+}
+
+.mobile-text-center{
+    @include maxBreakpoint('sm'){text-align: center !important;}
+}
+
+.mobile-text-right{
+    @include maxBreakpoint('sm'){text-align: right !important;}
+}
+
+.text-uppercase{
+    text-transform: uppercase !important;
+}
+
+.text-italic{
+    font-style: italic !important;
+}
+
+.font-900{
+    font-weight: 900 !important;
+}
+
+.font-700{
+    font-weight: 700 !important;
+}
+
+.font-600{
+    font-weight: 600 !important;
+}
+
+.font-500{
+    font-weight: 500 !important;
+}
+
+.font-400{
+    font-weight: 400 !important;
+}
+
+.font-300{
+    font-weight: 300 !important;
+}
+
+.text-sm,
+.has-small-font-size,
+.has-small-font-size li{
+    font-size: 1rem !important;
+}
+
+.text-lg,
+.has-large-font-size,
+.has-large-font-size li{
+    font-size: 1.25rem !important;
+}
+
+.no-y-pad {
+    padding-top: 0!important;
+    padding-bottom: 0!important;
+}

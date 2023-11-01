@@ -1,0 +1,29 @@
+@use 'helpers' as *;
+
+hr.block-divider{
+    border: none;
+
+    &.space-none{
+        margin: 0 !important;
+    }
+    
+    &.space-xs{
+        @include dividerSpace($spaceXS);
+    }
+    
+    &.space-sm{
+        @include dividerSpace($spaceSM);
+    }
+    
+    &.space-md{
+        @include dividerSpace($spaceMD);
+    }
+    
+    &.space-lg{
+        @include dividerSpace($spaceLG);
+    }
+    
+    &.space-xl{
+        @include dividerSpace($spaceXL);
+    }
+}

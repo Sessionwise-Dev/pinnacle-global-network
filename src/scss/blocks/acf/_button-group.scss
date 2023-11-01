@@ -1,0 +1,43 @@
+@use 'helpers' as *;
+
+.block-button-group{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    
+
+    &.align-center{
+        align-items: center;
+        @include minBreakpoint('sm'){justify-content: center;}
+    }
+
+    &.align-right{
+        align-items: end;
+        @include minBreakpoint('sm'){justify-content: flex-end;}
+    }
+
+    &.button-gap-xs{
+        gap: 1rem .25rem;
+        @include minBreakpoint('md'){gap: 1.25rem .25rem;}
+    }
+
+    &.button-gap-sm{
+        gap: 1rem .5rem;
+        @include minBreakpoint('md'){gap: 1.25rem .75rem;}
+    }
+
+    &.button-gap-md{
+        gap: 1rem .75rem;
+        @include minBreakpoint('md'){gap: 1.25rem 1rem;}
+    }
+
+    &.button-gap-lg{
+        gap: 1rem;
+        @include minBreakpoint('md'){gap: 1.25rem 1.5rem;}
+    }
+
+    &.button-gap-xl{
+        gap: 1rem 1.5rem;
+        @include minBreakpoint('md'){gap: 1.25rem 2rem;}
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "name": "acf/divider",
+    "title": "Divider",
+    "description": "",
+    "apiVersion": 2,
+    "category": "theme",
+    "icon": "minus",
+    "acf": {
+        "renderTemplate": "divider.php",
+        "mode": "preview"
+    },
+    "supports": {
+        "align"    : false,
+        "anchor"   : false
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "name": "acf/count-up",
+    "title": "Count Up",
+    "description": "",
+    "apiVersion": 2,
+    "category": "theme",
+    "icon": "arrow-up-alt",
+    "acf": {
+        "renderTemplate": "count-up.php",
+        "mode": "preview"
+    },
+    "supports": {
+        "align" : false,
+        "anchor" : false
+    }
+}

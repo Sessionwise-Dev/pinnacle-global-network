@@ -1,0 +1,54 @@
+@use 'helpers' as *;
+
+
+.hero-slider-block {
+    position: relative;
+    overflow: hidden;
+
+    .hero-container {
+        position: inherit;
+
+        &:before {
+            content: '';
+            background-image: linear-gradient(45deg, rgba(7, 5, 4, .05), rgba(5, 4, 3, .1) 17%, rgba(2, 1, 1, 0) 69%, rgba(0, 0, 0, 0));
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            z-index: 2;
+        }
+
+        .hero-content-inner {
+            max-width: $site_container_width;
+            padding-bottom: map-get($yPad,'xl');
+            width: 100%;
+            margin: 0 auto;
+            position: absolute;
+            z-index: 3;
+            left: 0;
+            right: 0;
+            bottom: 0;
+
+            @include minBreakpoint('xl'){
+                max-width: $site_container_width_xl;
+                padding-bottom: map-get($yPadLG,'xl');
+            }
+
+            .hero-heading {
+                margin-top: 0;
+                margin-bottom: 3rem;
+                color: map-get($colors, 'white');
+            }
+        }
+
+        .hero-slider-inner {
+            .hero-slider {
+                height: calc(100vh - 8rem);
+            }
+        }
+    }
+}

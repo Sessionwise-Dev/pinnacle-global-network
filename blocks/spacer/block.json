@@ -1,0 +1,16 @@
+{
+    "name": "acf/spacer",
+    "title": "Spacer",
+    "description": "",
+    "apiVersion": 2,
+    "category": "theme",
+    "icon": "sort",
+    "acf": {
+        "renderTemplate": "spacer.php",
+        "mode": "preview"
+    },
+    "supports": {
+        "align"    : false,
+        "anchor"   : false
+    }
+}

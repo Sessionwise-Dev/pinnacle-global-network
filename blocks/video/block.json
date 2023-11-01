@@ -1,0 +1,16 @@
+{
+    "name": "acf/video",
+    "title": "Video",
+    "description": "",
+    "apiVersion": 2,
+    "category": "theme",
+    "icon": "format-video",
+    "acf": {
+        "renderTemplate": "video.php",
+        "mode": "preview"
+    },
+    "supports": {
+        "align"    : false,
+        "anchor"   : true
+    }
+}

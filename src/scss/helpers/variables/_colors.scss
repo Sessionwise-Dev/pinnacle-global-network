@@ -1,0 +1,27 @@
+//Global Colors - update theme.json manually to display these colors in block options
+$colors : (
+    'white': white,
+    'white-2': #fcfbf8,
+    'white-3': #c6e0e9,
+    'antique-white': #f7e4d6,
+    'alice-blue': #d7e8ee,
+    'sky-blue-2': #07a5db,
+    'sky-blue': #2ebeef,
+    'sky-blue-pale': #7ed4f1,
+    'grey': #757575,
+    'charcoal': #353434,
+    'dark-slate-blue': #3a4755,
+    'slate-grey': #5b6b7b,
+    'navy-dark': #031122,
+    'dark': #070504,
+    'dark-2': #0f1d2e,
+    'midnight-blue': #050c35
+);
+
+//Font Colors
+$color_body_text: map-get($colors, 'charcoal');
+$color_heading: map-get($colors, 'dark');
+
+// Link Colors
+$color_link: map-get($colors, 'sky-blue');
+$color_link_hover: map-get($colors, 'sky-blue-2');

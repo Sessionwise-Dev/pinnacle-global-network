@@ -1,0 +1,16 @@
+{
+    "name": "acf/columns",
+    "title": "Columns",
+    "description": "",
+    "apiVersion": 2,
+    "category": "theme",
+    "icon": "columns",
+    "acf": {
+        "renderTemplate": "columns.php",
+        "mode": "preview"
+    },
+    "supports": {
+        "align"    : false,
+        "anchor"   : true
+    }
+}
