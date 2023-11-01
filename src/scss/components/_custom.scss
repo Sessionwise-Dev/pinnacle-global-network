@@ -1,0 +1,85 @@
+@use 'helpers' as *;
+
+
+// Custom Classes
+
+.logo-section.block-section  {
+    padding: 2rem 4rem;
+
+    .block-section-content {
+        max-width: 100%;
+    }
+
+    img {
+        opacity: 0.65;
+    }
+    
+}
+
+.width-translate-right img {
+    transform: translateX(100%);
+}
+
+.border-radius-10 img,
+.border-radius-10 .overlay {
+    border-radius: 10px;
+}
+
+.line-height-md {
+    line-height: 1.5em;
+}
+
+.rm-border-top-right img {
+    border-top-right-radius: 0!important;
+}
+
+.testimonial-slider h4 {
+    line-height: 1.4;
+}
+
+.aspect-ratio-21-9 .lightbox-poster {
+    padding-top: 42.85%;
+}
+
+.align-slider-dots .block-columns-row.d-grid {
+    align-items: stretch;
+
+    .acf-innerblocks-container,
+    .block-slider {
+        height: 100%;
+    }
+}
+
+
+.text-xxs {
+    font-size: 0.75rem!important;
+}
+
+.top-block-overlap-dark,
+.top-block-overlap-light {
+    position: relative;
+
+    h1, h2, h3, h4, h5, h6, p {
+        position: relative;
+    }
+}
+
+.top-block-overlap-dark:before {
+    content: '';
+    height: 12rem;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    display: block;
+    background: map-get($colors, 'dark-2');
+}
+
+.top-block-overlap-light:before {
+    content: '';
+    height: 12rem;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    display: block;
+    background: map-get($colors, 'white');
+}

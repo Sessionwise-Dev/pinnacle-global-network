@@ -41,33 +41,3 @@ img{
     }
 }
 
-// Custom Classes
-
-.logo-section.block-section  {
-    padding: 2rem 4rem;
-
-    .block-section-content {
-        max-width: 100%;
-    }
-
-    img {
-        opacity: 0.65;
-    }
-    
-}
-
-.width-translate-right {
-    transform: translateX(100%);
-}
-
-.border-radius-10 img {
-    border-radius: 10px;
-}
-
-.testimonial-slider h4 {
-    line-height: 1.4;
-}
-
-.text-xxs {
-    font-size: 0.75rem!important;
-}
