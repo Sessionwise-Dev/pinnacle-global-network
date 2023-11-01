@@ -193,6 +193,10 @@
             @include minBreakpoint('md'){order: 1;}
         }
     }
+
+    .wp-block-acf-fw-media-col .wp-block-acf-image{
+        width: 100%;
+    }
 }
 
 .theme-button{
