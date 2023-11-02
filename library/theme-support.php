@@ -1,7 +1,7 @@
 <?php
 //Theme support based off _s
 
-if ( ! function_exists( '_themename_setup' ) ) :
+if ( ! function_exists( '_pinnacle_setup' ) ) :
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
 	 *
@@ -9,14 +9,14 @@ if ( ! function_exists( '_themename_setup' ) ) :
 	 * runs before the init hook. The init hook is too late for some features, such
 	 * as indicating support for post thumbnails.
 	 */
-	function _themename_setup() {
+	function _pinnacle_setup() {
 		/*
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
-		 * If you're building a theme based on _themename of America, use a find and replace
-		 * to change '_themename' to the name of your theme in all the template files.
+		 * If you're building a theme based on _pinnacle of America, use a find and replace
+		 * to change '_pinnacle' to the name of your theme in all the template files.
 		 */
-		load_theme_textdomain( '_themename', get_template_directory() . '/languages' );
+		load_theme_textdomain( '_pinnacle', get_template_directory() . '/languages' );
 
 		// Add default posts and comments RSS feed links to head.
 		add_theme_support( 'automatic-feed-links' );
@@ -40,9 +40,9 @@ if ( ! function_exists( '_themename_setup' ) ) :
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
-		    'primary_nav' => esc_html__( 'Primary', '_themename' ),
-            'mobile_nav' => esc_html__( 'Mobile Navigation', '_themename' ),
-            'footer_nav' => esc_html__( 'Footer Navigation', '_themename' ),
+		    'primary_nav' => esc_html__( 'Primary', '_pinnacle' ),
+            'mobile_nav' => esc_html__( 'Mobile Navigation', '_pinnacle' ),
+            'footer_nav' => esc_html__( 'Footer Navigation', '_pinnacle' ),
 		) );
 
 		/*
@@ -63,7 +63,7 @@ if ( ! function_exists( '_themename_setup' ) ) :
 		);
 
 		// Set up the WordPress core custom background feature.
-		add_theme_support( 'custom-background', apply_filters( '_themename_custom_background_args', array(
+		add_theme_support( 'custom-background', apply_filters( '_pinnacle_custom_background_args', array(
 			'default-color' => 'ffffff',
 			'default-image' => '',
 		) ) );
@@ -84,4 +84,4 @@ if ( ! function_exists( '_themename_setup' ) ) :
 		) );
 	}
 endif;
-add_action( 'after_setup_theme', '_themename_setup' );
+add_action( 'after_setup_theme', '_pinnacle_setup' );

@@ -12,4 +12,4 @@ echo is_admin() ? '<div class="admin-block-label">Button</div>' : '';
 
 $btn = get_field( 'button' );
 
-echo _themename_acf_button( $btn, $classes, $id, $icon );
+echo _pinnacle_acf_button( $btn, $classes, $id, $icon );

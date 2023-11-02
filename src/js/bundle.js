@@ -7,5 +7,7 @@ import './components/navigation';
 import './components/modals';
 import './components/sticky-columns';
 import './components/custom-select';
+import './components/select-filter';
 
 import './animations/animations';
+ 

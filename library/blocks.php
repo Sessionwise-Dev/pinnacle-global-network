@@ -2,9 +2,9 @@
 
 $image_gallery_count = 1;
 
-add_action( 'init', '_themename_acf_init_block_types' );
+add_action( 'init', '_pinnacle_acf_init_block_types' );
 
-function _themename_acf_init_block_types(){
+function _pinnacle_acf_init_block_types(){
     register_block_type( get_template_directory() . '/blocks/button/block.json' );
     register_block_type( get_template_directory() . '/blocks/button-group/block.json' );
     register_block_type( get_template_directory() . '/blocks/column/block.json' );
@@ -29,10 +29,10 @@ function _themename_acf_init_block_types(){
 }
 
 //Remove most of core blocks and define allowed block types
-add_filter( 'allowed_block_types_all', '_themename_allowed_block_types' );
+add_filter( 'allowed_block_types_all', '_pinnacle_allowed_block_types' );
  
-function _themename_allowed_block_types( $allowed_blocks ) {
-	return apply_filters( '_themename_allowed_block_types', [
+function _pinnacle_allowed_block_types( $allowed_blocks ) {
+	return apply_filters( '_pinnacle_allowed_block_types', [
         'acf/button',
         'acf/button-group',
         'acf/column',
@@ -78,8 +78,8 @@ add_action( 'admin_head', function(){ ?>
 <?php });
 
 //Add wrappers around default blocks
-add_filter( 'render_block', '_themename_block_wrapper', 10, 2 );
-function _themename_block_wrapper( $block_content, $block ) {
+add_filter( 'render_block', '_pinnacle_block_wrapper', 10, 2 );
+function _pinnacle_block_wrapper( $block_content, $block ) {
     if ( $block['blockName'] === 'gravityforms/form' ) {
         $content = '<div class="custom-content-row theme-form-wrap">';
         $content .= $block_content;
@@ -91,47 +91,47 @@ function _themename_block_wrapper( $block_content, $block ) {
 }
 
 //Add styles to core blocks
-add_action( 'init', '_themename_core_block_styles' );
-function _themename_core_block_styles(){
+add_action( 'init', '_pinnacle_core_block_styles' );
+function _pinnacle_core_block_styles(){
     //Custom Body Font Sizes
     register_block_style( 'core/paragraph', [
         'name' => 'xl',
-        'label' => __( 'XL', '_themename' )
+        'label' => __( 'XL', '_pinnacle' )
     ] );
     register_block_style( 'core/paragraph', [
         'name' => 'lg',
-        'label' => __( 'LG', '_themename' )
+        'label' => __( 'LG', '_pinnacle' )
     ] );
     register_block_style( 'core/paragraph', [
         'name' => 'md',
-        'label' => __( 'MD', '_themename' )
+        'label' => __( 'MD', '_pinnacle' )
     ] );
     register_block_style( 'core/paragraph', [
         'name' => 'sm',
-        'label' => __( 'SM', '_themename' )
+        'label' => __( 'SM', '_pinnacle' )
     ] );
     register_block_style( 'core/paragraph', [
         'name' => 'xs',
-        'label' => __( 'XS', '_themename' )
+        'label' => __( 'XS', '_pinnacle' )
     ] );
     register_block_style( 'core/list', [
         'name' => 'xl',
-        'label' => __( 'XL', '_themename' )
+        'label' => __( 'XL', '_pinnacle' )
     ] );
     register_block_style( 'core/list', [
         'name' => 'lg',
-        'label' => __( 'LG', '_themename' )
+        'label' => __( 'LG', '_pinnacle' )
     ] );
     register_block_style( 'core/list', [
         'name' => 'md',
-        'label' => __( 'MD', '_themename' )
+        'label' => __( 'MD', '_pinnacle' )
     ] );
     register_block_style( 'core/list', [
         'name' => 'sm',
-        'label' => __( 'SM', '_themename' )
+        'label' => __( 'SM', '_pinnacle' )
     ] );
     register_block_style( 'core/list', [
         'name' => 'xs',
-        'label' => __( 'XS', '_themename' )
+        'label' => __( 'XS', '_pinnacle' )
     ] );
 }

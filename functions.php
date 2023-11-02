@@ -1,8 +1,8 @@
 <?php
 /**
- * _themename theme functions and definitions
+ * _pinnacle theme functions and definitions
  *
- * @package _themename
+ * @package _pinnacle
  */
 
 

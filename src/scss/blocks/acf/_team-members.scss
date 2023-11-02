@@ -1,5 +1,38 @@
 @use 'helpers' as *;
 
+.member-modal {
+
+    .custom-modal-inner {
+        max-width: 60rem;
+    }
+
+    .member-modal-inner {
+        display: grid;
+        column-gap: 30px;
+        grid-template-columns: 30% 1fr;
+
+        .member-modal-info {
+
+            .team-member-name  {
+                font-size: 1.375rem;
+                font-family: map-get($fonts, 'playfair');
+                letter-spacing: .5px;
+                font-weight: 500;
+                line-height: 1.2;
+                margin-bottom: 0;
+                margin-top: 1rem;
+            }
+
+
+            .team-member-position {
+                font-size: 0.875rem;
+                margin-top: 0.5rem;
+                margin-bottom: auto;
+            }
+        }
+    }
+}
+
 .team-members {
 
     .team-members-top-content {
@@ -86,18 +119,55 @@
     }
 
     .team-members-wrapper {
-        position: relative;
-        display: grid;
-        grid-column-gap: 20px;
-        grid-row-gap: 40px;
-        grid-template-rows: auto;
-        grid-template-columns: repeat(5, 1fr);
-        margin-top: 5rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        justify-content: space-between;
+        margin-top: 4rem;
+
+        /* 2 Columns */
+        .mix,
+        .gap {
+            width: calc(100%/2 - (((2 - 1) * 1rem) / 2));
+        }
+
+        /* 3 Columns */
+
+        @media screen and (min-width: 541px) {
+            .mix,
+            .gap {
+                width: calc(100%/3 - (((3 - 1) * 1rem) / 3));
+            }
+        }
+
+        /* 4 Columns */
+
+        @media screen and (min-width: 961px) {
+            .mix,
+            .gap {
+                width: calc(100%/4 - (((4 - 1) * 1rem) / 4));
+            }
+        }
+
+        /* 5 Columns */
+
+        @media screen and (min-width: 1281px) {
+            .mix,
+            .gap {
+                width: calc(100%/5 - (((5 - 1) * 1rem) / 5));
+            }
+        }
 
         .team-member {
             display: flex;
             flex-direction: column;
-            justify-content: center;
+
+            &.mix {
+                margin-bottom: 1rem;
+                position: relative;
+            }
+            
 
             .team-headshot {
                 width: 100%;

@@ -84,7 +84,7 @@ echo '<div ' . ( isset( $id ) ? 'id="' . $id . '" ' : '') . 'class="block-wrappe
     echo isset( $media ) ? $media : '';
     echo get_field( 'background_overlay' ) ? '<div class="block-section-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 2; background: ' . get_field( 'background_overlay' ) . '"></div>' : '';
     echo '<div class="block-wrapper-content" style="position: relative; z-index: 3;">';
-        //$allowed_blocks = _themename_get_allowed_section_blocktypes();
+        //$allowed_blocks = _pinnacle_get_allowed_section_blocktypes();
         echo '<InnerBlocks/>';
     echo '</div>';
 echo '</div>';

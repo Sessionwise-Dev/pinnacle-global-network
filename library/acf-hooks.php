@@ -34,14 +34,14 @@ acf_add_options_sub_page(
 );
 
 //Load default values so blocks don't appear empty
-add_filter('acf/load_value/key=field_62d600ad7bc9a',  '_themename_load_default_video', 10, 3);
-function _themename_load_default_video($value, $post_id, $field) {
+add_filter('acf/load_value/key=field_62d600ad7bc9a',  '_pinnacle_load_default_video', 10, 3);
+function _pinnacle_load_default_video($value, $post_id, $field) {
     if( !isset( $value ) ) $value = 'https://www.youtube.com/watch?v=xcJtL7QggTI';
     return $value;
 }
 
-add_filter('acf/load_value/key=field_6519e3bfa3237',  '_themename_load_default_button', 10, 3);
-function _themename_load_default_button($value, $post_id, $field) {
+add_filter('acf/load_value/key=field_6519e3bfa3237',  '_pinnacle_load_default_button', 10, 3);
+function _pinnacle_load_default_button($value, $post_id, $field) {
     if( !isset( $value ) ){
         $link = [
             'url' => '#',
@@ -54,8 +54,8 @@ function _themename_load_default_button($value, $post_id, $field) {
 }
 
 //Color picker, custom palette
-add_action( 'acf/input/admin_footer', '_themename_custom_color_picker_palette' );
-function _themename_custom_color_picker_palette(){ ?>
+add_action( 'acf/input/admin_footer', '_pinnacle_custom_color_picker_palette' );
+function _pinnacle_custom_color_picker_palette(){ ?>
 <script type="text/javascript">
     (function($) {
         acf.add_filter('color_picker_args', function( args, $field ){

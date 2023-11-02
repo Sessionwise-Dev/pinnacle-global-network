@@ -9,7 +9,7 @@
  * @since 1.0.0
  */
 
- function _themename_acf_button( $link, $classes = array( 'theme-button' ), $id = '', $icon = false ){
+ function _pinnacle_acf_button( $link, $classes = array( 'theme-button' ), $id = '', $icon = false ){
 
     //Immediately return if this is not a link array
     if( empty( $link ) || ( is_array( $link ) && !$link['url'] ) ){
@@ -37,7 +37,7 @@
  * @param int  - post ID
  * @return array The category name, slug, and URL.
  */
-function _themename_get_primary_parent_category( $post = null ) {
+function _pinnacle_get_primary_parent_category( $post = null ) {
     
 	if( empty( $post ) ) $post = get_the_ID();
 
@@ -85,7 +85,7 @@ function _themename_get_primary_parent_category( $post = null ) {
 }
 
 // Numbered pagination
-function _themename_numbered_pagination( $custom_query ) {
+function _pinnacle_numbered_pagination( $custom_query ) {
 
     if( empty( $custom_query ) ) return;
 

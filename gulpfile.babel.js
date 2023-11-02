@@ -104,7 +104,7 @@ export const compress = () => {
     .pipe(
         gulpif(
             file => file.relative.split(".").pop() !== "zip",
-            replace("_themename", info.name)
+            replace("_pinnacle", info.name)
         )
     )
     .pipe(zip(`${info.name}.zip`))
@@ -115,7 +115,7 @@ export const pot = () => {
     return src("**/*.php")
     .pipe(
         wpPot({
-            domain: "_themename",
+            domain: "_pinnacle",
             package: info.name
         })
     )

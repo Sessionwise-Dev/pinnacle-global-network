@@ -2,12 +2,12 @@
 //Register widget areas here
 
 
-function _themename_widgets_init() {
+function _pinnacle_widgets_init() {
 	register_sidebar(
 		array(
-			'name'          => esc_html__( 'Sidebar', '_themename' ),
+			'name'          => esc_html__( 'Sidebar', '_pinnacle' ),
 			'id'            => 'sidebar-1',
-			'description'   => esc_html__( 'Add widgets here.', '_themename' ),
+			'description'   => esc_html__( 'Add widgets here.', '_pinnacle' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
 			'before_title'  => '<h2 class="widget-title">',
@@ -15,4 +15,4 @@ function _themename_widgets_init() {
 		)
 	);
 }
-add_action( 'widgets_init', '_themename_widgets_init' );
+add_action( 'widgets_init', '_pinnacle_widgets_init' );

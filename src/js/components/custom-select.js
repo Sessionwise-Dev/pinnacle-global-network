@@ -11,5 +11,5 @@ $('.filter').focusout(function () {
 });
 $('.filter .dropdown-menu li').click(function () {
     $(this).parents('.filter').find('span').text($(this).text());
-    $(this).parents('.filter').find('input').attr('value', $(this).attr('value'));
+    $(this).parents('.filter').find('input').attr('value', $(this).attr('value')).trigger('change');
 });
