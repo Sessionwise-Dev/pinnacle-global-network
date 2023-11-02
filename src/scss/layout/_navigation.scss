@@ -26,26 +26,28 @@
         @include minBreakpoint('md'){display: flex;}
 
         & > li{
-            margin-right: 1.25rem;
-            @include minBreakpoint('lg'){margin-right: 1.5rem;}
+            margin-right: 2.5rem;
+            @include minBreakpoint('lg'){margin-right: 2.5rem;}
 
             &:last-child{
                 margin-right: 0;
             }
 
             & > a{
-                font-size: 1.1rem;
-                font-weight: 600;
+                opacity: 0.8;
+                font-size: 1.063rem;
+                font-weight: 400;
                 color: white;
                 padding: .5rem 0;
 
                 &:hover{
-                    color: map-get($colors, 'blue-light');
+                    opacity: 1;
+                    color: map-get($colors, 'sky-blue-3')!important;
                 }
             }
 
             &.current-menu-item > a{
-                color: map-get($colors, 'blue-light');
+                color: map-get($colors, 'sky-blue-3')!important;
             }
         }
 
