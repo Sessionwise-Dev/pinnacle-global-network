@@ -1,0 +1,16 @@
+{
+    "name": "acf/team-members",
+    "title": "Team Members",
+    "description": "",
+    "category": "theme",
+    "icon": "groups",
+    "apiVersion": 2,
+    "acf": {
+        "renderTemplate": "team-members.php",
+        "mode": "preview"
+    },
+    "supports": {
+        "align"    : false,
+        "anchor"   : true
+    }
+}

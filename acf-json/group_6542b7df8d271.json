@@ -3,6 +3,12 @@
     "title": "Team Members Field",
     "fields": [
         {
+            "show_column_filter": false,
+            "allow_bulkedit": false,
+            "allow_quickedit": false,
+            "show_column": false,
+            "show_column_weight": 1000,
+            "show_column_sortable": false,
             "key": "field_6542b7dfe3dd7",
             "label": "Position",
             "name": "position",
@@ -21,6 +27,32 @@
             "placeholder": "",
             "prepend": "",
             "append": ""
+        },
+        {
+            "show_column_filter": 0,
+            "allow_bulkedit": 1,
+            "allow_quickedit": 0,
+            "show_column": 1,
+            "show_column_weight": 1000,
+            "show_column_sortable": 0,
+            "key": "field_6542c02a07b99",
+            "label": "Show in frontend?",
+            "name": "show_in_frontend",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1,
+            "ui_on_text": "Show",
+            "ui_off_text": "Hide",
+            "ui": 1
         }
     ],
     "location": [
@@ -41,5 +73,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1698871290
+    "modified": 1698876129
 }
