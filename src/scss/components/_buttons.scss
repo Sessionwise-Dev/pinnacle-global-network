@@ -29,6 +29,12 @@
         @include button(white, map-get($colors, 'navy-dark'), 1px solid white, map-get($colors, 'navy-dark'), white, 1px solid map-get($colors, 'navy-dark'));
     }
 
+    &.header{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        @include button(white, map-get($colors, 'navy-dark'), 1px solid white, map-get($colors, 'sky-blue'), white, 1px solid map-get($colors, 'sky-blue'));
+    }
+
     &.hero {
         @include button(map-get($colors, 'sky-blue-2'), white, 1px solid map-get($colors, 'sky-blue-2'), map-get($colors, 'navy-dark'), white, 1px solid map-get($colors, 'navy-dark'));
     }

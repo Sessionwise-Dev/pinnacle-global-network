@@ -8,14 +8,14 @@ $parent = acf_add_options_page(
         'capability'  => 'edit_posts',
     )
 );
-acf_add_options_sub_page(
-    array(
-        'page_title'  => __( 'Global Settings' ),
-        'menu_title'  => __( 'Global Settings' ),
-        'menu_slug'   => 'theme-global-settings',
-        'parent_slug' => $parent['menu_slug'] 
-    )
-);
+// acf_add_options_sub_page(
+//     array(
+//         'page_title'  => __( 'Global Settings' ),
+//         'menu_title'  => __( 'Global Settings' ),
+//         'menu_slug'   => 'theme-global-settings',
+//         'parent_slug' => $parent['menu_slug'] 
+//     )
+// );
 acf_add_options_sub_page(
     array(
         'page_title'  => __( 'Header Settings' ),

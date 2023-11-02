@@ -24,6 +24,12 @@
 	include( locate_template( 'template-parts/components/mobile-navigation.php' ) );
 	?>
 
+	<?php 
+		if($announcement = get_field('announcement_text', 'option')) {
+			$announcement_link = get_field('announcement_link','option');
+			echo '<div class="announcement-bar"><a href="'.$announcement_link['url'].'" target="'.$announcement_link['target'].'">'.$announcement.' <span>'.$announcement_link['title'].'</span></a></div>';
+		}
+	?>
 	<header id="masthead" class="site-header">
 
 		<div class="header-inner">
@@ -38,11 +44,20 @@
 					'menu_id'        => 'primary-menu',
 					'container'      => false
                 )); ?>
+
+				<?php 
+					if($header_cta = get_field('header_cta','option')) {
+						echo '<a class="theme-button header" href="'.$header_cta['url'].'" target="'.$header_cta['target'].'" ">'.$header_cta['title'].'</a>';
+					}
+				?>
 				<div class="menu-icon"><i class="fa-regular fa-bars"></i></div>
+				
 			</nav>
 
+			
+
 		</div>
-		
+		 
 	</header>
 
 	<main id="content" class="site-content">

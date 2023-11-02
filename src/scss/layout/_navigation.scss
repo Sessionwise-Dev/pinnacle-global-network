@@ -1,6 +1,9 @@
 @use 'helpers' as *;
 
 #site-navigation{
+    display: flex;
+    align-items: center;
+    gap: 30px;
 
     ul{
         margin: 0;
@@ -16,6 +19,7 @@
             }
         }
     }
+    
 
     #primary-menu{
         display: none;
