@@ -4,6 +4,7 @@
 .hero-slider-block {
     position: relative;
     overflow: hidden;
+    
 
     .hero-container {
         position: inherit;
@@ -23,19 +24,23 @@
         }
 
         .hero-content-inner {
-            max-width: $site_container_width;
             padding-bottom: map-get($yPad,'xl');
-            width: 100%;
-            margin: 0 auto;
             position: absolute;
             z-index: 3;
             left: 0;
             right: 0;
             bottom: 0;
+            @include containerXPad;
 
             @include minBreakpoint('xl'){
                 max-width: $site_container_width_xl;
                 padding-bottom: map-get($yPadLG,'xl');
+            }
+
+            .hero-wrap {
+                max-width: $site_container_width;
+                width: 100%;
+                margin: 0 auto;
             }
 
             .hero-heading {
@@ -48,6 +53,21 @@
         .hero-slider-inner {
             .hero-slider {
                 height: calc(100vh - 8rem);
+
+                img {
+                    height: calc(100vh - 8rem);
+                    object-fit: cover;
+                    width: 100%;
+                    object-position: top;
+                }
+
+                @include maxBreakpoint('sm') {
+                    height: calc(80vh - 8rem);
+
+                    img {
+                        height: calc(80vh - 8rem);
+                    }
+                }
             }
         }
     }

@@ -19,6 +19,12 @@
             }
         }
     }
+
+    .theme-button.header {
+        @include maxBreakpoint('sm') {
+            display: none;
+        }
+    }
     
 
     #primary-menu{
@@ -129,7 +135,7 @@
     .menu-icon{
         position: relative;
         cursor: pointer;
-        color: map-get($colors, 'blue-light');
+        color: map-get($colors, 'white');
         font-size: 1.75rem;
         display: flex;
         justify-content: center;

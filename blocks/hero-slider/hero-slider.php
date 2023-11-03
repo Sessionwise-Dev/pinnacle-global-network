@@ -12,10 +12,10 @@
 
 echo '<section class="hero-slider-block'. $classes .'"' . (!empty($id) ? 'id="'.$id.'"' : '') . '>';
      echo '<div class="hero-container">';
-        echo '<div class="hero-content-inner">';
+        echo '<div class="hero-content-inner"><div class="hero-wrap">';
             echo $heading ? '<h1 class="hero-heading">'.$heading.'</h1>' : '';
             echo '<InnerBlocks  ' . ( !empty( $id ) ? 'id="' . $id . '" ' : '') . 'class="block-button-group' . $classes . '" template="' . esc_attr( wp_json_encode( $template ) ) . '" allowedBlocks="' . esc_attr( wp_json_encode( $allowed_blocks ) ) . '" templateLock="false"/>';
-        echo '</div>';
+        echo '</div></div>';
   
         echo '<div class="hero-slider-inner">';
   

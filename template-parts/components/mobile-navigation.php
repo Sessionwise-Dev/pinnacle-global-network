@@ -19,4 +19,10 @@
         ));
     ?>
 
+    <?php 
+        if($header_cta = get_field('header_cta','option')) {
+            echo '<a class="theme-button header" href="'.$header_cta['url'].'" target="'.$header_cta['target'].'" ">'.$header_cta['title'].'</a>';
+        }
+    ?>
+
 </nav>

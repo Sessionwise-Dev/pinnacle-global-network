@@ -16,4 +16,15 @@ if(membersContainer.length != 0) { // avoid running script on pages without team
         }
         
     });
+
+    var elementHeights = $('.team-member-info').map(function() {
+        return $(this).height();
+    }).get();
+    
+    // Math.max takes a variable number of arguments
+    // `apply` is equivalent to passing each height as an argument
+    var maxHeight = Math.max.apply(null, elementHeights);
+    
+    // Set each height to the max height
+    $('.team-member-info').height(maxHeight);
 }

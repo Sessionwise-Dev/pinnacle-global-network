@@ -17,11 +17,19 @@
         padding-top: 20px;
         margin-bottom: 40px;
 
+        @include maxBreakpoint('sm') {
+            flex-direction: column;
+        }
+
         .site-info {
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
             gap: 50px;
+
+            @include maxBreakpoint('sm') {
+                flex-direction: column;
+            }
 
             .logo-and-socials {
 
@@ -55,6 +63,11 @@
             .contacts-and-location {
                 padding-left: 20px;
 
+                @include maxBreakpoint('sm') {
+                    padding-left: 0;
+                    margin-bottom: 30px;
+                }
+
                 p, a {
                     font-size: 16px;
                     color: white;
@@ -82,6 +95,16 @@
                 max-height: 90px;
                 width: 100%;
                 margin-right: 60px;
+
+                @include maxBreakpoint('sm') {
+                    margin-right: 40px;   
+                }
+
+                &:last-child {
+                    @include maxBreakpoint('sm') {
+                        margin-right: 0;
+                    }
+                }
             }
         }
     }
@@ -93,7 +116,12 @@
         justify-content: space-between;
         align-items: center;
 
+        @include maxBreakpoint('sm') {
+            flex-direction: column-reverse;
+        }
+
         p, a {
+            margin-bottom: 0;
             font-size: 12px;
             color: #e7e7e7;
             letter-spacing: 0.5px;
@@ -106,6 +134,13 @@
             padding: 0;
             display: flex;
             gap: 20px;
+
+            @include maxBreakpoint('sm') {
+                gap: 0;
+                flex-direction: column;
+                text-align: center; 
+                margin-bottom: 30px;
+            }
 
             li {
                 list-style: none;

@@ -34,21 +34,39 @@
 }
 
 .team-members {
+    @include containerXPad;
 
     .team-members-top-content {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
 
+        @include maxBreakpoint('sm') {
+            flex-direction: column;
+        }
+
         .team-members-filter {
             display: flex;
             align-items: center;
+
+            @include maxBreakpoint('sm') {
+                flex-direction: column;
+                text-align: center;
+                justify-content: center;
+                width: 100%;
+                margin-top: 30px;
+            }
 
             label {
                 font-size: 0.875rem;
                 margin-right: 2.5rem;
                 font-weight: 500;
                 color: map-get($colors, 'black');
+
+                @include maxBreakpoint('sm') {
+                    margin-right: 0;
+                    line-height: 3em;
+                }
             }
 
             .filter {
@@ -86,6 +104,7 @@
                 }
                  
                 .dropdown-menu {
+                    background-color: #eaf3f5;
                     position: absolute;
                     width: 100%;
                     left: 0;
@@ -182,8 +201,12 @@
                 padding: 1.875rem 2.5rem;
                 display: flex;
                 flex-direction: column;
-                height: 100%;
+                height: auto;
                 border-radius:  0 0 10px 10px;
+
+                @include maxBreakpoint('sm') {
+                    padding: 1.125rem;
+                }
 
                 &:hover {
                     background-color: map-get($colors, 'black');
@@ -215,7 +238,7 @@
 
                 .team-member-bio {
                     font-size: 0.875rem;
-                    margin-top: 0.5rem;
+                    margin-top: 1.5rem;
                 }
             }
         }

@@ -16,6 +16,8 @@
 }
 
 .separator {
+
+    
     
     &.block-columns-row .block-column:not(:last-child):after {
         width: 1px;
@@ -27,6 +29,10 @@
         top: 50%;
         bottom: 0;
         transform: translateY(-50%);
+
+        @include maxBreakpoint('sm') {
+            display: none;
+        }
     }
 
     &.light .block-column:not(:last-child):after {
@@ -44,6 +50,30 @@
 
 .width-translate-right img {
     transform: translateX(100%);
+
+    @include maxBreakpoint('sm') {
+        display: none;
+    }
+}
+
+.center-mobile {
+    text-align: center;
+
+    img {
+        margin: auto;
+    }
+}
+
+.light-on-mobile {
+    @include maxBreakpoint('sm') {
+        color: white!important;
+    }
+}
+
+.hide-mobile {
+    @include maxBreakpoint('sm') {
+        display: none!important;
+    }
 }
 
 .border-radius-10 img,
@@ -109,3 +139,4 @@
     display: block;
     background: map-get($colors, 'white');
 }
+
