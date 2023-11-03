@@ -70,6 +70,13 @@
     }
 }
 
+.hide-desktop {
+    display: none!important;
+    @include maxBreakpoint('sm') {
+        display: block!important;
+    }
+}
+
 .hide-mobile {
     @include maxBreakpoint('sm') {
         display: none!important;
