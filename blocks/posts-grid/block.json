@@ -1,0 +1,16 @@
+{
+    "name": "acf/posts-grid",
+    "title": "Posts Grid",
+    "description": "",
+    "apiVersion": 2,
+    "category": "theme",
+    "icon": "admin-post",
+    "acf": {
+        "renderTemplate": "posts-grid.php",
+        "mode": "preview"
+    },
+    "supports": {
+        "align"    : false,
+        "anchor"   : true
+    }
+}

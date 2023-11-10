@@ -2,8 +2,6 @@
 
 .blog-archive-container, .blog-post-container {
 
-
-
     .blog-inner, .blog-post-inner {
         display: grid;
         grid-template-columns: 1fr 25rem;
@@ -11,9 +9,6 @@
         margin: 0 auto;
 
         .blog-posts {
-            display: grid;
-            grid-template-columns: repeat(2,minmax(0,1fr));
-            gap: 2rem;
 
             .numbered-pagination {
                 grid-column: span 2;
@@ -155,4 +150,18 @@
             }
         }
     }
+
+    &.category-archive {
+        .blog-inner {
+            grid-template-columns: 1fr;
+        }
+
+        .blog-posts {
+            .numbered-pagination {
+                grid-column: span 3;
+            }
+        }
+        
+    } 
 }
+

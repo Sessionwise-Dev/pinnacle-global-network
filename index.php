@@ -25,7 +25,7 @@ get_header();
 		<div class="blog-inner">
 
 				<?php if( have_posts() ) : ?>
-					<div class="blog-posts">
+					<div class="blog-posts d-grid cols-2 gap-md">
 					<?php while( have_posts() ) : the_post(); ?>
 
 						<?php get_template_part('template-parts/content/content', 'post-item'); ?>
