@@ -5,6 +5,13 @@
     position: relative;
 
     .testimonials {
+
+        .d-grid {
+            @include maxBreakpoint('sm') {
+                grid-template-columns: 1fr;
+                gap: 60px;
+            }
+        }
         
         .testimonial-item {
 

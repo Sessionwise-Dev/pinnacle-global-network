@@ -1,0 +1,18 @@
+{
+    "name": "acf/button",
+    "title": "Button",
+    "description": "",
+    "apiVersion": 2,
+    "category": "theme",
+    "parent": ["acf/button-group"],
+    "icon": "button",
+    "keywords": ["button"],
+    "acf": {
+        "renderTemplate": "button.php",
+        "mode": "preview"
+    },
+    "supports": {
+        "align"    : false,
+        "anchor"   : true
+    }
+}

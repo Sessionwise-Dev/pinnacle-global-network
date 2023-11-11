@@ -97,7 +97,7 @@ if($style == 'style1') {
     
     echo '<div class="block-testimonials'.$classes.'" data-animation="' . esc_attr( $slide_animation ) . '" data-autoplay="' . esc_attr( $autoplay ) . '" data-autoplay-delay="' . esc_attr( $autoplay_delay ) . '" data-auto-height="' . esc_attr( $mobile_auto_height ) . '">';
 
-        echo '<div class="testimonials'.(($display_type == 'slider') ? ' swiper' : '').'">
+        echo '<div class="testimonials'.(($display_type == 'grid') ? ' swiper' : $display_type).'">
             <div class="swiper-wrapper">';
 
             foreach($testimonials as $testimonial){
@@ -113,27 +113,11 @@ if($style == 'style1') {
                 echo '<div class="testimonial-item swiper-slide">
                         <img src="'.get_template_directory_uri().'/src/images/quote.webp" alt="quote" />';
 
-                        if(get_field('testimonial_type', $id) == 'text') {
+                        if(get_field('testimonial_type', $id)) {
 
                             $content = get_field('content', $id);
                             echo (!empty($content) ? '<h4 class="testimonial-content mt-md">'.$content.'</h4>' : '');
                         
-                        } elseif(get_field('testimonial_type', $id) == 'video') {
-
-                            $video = get_field('video', $id);
-                            $poster = get_field('video_poster', $id);
-
-                            preg_match('/src="(.+?)"/', $video , $matches);
-                            $src = $matches[1];
-
-
-                            echo '<a href="#" class="custom-modal-trigger lightbox-poster" data-modal="' . $src . '">';
-                                echo '<div class="overlay"></div>';
-                                echo wp_get_attachment_image( $poster, 'large', 'null', ['class' => 'poster-img'] );
-                                echo '<img src="' . get_stylesheet_directory_uri() . '/dist/images/play-white.svg" alt="play-button" class="play-button">';
-                            echo '</a>';
-                            include( locate_template( 'template-parts/components/lightbox-modal.php' ) );
-
                         }
 
                         echo '<div class="testimonial-author-info mt-lg">'.
@@ -192,28 +176,12 @@ if($style == 'style2') {
 
                 echo '<div class="testimonial-item swiper-slide">';
 
-                        if(get_field('testimonial_type', $id) == 'text') {
+                        if(get_field('testimonial_type', $id)) {
 
                             $content = get_field('content', $id);
                             echo (!empty($content) ? '<div class="testimonial-content mt-md">'.$content.'</div>' : '');
                         
-                        } elseif(get_field('testimonial_type', $id) == 'video') {
-
-                            $video = get_field('video', $id);
-                            $poster = get_field('video_poster', $id);
-
-                            preg_match('/src="(.+?)"/', $video , $matches);
-                            $src = $matches[1];
-
-
-                            echo '<a href="#" class="custom-modal-trigger lightbox-poster" data-modal="' . $src . '">';
-                                echo '<div class="overlay"></div>';
-                                echo wp_get_attachment_image( $poster, 'large', 'null', ['class' => 'poster-img'] );
-                                echo '<img src="' . get_stylesheet_directory_uri() . '/dist/images/play-white.svg" alt="play-button" class="play-button">';
-                            echo '</a>';
-                            include( locate_template( 'template-parts/components/lightbox-modal.php' ) );
-
-                        }
+                        } 
 
                         echo '<div class="testimonial-author-info mt-lg">'.
                             (has_post_thumbnail($id) ? $image : '').

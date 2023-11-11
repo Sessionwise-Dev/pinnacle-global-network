@@ -12,11 +12,27 @@
 
     .blog-inner, .blog-post-inner {
         display: grid;
-        grid-template-columns: 1fr 25rem;
-        grid-gap: 4rem;
+        grid-template-columns: 1fr 300px;
+        grid-gap: 6rem;
         margin: 0 auto;
 
+        @include maxBreakpoint('md') {
+            grid-template-columns: 1fr;
+        }
+        
+
         .blog-posts {
+
+            @include maxBreakpoint('sm') {
+                grid-template-columns: 1fr;
+                grid-column: 1;
+            }
+
+            .blog-post, nav {
+                @include maxBreakpoint('sm') {
+                    grid-column: span 1!important;
+                }
+            }
 
             .numbered-pagination {
                 grid-column: span 2;
@@ -94,6 +110,7 @@
 
         ul {
             margin-top: 0;
+            padding-left: 0;
         }
         
         ol {
