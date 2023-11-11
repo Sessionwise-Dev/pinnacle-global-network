@@ -1,8 +1,16 @@
 {
+    "qef_simple_location_rules": false,
     "key": "group_6541d005539f7",
     "title": "Block - Drop Cap",
     "fields": [
         {
+            "allow_backendsearch": false,
+            "show_column_filter": false,
+            "allow_bulkedit": false,
+            "allow_quickedit": false,
+            "show_column": false,
+            "show_column_weight": 1000,
+            "show_column_sortable": false,
             "key": "field_6541d00564ff8",
             "label": "Drop Cap",
             "name": "drop_cap",
@@ -23,6 +31,13 @@
             "append": ""
         },
         {
+            "allow_backendsearch": false,
+            "show_column_filter": false,
+            "allow_bulkedit": false,
+            "allow_quickedit": false,
+            "show_column": false,
+            "show_column_weight": 1000,
+            "show_column_sortable": false,
             "key": "field_6541d04064ff9",
             "label": "Heading",
             "name": "drop_heading",
@@ -43,6 +58,13 @@
             "append": ""
         },
         {
+            "allow_backendsearch": false,
+            "show_column_filter": false,
+            "allow_bulkedit": false,
+            "allow_quickedit": false,
+            "show_column": false,
+            "show_column_weight": 1000,
+            "show_column_sortable": false,
             "key": "field_6541d07464ffa",
             "label": "Content",
             "name": "drop_content",
@@ -81,5 +103,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1698812036
+    "modified": 1699660246
 }

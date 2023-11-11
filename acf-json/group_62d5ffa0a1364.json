@@ -1,11 +1,20 @@
 {
+    "qef_simple_location_rules": false,
     "key": "group_62d5ffa0a1364",
     "title": "Block - Video",
     "fields": [
         {
+            "allow_backendsearch": false,
+            "show_column_filter": false,
+            "allow_bulkedit": false,
+            "allow_quickedit": false,
+            "show_column": false,
+            "show_column_weight": 1000,
+            "show_column_sortable": false,
             "key": "field_62d5ffaa7bc99",
             "label": "Video Type",
             "name": "video_type",
+            "aria-label": "",
             "type": "button_group",
             "instructions": "",
             "required": 0,
@@ -25,9 +34,17 @@
             "return_format": "value"
         },
         {
+            "allow_backendsearch": false,
+            "show_column_filter": false,
+            "allow_bulkedit": false,
+            "allow_quickedit": false,
+            "show_column": false,
+            "show_column_weight": 1000,
+            "show_column_sortable": false,
             "key": "field_62d600ad7bc9a",
             "label": "Video",
             "name": "video",
+            "aria-label": "",
             "type": "oembed",
             "instructions": "",
             "required": 1,
@@ -41,9 +58,17 @@
             "height": ""
         },
         {
+            "allow_backendsearch": false,
+            "show_column_filter": false,
+            "allow_bulkedit": false,
+            "allow_quickedit": false,
+            "show_column": false,
+            "show_column_weight": 1000,
+            "show_column_sortable": false,
             "key": "field_62d600bf7bc9b",
             "label": "Poster Image",
             "name": "poster_image",
+            "aria-label": "",
             "type": "image",
             "instructions": "",
             "required": 1,
@@ -91,5 +116,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1660069257
+    "modified": 1699660246
 }

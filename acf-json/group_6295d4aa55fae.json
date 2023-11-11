@@ -1,8 +1,16 @@
 {
+    "qef_simple_location_rules": false,
     "key": "group_6295d4aa55fae",
     "title": "Block - Image",
     "fields": [
         {
+            "allow_backendsearch": false,
+            "show_column_filter": false,
+            "allow_bulkedit": false,
+            "allow_quickedit": false,
+            "show_column": false,
+            "show_column_weight": 1000,
+            "show_column_sortable": false,
             "key": "field_6295d582cbdf1",
             "label": "Custom Max Width?",
             "name": "custom_max_width",
@@ -23,6 +31,13 @@
             "ui_off_text": ""
         },
         {
+            "allow_backendsearch": false,
+            "show_column_filter": false,
+            "allow_bulkedit": false,
+            "allow_quickedit": false,
+            "show_column": false,
+            "show_column_weight": 1000,
+            "show_column_sortable": false,
             "key": "field_6295d58dcbdf2",
             "label": "Max Width Units",
             "name": "max_width_units",
@@ -57,6 +72,13 @@
             "placeholder": ""
         },
         {
+            "allow_backendsearch": false,
+            "show_column_filter": false,
+            "allow_bulkedit": false,
+            "allow_quickedit": false,
+            "show_column": false,
+            "show_column_weight": 1000,
+            "show_column_sortable": false,
             "key": "field_6295d59dcbdf3",
             "label": "Max Width %",
             "name": "max_width_percentage",
@@ -92,6 +114,13 @@
             "step": ""
         },
         {
+            "allow_backendsearch": false,
+            "show_column_filter": false,
+            "allow_bulkedit": false,
+            "allow_quickedit": false,
+            "show_column": false,
+            "show_column_weight": 1000,
+            "show_column_sortable": false,
             "key": "field_6295d5bacbdf4",
             "label": "Max Width Pixels",
             "name": "max_width_px",
@@ -127,6 +156,13 @@
             "step": ""
         },
         {
+            "allow_backendsearch": false,
+            "show_column_filter": false,
+            "allow_bulkedit": false,
+            "allow_quickedit": false,
+            "show_column": false,
+            "show_column_weight": 1000,
+            "show_column_sortable": false,
             "key": "field_6295d5f1cbdf5",
             "label": "Image Alignment",
             "name": "image_alignment",
@@ -154,6 +190,13 @@
             "placeholder": ""
         },
         {
+            "allow_backendsearch": false,
+            "show_column_filter": false,
+            "allow_bulkedit": false,
+            "allow_quickedit": false,
+            "show_column": false,
+            "show_column_weight": 1000,
+            "show_column_sortable": false,
             "key": "field_6295d604cbdf6",
             "label": "Image",
             "name": "image",
@@ -179,6 +222,13 @@
             "mime_types": ""
         },
         {
+            "allow_backendsearch": false,
+            "show_column_filter": false,
+            "allow_bulkedit": false,
+            "allow_quickedit": false,
+            "show_column": false,
+            "show_column_weight": 1000,
+            "show_column_sortable": false,
             "key": "field_6295d60dcbdf7",
             "label": "Mobile Image",
             "name": "mobile_image",
@@ -204,6 +254,13 @@
             "mime_types": ""
         },
         {
+            "allow_backendsearch": false,
+            "show_column_filter": false,
+            "allow_bulkedit": false,
+            "allow_quickedit": false,
+            "show_column": false,
+            "show_column_weight": 1000,
+            "show_column_sortable": false,
             "key": "field_63977d885d06a",
             "label": "Link",
             "name": "link",
@@ -220,6 +277,13 @@
             "return_format": "array"
         },
         {
+            "allow_backendsearch": false,
+            "show_column_filter": false,
+            "allow_bulkedit": false,
+            "allow_quickedit": false,
+            "show_column": false,
+            "show_column_weight": 1000,
+            "show_column_sortable": false,
             "key": "field_63e9bd9174e67",
             "label": "Fixed Aspect Ratio?",
             "name": "fixed_aspect_ratio",
@@ -240,6 +304,13 @@
             "ui": 1
         },
         {
+            "allow_backendsearch": false,
+            "show_column_filter": false,
+            "allow_bulkedit": false,
+            "allow_quickedit": false,
+            "show_column": false,
+            "show_column_weight": 1000,
+            "show_column_sortable": false,
             "key": "field_63e9bd9f74e68",
             "label": "Aspect Ratio",
             "name": "aspect_ratio",
@@ -292,5 +363,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1676263006
+    "modified": 1699660246
 }

@@ -1,8 +1,16 @@
 {
+    "qef_simple_location_rules": false,
     "key": "group_62959527c039f",
     "title": "Block - Columns",
     "fields": [
         {
+            "allow_backendsearch": false,
+            "show_column_filter": false,
+            "allow_bulkedit": false,
+            "allow_quickedit": false,
+            "show_column": false,
+            "show_column_weight": 1000,
+            "show_column_sortable": false,
             "key": "field_645bb246243e4",
             "label": "Display Type",
             "name": "display_type",
@@ -26,6 +34,13 @@
             "layout": "horizontal"
         },
         {
+            "allow_backendsearch": false,
+            "show_column_filter": false,
+            "allow_bulkedit": false,
+            "allow_quickedit": false,
+            "show_column": false,
+            "show_column_weight": 1000,
+            "show_column_sortable": false,
             "key": "field_62959547ef71a",
             "label": "Columns Per Row",
             "name": "number_of_columns",
@@ -60,6 +75,13 @@
             "layout": "horizontal"
         },
         {
+            "allow_backendsearch": false,
+            "show_column_filter": false,
+            "allow_bulkedit": false,
+            "allow_quickedit": false,
+            "show_column": false,
+            "show_column_weight": 1000,
+            "show_column_sortable": false,
             "key": "field_62d5f177bc70e",
             "label": "Column Gap",
             "name": "column_gap",
@@ -87,6 +109,13 @@
             "return_format": "value"
         },
         {
+            "allow_backendsearch": false,
+            "show_column_filter": false,
+            "allow_bulkedit": false,
+            "allow_quickedit": false,
+            "show_column": false,
+            "show_column_weight": 1000,
+            "show_column_sortable": false,
             "key": "field_645bb286243e6",
             "label": "Justify Content",
             "name": "justify_content",
@@ -120,6 +149,13 @@
             "layout": "horizontal"
         },
         {
+            "allow_backendsearch": false,
+            "show_column_filter": false,
+            "allow_bulkedit": false,
+            "allow_quickedit": false,
+            "show_column": false,
+            "show_column_weight": 1000,
+            "show_column_sortable": false,
             "key": "field_62d5f074905b5",
             "label": "Vertical Alignment",
             "name": "vertical_alignment",
@@ -145,6 +181,13 @@
             "return_format": "value"
         },
         {
+            "allow_backendsearch": false,
+            "show_column_filter": false,
+            "allow_bulkedit": false,
+            "allow_quickedit": false,
+            "show_column": false,
+            "show_column_weight": 1000,
+            "show_column_sortable": false,
             "key": "field_62d5f08d905b6",
             "label": "Two Column Layout",
             "name": "two_column_layout",
@@ -183,9 +226,20 @@
             "default_value": "half",
             "return_format": "value",
             "allow_null": 0,
-            "layout": "horizontal"
+            "layout": "horizontal",
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
         },
         {
+            "allow_backendsearch": false,
+            "show_column_filter": false,
+            "allow_bulkedit": false,
+            "allow_quickedit": false,
+            "show_column": false,
+            "show_column_weight": 1000,
+            "show_column_sortable": false,
             "key": "field_6303781e53e44",
             "label": "Collapse at Tablet Breakpoint?",
             "name": "collapse_tablet",
@@ -206,6 +260,13 @@
             "ui_off_text": ""
         },
         {
+            "allow_backendsearch": false,
+            "show_column_filter": false,
+            "allow_bulkedit": false,
+            "allow_quickedit": false,
+            "show_column": false,
+            "show_column_weight": 1000,
+            "show_column_sortable": false,
             "key": "field_62d648d2debec",
             "label": "Reverse on Mobile?",
             "name": "reverse_on_mobile",
@@ -252,5 +313,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1683731131
+    "modified": 1699660246
 }

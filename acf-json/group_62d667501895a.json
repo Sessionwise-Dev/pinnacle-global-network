@@ -1,8 +1,16 @@
 {
+    "qef_simple_location_rules": false,
     "key": "group_62d667501895a",
     "title": "Block - Divider",
     "fields": [
         {
+            "allow_backendsearch": false,
+            "show_column_filter": false,
+            "allow_bulkedit": false,
+            "allow_quickedit": false,
+            "show_column": false,
+            "show_column_weight": 1000,
+            "show_column_sortable": false,
             "key": "field_62d66754fb1f3",
             "label": "Color",
             "name": "color",
@@ -21,6 +29,13 @@
             "return_format": "string"
         },
         {
+            "allow_backendsearch": false,
+            "show_column_filter": false,
+            "allow_bulkedit": false,
+            "allow_quickedit": false,
+            "show_column": false,
+            "show_column_weight": 1000,
+            "show_column_sortable": false,
             "key": "field_62d66773fb1f4",
             "label": "Height",
             "name": "height",
@@ -43,6 +58,13 @@
             "step": ""
         },
         {
+            "allow_backendsearch": false,
+            "show_column_filter": false,
+            "allow_bulkedit": false,
+            "allow_quickedit": false,
+            "show_column": false,
+            "show_column_weight": 1000,
+            "show_column_sortable": false,
             "key": "field_649d9be6812b5",
             "label": "Space Size",
             "name": "space_size",
@@ -57,7 +79,7 @@
                 "id": ""
             },
             "choices": {
-                "space-none" : "None",
+                "space-none": "None",
                 "space-xs": "XS",
                 "space-sm": "SM",
                 "space-md": "MD",
@@ -70,6 +92,13 @@
             "layout": "horizontal"
         },
         {
+            "allow_backendsearch": false,
+            "show_column_filter": false,
+            "allow_bulkedit": false,
+            "allow_quickedit": false,
+            "show_column": false,
+            "show_column_weight": 1000,
+            "show_column_sortable": false,
             "key": "field_62f2b0d076d59",
             "label": "Alignment",
             "name": "alignment",
@@ -94,6 +123,13 @@
             "return_format": "value"
         },
         {
+            "allow_backendsearch": false,
+            "show_column_filter": false,
+            "allow_bulkedit": false,
+            "allow_quickedit": false,
+            "show_column": false,
+            "show_column_weight": 1000,
+            "show_column_sortable": false,
             "key": "field_62d66786fb1f5",
             "label": "Max Width Units",
             "name": "max_width_units",
@@ -117,6 +153,13 @@
             "return_format": "value"
         },
         {
+            "allow_backendsearch": false,
+            "show_column_filter": false,
+            "allow_bulkedit": false,
+            "allow_quickedit": false,
+            "show_column": false,
+            "show_column_weight": 1000,
+            "show_column_sortable": false,
             "key": "field_62d66795fb1f6",
             "label": "Max Width %",
             "name": "max_width_percent",
@@ -147,6 +190,13 @@
             "step": ""
         },
         {
+            "allow_backendsearch": false,
+            "show_column_filter": false,
+            "allow_bulkedit": false,
+            "allow_quickedit": false,
+            "show_column": false,
+            "show_column_weight": 1000,
+            "show_column_sortable": false,
             "key": "field_62d667bafb1f7",
             "label": "Max Width Pixels",
             "name": "max_width_px",
@@ -195,5 +245,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1688050828
+    "modified": 1699660246
 }

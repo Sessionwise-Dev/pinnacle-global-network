@@ -1,8 +1,10 @@
 {
+    "qef_simple_location_rules": false,
     "key": "group_654419613ab51",
     "title": "Footer Fields",
     "fields": [
         {
+            "allow_backendsearch": false,
             "show_column_filter": false,
             "allow_bulkedit": false,
             "allow_quickedit": false,
@@ -26,6 +28,7 @@
             "endpoint": 0
         },
         {
+            "allow_backendsearch": false,
             "show_column_filter": false,
             "allow_bulkedit": false,
             "allow_quickedit": false,
@@ -52,6 +55,7 @@
             "delay": 0
         },
         {
+            "allow_backendsearch": false,
             "show_column_filter": false,
             "allow_bulkedit": false,
             "allow_quickedit": false,
@@ -86,6 +90,7 @@
             "preview_size": "medium"
         },
         {
+            "allow_backendsearch": false,
             "show_column_filter": false,
             "allow_bulkedit": 0,
             "allow_quickedit": 0,
@@ -112,6 +117,7 @@
             "append": ""
         },
         {
+            "allow_backendsearch": false,
             "show_column_filter": false,
             "allow_bulkedit": false,
             "allow_quickedit": false,
@@ -135,6 +141,7 @@
             "endpoint": 0
         },
         {
+            "allow_backendsearch": false,
             "show_column_filter": false,
             "allow_bulkedit": false,
             "allow_quickedit": false,
@@ -158,6 +165,7 @@
             "placeholder": ""
         },
         {
+            "allow_backendsearch": false,
             "show_column_filter": false,
             "allow_bulkedit": false,
             "allow_quickedit": false,
@@ -181,6 +189,7 @@
             "placeholder": ""
         },
         {
+            "allow_backendsearch": false,
             "show_column_filter": false,
             "allow_bulkedit": false,
             "allow_quickedit": false,
@@ -204,6 +213,7 @@
             "placeholder": ""
         },
         {
+            "allow_backendsearch": false,
             "show_column_filter": false,
             "allow_bulkedit": false,
             "allow_quickedit": false,
@@ -245,5 +255,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1698962861
+    "modified": 1699660246
 }

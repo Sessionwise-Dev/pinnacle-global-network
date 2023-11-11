@@ -1,8 +1,16 @@
 {
+    "qef_simple_location_rules": false,
     "key": "group_63e9c8ec9f2fe",
     "title": "Block - Count Up",
     "fields": [
         {
+            "allow_backendsearch": false,
+            "show_column_filter": false,
+            "allow_bulkedit": false,
+            "allow_quickedit": false,
+            "show_column": false,
+            "show_column_weight": 1000,
+            "show_column_sortable": false,
             "key": "field_63e9c91326828",
             "label": "Number",
             "name": "number",
@@ -25,6 +33,13 @@
             "append": ""
         },
         {
+            "allow_backendsearch": false,
+            "show_column_filter": false,
+            "allow_bulkedit": false,
+            "allow_quickedit": false,
+            "show_column": false,
+            "show_column_weight": 1000,
+            "show_column_sortable": false,
             "key": "field_63e9c8ee26827",
             "label": "Text After Number",
             "name": "text_after_number",
@@ -45,6 +60,13 @@
             "append": ""
         },
         {
+            "allow_backendsearch": false,
+            "show_column_filter": false,
+            "allow_bulkedit": false,
+            "allow_quickedit": false,
+            "show_column": false,
+            "show_column_weight": 1000,
+            "show_column_sortable": false,
             "key": "field_63e9c92426829",
             "label": "Color",
             "name": "color",
@@ -81,5 +103,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1676266020
+    "modified": 1699660246
 }

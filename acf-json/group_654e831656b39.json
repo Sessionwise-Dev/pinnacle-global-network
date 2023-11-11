@@ -1,0 +1,547 @@
+{
+    "key": "group_654e831656b39",
+    "title": "Testimonials - Block",
+    "fields": [
+        {
+            "allow_backendsearch": false,
+            "show_column_filter": false,
+            "allow_bulkedit": false,
+            "allow_quickedit": false,
+            "show_column": false,
+            "show_column_weight": 1000,
+            "show_column_sortable": false,
+            "key": "field_654e851dab955",
+            "label": "Display Type",
+            "name": "display_type",
+            "aria-label": "",
+            "type": "button_group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "grid": "Grid",
+                "slider": "Slider"
+            },
+            "default_value": "grid",
+            "return_format": "value",
+            "allow_null": 0,
+            "layout": "horizontal"
+        },
+        {
+            "allow_backendsearch": false,
+            "show_column_filter": 0,
+            "allow_bulkedit": 0,
+            "allow_quickedit": 0,
+            "show_column": 0,
+            "show_column_weight": 1000,
+            "show_column_sortable": false,
+            "key": "field_654e831875cb1",
+            "label": "Theme",
+            "name": "style",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "Note: Grid layout not available for Style 1",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "style1": "Text 1",
+                "style2": "Text 2",
+                "style3": "Video"
+            },
+            "default_value": false,
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 1,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "allow_backendsearch": false,
+            "show_column_filter": false,
+            "allow_bulkedit": false,
+            "allow_quickedit": false,
+            "show_column": false,
+            "show_column_weight": 1000,
+            "show_column_sortable": false,
+            "key": "field_654e98a25d123",
+            "label": "Color Mode",
+            "name": "color_mode",
+            "aria-label": "",
+            "type": "button_group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "dark": "Dark",
+                "light": "Light"
+            },
+            "default_value": "dark",
+            "return_format": "value",
+            "allow_null": 0,
+            "layout": "horizontal"
+        },
+        {
+            "allow_backendsearch": false,
+            "show_column_filter": 0,
+            "allow_bulkedit": 0,
+            "allow_quickedit": 0,
+            "show_column": 0,
+            "show_column_weight": 1000,
+            "show_column_sortable": false,
+            "key": "field_654ec24f40e4b",
+            "label": "Category",
+            "name": "testimonial_category",
+            "aria-label": "",
+            "type": "taxonomy",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "taxonomy": "testimonial-category",
+            "add_term": 1,
+            "save_terms": 1,
+            "load_terms": 1,
+            "return_format": "id",
+            "field_type": "select",
+            "allow_null": 0,
+            "bidirectional": 0,
+            "multiple": 0,
+            "bidirectional_target": []
+        },
+        {
+            "allow_backendsearch": 0,
+            "show_column_filter": false,
+            "allow_bulkedit": 0,
+            "allow_quickedit": 0,
+            "show_column": 0,
+            "show_column_weight": 1000,
+            "show_column_sortable": false,
+            "key": "field_654e8a3c4e527",
+            "label": "Number of Testimonials",
+            "name": "number_of_testimonials",
+            "aria-label": "",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 6,
+            "min": "",
+            "max": "",
+            "placeholder": "",
+            "step": 1,
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "allow_backendsearch": 0,
+            "show_column_filter": false,
+            "allow_bulkedit": 0,
+            "allow_quickedit": 0,
+            "show_column": 0,
+            "show_column_weight": 1000,
+            "show_column_sortable": false,
+            "key": "field_654e8564ab956",
+            "label": "Number of Columns",
+            "name": "number_of_columns",
+            "aria-label": "",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 3,
+            "min": "",
+            "max": "",
+            "placeholder": "",
+            "step": 1,
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "allow_backendsearch": false,
+            "show_column_filter": false,
+            "allow_bulkedit": false,
+            "allow_quickedit": false,
+            "show_column": false,
+            "show_column_weight": 1000,
+            "show_column_sortable": false,
+            "key": "field_654e859bab957",
+            "label": "Column Gap",
+            "name": "column_gap",
+            "aria-label": "",
+            "type": "button_group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_654e851dab955",
+                        "operator": "==",
+                        "value": "grid"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "none": "None",
+                "xs": "XS",
+                "sm": "SM",
+                "md": "MD",
+                "lg": "LG",
+                "xl": "XL"
+            },
+            "default_value": "md",
+            "return_format": "value",
+            "allow_null": 0,
+            "layout": "horizontal"
+        },
+        {
+            "allow_backendsearch": false,
+            "show_column_filter": false,
+            "allow_bulkedit": false,
+            "allow_quickedit": false,
+            "show_column": false,
+            "show_column_weight": 1000,
+            "show_column_sortable": false,
+            "key": "field_654e8418ab94d",
+            "label": "Slide Animation",
+            "name": "slide_animation",
+            "aria-label": "",
+            "type": "button_group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_654e851dab955",
+                        "operator": "==",
+                        "value": "slider"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "default": "Default",
+                "fade": "Fade",
+                "none": "None"
+            },
+            "default_value": "default",
+            "return_format": "value",
+            "allow_null": 0,
+            "layout": "horizontal"
+        },
+        {
+            "allow_backendsearch": false,
+            "show_column_filter": 0,
+            "allow_bulkedit": 0,
+            "allow_quickedit": 0,
+            "show_column": 0,
+            "show_column_weight": 1000,
+            "show_column_sortable": false,
+            "key": "field_654e843eab94e",
+            "label": "Autoplay?",
+            "name": "autoplay",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_654e851dab955",
+                        "operator": "==",
+                        "value": "slider"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "ui": 1
+        },
+        {
+            "allow_backendsearch": false,
+            "show_column_filter": false,
+            "allow_bulkedit": false,
+            "allow_quickedit": false,
+            "show_column": false,
+            "show_column_weight": 1000,
+            "show_column_sortable": false,
+            "key": "field_654e8457ab94f",
+            "label": "Autoplay Delay (in seconds)",
+            "name": "autoplay_delay",
+            "aria-label": "",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_654e843eab94e",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 7,
+            "min": "",
+            "max": "",
+            "placeholder": "",
+            "step": 1,
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "allow_backendsearch": false,
+            "show_column_filter": false,
+            "allow_bulkedit": false,
+            "allow_quickedit": false,
+            "show_column": false,
+            "show_column_weight": 1000,
+            "show_column_sortable": false,
+            "key": "field_654e847cab950",
+            "label": "Mobile Auto Height?",
+            "name": "mobile_auto_height",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_654e851dab955",
+                        "operator": "==",
+                        "value": "slider"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "ui": 1
+        },
+        {
+            "allow_backendsearch": false,
+            "show_column_filter": false,
+            "allow_bulkedit": false,
+            "allow_quickedit": false,
+            "show_column": false,
+            "show_column_weight": 1000,
+            "show_column_sortable": false,
+            "key": "field_654e8490ab951",
+            "label": "Controls Display Type",
+            "name": "controls_display_type",
+            "aria-label": "",
+            "type": "button_group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_654e851dab955",
+                        "operator": "==",
+                        "value": "slider"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "arrows": "Arrows",
+                "dots": "Dots",
+                "both": "Both"
+            },
+            "default_value": "inline",
+            "return_format": "value",
+            "allow_null": 0,
+            "layout": "horizontal"
+        },
+        {
+            "allow_backendsearch": false,
+            "show_column_filter": false,
+            "allow_bulkedit": false,
+            "allow_quickedit": false,
+            "show_column": false,
+            "show_column_weight": 1000,
+            "show_column_sortable": false,
+            "key": "field_654e84abab952",
+            "label": "Arrow Icon Color",
+            "name": "arrow_icon_color",
+            "aria-label": "",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_654e851dab955",
+                        "operator": "==",
+                        "value": "slider"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#FFFFFF",
+            "enable_opacity": 0,
+            "return_format": "string"
+        },
+        {
+            "allow_backendsearch": false,
+            "show_column_filter": false,
+            "allow_bulkedit": false,
+            "allow_quickedit": false,
+            "show_column": false,
+            "show_column_weight": 1000,
+            "show_column_sortable": false,
+            "key": "field_654e84c9ab953",
+            "label": "Dots Color",
+            "name": "dots_color",
+            "aria-label": "",
+            "type": "button_group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_654e851dab955",
+                        "operator": "==",
+                        "value": "slider"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "light": "Light",
+                "dark": "Dark"
+            },
+            "default_value": "",
+            "return_format": "value",
+            "allow_null": 0,
+            "layout": "horizontal"
+        },
+        {
+            "allow_backendsearch": false,
+            "show_column_filter": false,
+            "allow_bulkedit": false,
+            "allow_quickedit": false,
+            "show_column": false,
+            "show_column_weight": 1000,
+            "show_column_sortable": false,
+            "key": "field_654e84dfab954",
+            "label": "Dots Alignment",
+            "name": "dots_alignment",
+            "aria-label": "",
+            "type": "button_group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_654e851dab955",
+                        "operator": "==",
+                        "value": "slider"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "jc-start": "Left",
+                "jc-center": "Center",
+                "jc-end": "Right"
+            },
+            "default_value": "",
+            "return_format": "value",
+            "allow_null": 0,
+            "layout": "horizontal"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/testimonials"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "qef_simple_location_rules": 0,
+    "modified": 1699660888
+}

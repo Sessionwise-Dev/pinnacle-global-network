@@ -10,6 +10,7 @@ $autoplay = get_field( 'autoplay' ) ?: 0;
 $autoplay_delay = get_field( 'autoplay_delay' ) ? get_field( 'autoplay_delay' ) * 1000 : 7000;
 $mobile_auto_height = get_field( 'mobile_auto_height') ?: false;
 
+
 switch( get_field( 'controls_display_type' ) ){
     case 'dots':
         $dots = true;

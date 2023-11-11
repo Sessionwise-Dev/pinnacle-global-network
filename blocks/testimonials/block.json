@@ -1,0 +1,16 @@
+{
+    "name": "acf/testimonials",
+    "title": "Testimonials",
+    "description": "",
+    "apiVersion": 2,
+    "category": "theme",
+    "icon": "format-quote",
+    "acf": {
+        "renderTemplate": "testimonials.php",
+        "mode": "preview"
+    },
+    "supports": {
+        "align"    : false,
+        "anchor"   : true
+    }
+}

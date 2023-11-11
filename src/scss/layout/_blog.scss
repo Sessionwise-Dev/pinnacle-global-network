@@ -1,5 +1,13 @@
 @use 'helpers' as *;
 
+.blog-banner {
+    background-color: map-get($colors, 'sky-blue-2');
+    h1 {
+        margin: 0!important;
+        color: white;
+    }
+}
+
 .blog-archive-container, .blog-post-container {
 
     .blog-inner, .blog-post-inner {

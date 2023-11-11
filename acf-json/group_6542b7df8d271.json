@@ -1,8 +1,10 @@
 {
+    "qef_simple_location_rules": false,
     "key": "group_6542b7df8d271",
     "title": "Team Members Field",
     "fields": [
         {
+            "allow_backendsearch": false,
             "show_column_filter": false,
             "allow_bulkedit": false,
             "allow_quickedit": false,
@@ -29,6 +31,7 @@
             "append": ""
         },
         {
+            "allow_backendsearch": false,
             "show_column_filter": 0,
             "allow_bulkedit": 1,
             "allow_quickedit": 0,
@@ -73,5 +76,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1698876129
+    "modified": 1699660246
 }

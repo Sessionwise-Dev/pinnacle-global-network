@@ -1,8 +1,16 @@
 {
+    "qef_simple_location_rules": false,
     "key": "group_6519e3be8b743",
     "title": "Block - Button",
     "fields": [
         {
+            "allow_backendsearch": false,
+            "show_column_filter": false,
+            "allow_bulkedit": false,
+            "allow_quickedit": false,
+            "show_column": false,
+            "show_column_weight": 1000,
+            "show_column_sortable": false,
             "key": "field_6519e3bfa3237",
             "label": "Button",
             "name": "button",
@@ -19,6 +27,13 @@
             "return_format": "array"
         },
         {
+            "allow_backendsearch": false,
+            "show_column_filter": false,
+            "allow_bulkedit": false,
+            "allow_quickedit": false,
+            "show_column": false,
+            "show_column_weight": 1000,
+            "show_column_sortable": false,
             "key": "field_6519eecce46b4",
             "label": "Button Style",
             "name": "button_style",
@@ -45,6 +60,13 @@
             "layout": "horizontal"
         },
         {
+            "allow_backendsearch": false,
+            "show_column_filter": false,
+            "allow_bulkedit": false,
+            "allow_quickedit": false,
+            "show_column": false,
+            "show_column_weight": 1000,
+            "show_column_sortable": false,
             "key": "field_6519ef00e46b5",
             "label": "Button Size",
             "name": "button_size",
@@ -69,6 +91,13 @@
             "layout": "horizontal"
         },
         {
+            "allow_backendsearch": false,
+            "show_column_filter": false,
+            "allow_bulkedit": false,
+            "allow_quickedit": false,
+            "show_column": false,
+            "show_column_weight": 1000,
+            "show_column_sortable": false,
             "key": "field_65381dd0c4db9",
             "label": "Arrow Icon?",
             "name": "arrow_icon",
@@ -89,6 +118,13 @@
             "ui": 1
         },
         {
+            "allow_backendsearch": false,
+            "show_column_filter": false,
+            "allow_bulkedit": false,
+            "allow_quickedit": false,
+            "show_column": false,
+            "show_column_weight": 1000,
+            "show_column_sortable": false,
             "key": "field_654031c248ff0",
             "label": "Full Width?",
             "name": "full_width",
@@ -127,5 +163,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1698854681
+    "modified": 1699660246
 }

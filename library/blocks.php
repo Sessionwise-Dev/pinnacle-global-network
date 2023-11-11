@@ -24,6 +24,7 @@ function _pinnacle_acf_init_block_types(){
     register_block_type( get_template_directory() . '/blocks/slider/block.json' );
     register_block_type( get_template_directory() . '/blocks/spacer/block.json' );
     register_block_type( get_template_directory() . '/blocks/team-members/block.json' );
+    register_block_type( get_template_directory() . '/blocks/testimonials/block.json' );
     register_block_type( get_template_directory() . '/blocks/video/block.json' );
     register_block_type( get_template_directory() . '/blocks/wrapper/block.json' );
     register_block_type( get_template_directory() . '/blocks/wysiwyg/block.json' );
@@ -53,6 +54,7 @@ function _pinnacle_allowed_block_types( $allowed_blocks ) {
         'acf/slider',
         'acf/spacer',
         'acf/team-members',
+        'acf/testimonials',
         'acf/video',
         'acf/wrapper',
         'acf/wysiwyg',

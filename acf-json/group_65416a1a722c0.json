@@ -1,8 +1,16 @@
 {
+    "qef_simple_location_rules": false,
     "key": "group_65416a1a722c0",
     "title": "Block - Hero Slider",
     "fields": [
         {
+            "allow_backendsearch": false,
+            "show_column_filter": false,
+            "allow_bulkedit": false,
+            "allow_quickedit": false,
+            "show_column": false,
+            "show_column_weight": 1000,
+            "show_column_sortable": false,
             "key": "field_65416a1b2d4a2",
             "label": "Slideshow Images",
             "name": "slideshow_images",
@@ -31,6 +39,13 @@
             "preview_size": "medium"
         },
         {
+            "allow_backendsearch": false,
+            "show_column_filter": false,
+            "allow_bulkedit": false,
+            "allow_quickedit": false,
+            "show_column": false,
+            "show_column_weight": 1000,
+            "show_column_sortable": false,
             "key": "field_65416a322d4a3",
             "label": "Heading",
             "name": "heading",
@@ -69,5 +84,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1698855152
+    "modified": 1699660246
 }

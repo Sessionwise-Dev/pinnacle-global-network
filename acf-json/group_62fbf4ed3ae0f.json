@@ -1,11 +1,20 @@
 {
+    "qef_simple_location_rules": false,
     "key": "group_62fbf4ed3ae0f",
     "title": "Block - Image Gallery",
     "fields": [
         {
+            "allow_backendsearch": false,
+            "show_column_filter": false,
+            "allow_bulkedit": false,
+            "allow_quickedit": false,
+            "show_column": false,
+            "show_column_weight": 1000,
+            "show_column_sortable": false,
             "key": "field_63090afcd9d16",
             "label": "Number of Columns",
             "name": "number_of_columns",
+            "aria-label": "",
             "type": "button_group",
             "instructions": "",
             "required": 0,
@@ -26,9 +35,17 @@
             "return_format": "value"
         },
         {
+            "allow_backendsearch": false,
+            "show_column_filter": false,
+            "allow_bulkedit": false,
+            "allow_quickedit": false,
+            "show_column": false,
+            "show_column_weight": 1000,
+            "show_column_sortable": false,
             "key": "field_62fbf50bf493c",
             "label": "Image Gallery",
             "name": "image_gallery",
+            "aria-label": "",
             "type": "gallery",
             "instructions": "",
             "required": 0,
@@ -71,5 +88,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1661537044
+    "modified": 1699660246
 }

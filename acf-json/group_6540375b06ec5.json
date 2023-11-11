@@ -1,8 +1,16 @@
 {
+    "qef_simple_location_rules": false,
     "key": "group_6540375b06ec5",
     "title": "Block - Full Width Text + Media Columns",
     "fields": [
         {
+            "allow_backendsearch": false,
+            "show_column_filter": false,
+            "allow_bulkedit": false,
+            "allow_quickedit": false,
+            "show_column": false,
+            "show_column_weight": 1000,
+            "show_column_sortable": false,
             "key": "field_654124faab5dd",
             "label": "Section Vertical Padding",
             "name": "section_vertical_padding",
@@ -28,6 +36,13 @@
             "layout": "horizontal"
         },
         {
+            "allow_backendsearch": false,
+            "show_column_filter": false,
+            "allow_bulkedit": false,
+            "allow_quickedit": false,
+            "show_column": false,
+            "show_column_weight": 1000,
+            "show_column_sortable": false,
             "key": "field_6540375cb20d8",
             "label": "Vertical Content Alignment",
             "name": "vertical_content_alignment",
@@ -53,6 +68,13 @@
             "layout": "horizontal"
         },
         {
+            "allow_backendsearch": false,
+            "show_column_filter": false,
+            "allow_bulkedit": false,
+            "allow_quickedit": false,
+            "show_column": false,
+            "show_column_weight": 1000,
+            "show_column_sortable": false,
             "key": "field_654037b4b20d9",
             "label": "Image Position",
             "name": "image_position",
@@ -76,6 +98,13 @@
             "layout": "horizontal"
         },
         {
+            "allow_backendsearch": false,
+            "show_column_filter": false,
+            "allow_bulkedit": false,
+            "allow_quickedit": false,
+            "show_column": false,
+            "show_column_weight": 1000,
+            "show_column_sortable": false,
             "key": "field_654038f2b20da",
             "label": "Overlapping Content?",
             "name": "overlapping_content",
@@ -96,6 +125,13 @@
             "ui": 1
         },
         {
+            "allow_backendsearch": false,
+            "show_column_filter": false,
+            "allow_bulkedit": false,
+            "allow_quickedit": false,
+            "show_column": false,
+            "show_column_weight": 1000,
+            "show_column_sortable": false,
             "key": "field_6541180f8ca09",
             "label": "Background Color",
             "name": "background_color",
@@ -114,6 +150,13 @@
             "return_format": "string"
         },
         {
+            "allow_backendsearch": false,
+            "show_column_filter": false,
+            "allow_bulkedit": false,
+            "allow_quickedit": false,
+            "show_column": false,
+            "show_column_weight": 1000,
+            "show_column_sortable": false,
             "key": "field_654121bc2c43e",
             "label": "Media Column Width",
             "name": "media_column_width",
@@ -138,6 +181,13 @@
             "layout": "horizontal"
         },
         {
+            "allow_backendsearch": false,
+            "show_column_filter": false,
+            "allow_bulkedit": false,
+            "allow_quickedit": false,
+            "show_column": false,
+            "show_column_weight": 1000,
+            "show_column_sortable": false,
             "key": "field_65411afce7494",
             "label": "Image Direction",
             "name": "image_direction",
@@ -179,5 +229,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1698768175
+    "modified": 1699660246
 }

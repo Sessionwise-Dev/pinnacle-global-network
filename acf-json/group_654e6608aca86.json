@@ -1,4 +1,5 @@
 {
+    "qef_simple_location_rules": 0,
     "key": "group_654e6608aca86",
     "title": "Block - Posts Grid",
     "fields": [
@@ -147,6 +148,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "qef_simple_location_rules": 0,
-    "modified": 1699638649
+    "modified": 1699660246
 }

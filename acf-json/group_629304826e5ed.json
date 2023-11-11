@@ -1,11 +1,20 @@
 {
+    "qef_simple_location_rules": false,
     "key": "group_629304826e5ed",
     "title": "Block - Spacer",
     "fields": [
         {
+            "allow_backendsearch": false,
+            "show_column_filter": false,
+            "allow_bulkedit": false,
+            "allow_quickedit": false,
+            "show_column": false,
+            "show_column_weight": 1000,
+            "show_column_sortable": false,
             "key": "field_629304887f883",
             "label": "Spacer Size",
             "name": "spacer_size",
+            "aria-label": "",
             "type": "select",
             "instructions": "",
             "required": 0,
@@ -22,9 +31,7 @@
                 "lg": "Large (48px desktop, 24px mobile)",
                 "xl": "Extra Large (64px desktop, 32px mobile)"
             },
-            "default_value": [
-                "md"
-            ],
+            "default_value": "md",
             "allow_null": 0,
             "multiple": 0,
             "ui": 0,
@@ -48,7 +55,8 @@
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
-    "active": 1,
+    "active": true,
     "description": "",
-    "modified": 1653802211
+    "show_in_rest": false,
+    "modified": 1699660246
 }

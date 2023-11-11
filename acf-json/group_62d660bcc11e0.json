@@ -1,8 +1,16 @@
 {
+    "qef_simple_location_rules": false,
     "key": "group_62d660bcc11e0",
     "title": "Block - Column",
     "fields": [
         {
+            "allow_backendsearch": false,
+            "show_column_filter": false,
+            "allow_bulkedit": false,
+            "allow_quickedit": false,
+            "show_column": false,
+            "show_column_weight": 1000,
+            "show_column_sortable": false,
             "key": "field_62d660ca3f0e9",
             "label": "Position Sticky?",
             "name": "position_sticky",
@@ -23,6 +31,13 @@
             "ui_off_text": ""
         },
         {
+            "allow_backendsearch": false,
+            "show_column_filter": false,
+            "allow_bulkedit": false,
+            "allow_quickedit": false,
+            "show_column": false,
+            "show_column_weight": 1000,
+            "show_column_sortable": false,
             "key": "field_6303d701cd629",
             "label": "Padding",
             "name": "padding",
@@ -52,6 +67,13 @@
             "return_format": "value"
         },
         {
+            "allow_backendsearch": false,
+            "show_column_filter": false,
+            "allow_bulkedit": false,
+            "allow_quickedit": false,
+            "show_column": false,
+            "show_column_weight": 1000,
+            "show_column_sortable": false,
             "key": "field_6303d72ecd62a",
             "label": "Background Type",
             "name": "column_background_type",
@@ -79,6 +101,13 @@
             "placeholder": ""
         },
         {
+            "allow_backendsearch": false,
+            "show_column_filter": false,
+            "allow_bulkedit": false,
+            "allow_quickedit": false,
+            "show_column": false,
+            "show_column_weight": 1000,
+            "show_column_sortable": false,
             "key": "field_6303d743cd62b",
             "label": "Background Color",
             "name": "background_color",
@@ -105,6 +134,13 @@
             "return_format": "string"
         },
         {
+            "allow_backendsearch": false,
+            "show_column_filter": false,
+            "allow_bulkedit": false,
+            "allow_quickedit": false,
+            "show_column": false,
+            "show_column_weight": 1000,
+            "show_column_sortable": false,
             "key": "field_6303d76a4f939",
             "label": "Background Media",
             "name": "background_media",
@@ -129,6 +165,13 @@
             "layout": "block",
             "sub_fields": [
                 {
+                    "allow_backendsearch": false,
+                    "show_column_filter": false,
+                    "allow_bulkedit": false,
+                    "allow_quickedit": false,
+                    "show_column": false,
+                    "show_column_weight": 1000,
+                    "show_column_sortable": false,
                     "key": "field_6303d76a4f93a",
                     "label": "Video",
                     "name": "video",
@@ -157,6 +200,13 @@
                     "mime_types": "mp4, webm"
                 },
                 {
+                    "allow_backendsearch": false,
+                    "show_column_filter": false,
+                    "allow_bulkedit": false,
+                    "allow_quickedit": false,
+                    "show_column": false,
+                    "show_column_weight": 1000,
+                    "show_column_sortable": false,
                     "key": "field_6303d76a4f93b",
                     "label": "Poster Image",
                     "name": "poster_image",
@@ -190,6 +240,13 @@
                     "mime_types": ""
                 },
                 {
+                    "allow_backendsearch": false,
+                    "show_column_filter": false,
+                    "allow_bulkedit": false,
+                    "allow_quickedit": false,
+                    "show_column": false,
+                    "show_column_weight": 1000,
+                    "show_column_sortable": false,
                     "key": "field_6303d76a4f93c",
                     "label": "Image",
                     "name": "image",
@@ -223,6 +280,13 @@
                     "mime_types": ""
                 },
                 {
+                    "allow_backendsearch": false,
+                    "show_column_filter": false,
+                    "allow_bulkedit": false,
+                    "allow_quickedit": false,
+                    "show_column": false,
+                    "show_column_weight": 1000,
+                    "show_column_sortable": false,
                     "key": "field_6303d76a4f93d",
                     "label": "X Position",
                     "name": "x_position",
@@ -245,6 +309,13 @@
                     "step": ""
                 },
                 {
+                    "allow_backendsearch": false,
+                    "show_column_filter": false,
+                    "allow_bulkedit": false,
+                    "allow_quickedit": false,
+                    "show_column": false,
+                    "show_column_weight": 1000,
+                    "show_column_sortable": false,
                     "key": "field_6303d76a4f93e",
                     "label": "Y Position",
                     "name": "y_position",
@@ -269,6 +340,13 @@
             ]
         },
         {
+            "allow_backendsearch": false,
+            "show_column_filter": false,
+            "allow_bulkedit": false,
+            "allow_quickedit": false,
+            "show_column": false,
+            "show_column_weight": 1000,
+            "show_column_sortable": false,
             "key": "field_6303d76c4f93f",
             "label": "Background Overlay",
             "name": "background_overlay",
@@ -295,6 +373,13 @@
             "return_format": "string"
         },
         {
+            "allow_backendsearch": false,
+            "show_column_filter": false,
+            "allow_bulkedit": false,
+            "allow_quickedit": false,
+            "show_column": false,
+            "show_column_weight": 1000,
+            "show_column_sortable": false,
             "key": "field_63e9badaab4cd",
             "label": "Column Link",
             "name": "column_link",
@@ -329,5 +414,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1698696099
+    "modified": 1699660246
 }

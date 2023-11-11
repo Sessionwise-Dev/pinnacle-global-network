@@ -1,11 +1,20 @@
 {
+    "qef_simple_location_rules": 0,
     "key": "group_633332a9d3308",
     "title": "Block Spacing",
     "fields": [
         {
+            "allow_backendsearch": false,
+            "show_column_filter": false,
+            "allow_bulkedit": false,
+            "allow_quickedit": false,
+            "show_column": false,
+            "show_column_weight": 1000,
+            "show_column_sortable": false,
             "key": "field_633332ab54a4a",
             "label": "Space Above",
             "name": "spacing_size",
+            "aria-label": "",
             "type": "button_group",
             "instructions": "Adds a variable amount of space above the block. This setting will have no effect on the first block within a container.",
             "required": 0,
@@ -62,5 +71,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1664838826
+    "modified": 1699660246
 }

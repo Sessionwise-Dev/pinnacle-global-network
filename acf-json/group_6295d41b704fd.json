@@ -1,8 +1,16 @@
 {
+    "qef_simple_location_rules": false,
     "key": "group_6295d41b704fd",
     "title": "Block - Button Group",
     "fields": [
         {
+            "allow_backendsearch": false,
+            "show_column_filter": false,
+            "allow_bulkedit": false,
+            "allow_quickedit": false,
+            "show_column": false,
+            "show_column_weight": 1000,
+            "show_column_sortable": false,
             "key": "field_6295d51157885",
             "label": "Button Alignment",
             "name": "button_alignment",
@@ -30,6 +38,13 @@
             "placeholder": ""
         },
         {
+            "allow_backendsearch": false,
+            "show_column_filter": false,
+            "allow_bulkedit": false,
+            "allow_quickedit": false,
+            "show_column": false,
+            "show_column_weight": 1000,
+            "show_column_sortable": false,
             "key": "field_65381a511735b",
             "label": "Button Gap",
             "name": "button_gap",
@@ -75,5 +90,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1698175606
+    "modified": 1699660246
 }

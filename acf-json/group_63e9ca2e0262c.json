@@ -1,8 +1,16 @@
 {
+    "qef_simple_location_rules": false,
     "key": "group_63e9ca2e0262c",
     "title": "Block - Slider",
     "fields": [
         {
+            "allow_backendsearch": false,
+            "show_column_filter": false,
+            "allow_bulkedit": false,
+            "allow_quickedit": false,
+            "show_column": false,
+            "show_column_weight": 1000,
+            "show_column_sortable": false,
             "key": "field_63e9ca2ffd6f9",
             "label": "Slide Animation",
             "name": "slide_animation",
@@ -27,6 +35,13 @@
             "layout": "horizontal"
         },
         {
+            "allow_backendsearch": false,
+            "show_column_filter": false,
+            "allow_bulkedit": false,
+            "allow_quickedit": false,
+            "show_column": false,
+            "show_column_weight": 1000,
+            "show_column_sortable": false,
             "key": "field_63e9ca60fd6fa",
             "label": "Autoplay?",
             "name": "autoplay",
@@ -47,6 +62,13 @@
             "ui": 1
         },
         {
+            "allow_backendsearch": false,
+            "show_column_filter": false,
+            "allow_bulkedit": false,
+            "allow_quickedit": false,
+            "show_column": false,
+            "show_column_weight": 1000,
+            "show_column_sortable": false,
             "key": "field_63e9ca72fd6fb",
             "label": "Autoplay Delay (in seconds)",
             "name": "autoplay_delay",
@@ -77,6 +99,13 @@
             "append": "second(s)"
         },
         {
+            "allow_backendsearch": false,
+            "show_column_filter": false,
+            "allow_bulkedit": false,
+            "allow_quickedit": false,
+            "show_column": false,
+            "show_column_weight": 1000,
+            "show_column_sortable": false,
             "key": "field_641ef035e90c3",
             "label": "Mobile Auto Height?",
             "name": "mobile_auto_height",
@@ -97,6 +126,13 @@
             "ui": 1
         },
         {
+            "allow_backendsearch": false,
+            "show_column_filter": false,
+            "allow_bulkedit": false,
+            "allow_quickedit": false,
+            "show_column": false,
+            "show_column_weight": 1000,
+            "show_column_sortable": false,
             "key": "field_63e9cb264283d",
             "label": "Controls Display Type",
             "name": "controls_display_type",
@@ -121,6 +157,13 @@
             "layout": "horizontal"
         },
         {
+            "allow_backendsearch": false,
+            "show_column_filter": false,
+            "allow_bulkedit": false,
+            "allow_quickedit": false,
+            "show_column": false,
+            "show_column_weight": 1000,
+            "show_column_sortable": false,
             "key": "field_63e9cbf242840",
             "label": "Arrow Icon Color",
             "name": "arrow_icon_color",
@@ -147,6 +190,13 @@
             "return_format": "string"
         },
         {
+            "allow_backendsearch": false,
+            "show_column_filter": false,
+            "allow_bulkedit": false,
+            "allow_quickedit": false,
+            "show_column": false,
+            "show_column_weight": 1000,
+            "show_column_sortable": false,
             "key": "field_63e9cb904283e",
             "label": "Dots Color",
             "name": "dots_color",
@@ -178,6 +228,13 @@
             "layout": "horizontal"
         },
         {
+            "allow_backendsearch": false,
+            "show_column_filter": false,
+            "allow_bulkedit": false,
+            "allow_quickedit": false,
+            "show_column": false,
+            "show_column_weight": 1000,
+            "show_column_sortable": false,
             "key": "field_654028f32a09f",
             "label": "Dots Alignment",
             "name": "dots_alignment",
@@ -228,5 +285,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1698703800
+    "modified": 1699660246
 }
