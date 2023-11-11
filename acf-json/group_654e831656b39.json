@@ -118,9 +118,9 @@
                 "id": ""
             },
             "taxonomy": "testimonial-category",
-            "add_term": 1,
-            "save_terms": 1,
-            "load_terms": 1,
+            "add_term": 0,
+            "save_terms": 0,
+            "load_terms": 0,
             "return_format": "id",
             "field_type": "select",
             "allow_null": 0,
@@ -543,5 +543,5 @@
     "description": "",
     "show_in_rest": 0,
     "qef_simple_location_rules": 0,
-    "modified": 1699660888
+    "modified": 1699663083
 }

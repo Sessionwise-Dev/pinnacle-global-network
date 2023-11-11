@@ -1,14 +1,12 @@
 {
-    "name": "acf/button",
-    "title": "Button",
+    "name": "acf/accordion",
+    "title": "Accordion",
     "description": "",
     "apiVersion": 2,
     "category": "theme",
-    "parent": ["acf/button-group"],
-    "icon": "button",
-    "keywords": ["button"],
+    "icon": "clipboard",
     "acf": {
-        "renderTemplate": "button.php",
+        "renderTemplate": "accordion.php",
         "mode": "preview"
     },
     "supports": {

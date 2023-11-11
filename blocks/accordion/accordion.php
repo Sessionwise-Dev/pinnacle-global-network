@@ -1,15 +1,15 @@
 <?php
 
 $id = isset( $block['anchor'] ) ? $block['anchor'] : '';
-$classes = ['theme-button'];
-$classes[] = get_field( 'button_style' ) ?: '';
-$classes[] = get_field( 'button_size' ) ?: '';
-$classes[] = get_field( 'full_width' ) ? 'fw-button' : '';
-$icon = get_field( 'arrow_icon' );
-$btn = get_field( 'button' );
 
-echo is_admin() ? '<div class="admin-block-label">Button</div>' : '';
+$accordion_items = get_field('accordion_items');
 
-$btn = get_field( 'button' );
 
-echo _pinnacle_acf_button( $btn, $classes, $id, $icon );
+echo '<div class="block-accordion">';
+    foreach($accordion_items as $accordion) {
+        echo '<div class="accordion-item">'.
+            '<h3 class="accordion-title">'.$accordion->post_title.'<i class="fa-solid fa-angle-right"></i></h3>'.
+            '<div class="accordion-content">'.$accordion->post_content.'</div>'.
+        '</div>';
+    }
+echo '</div>';
