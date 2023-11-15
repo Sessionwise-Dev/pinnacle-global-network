@@ -237,7 +237,7 @@ if($style == 'style3') {
 
                 echo '<div class="testimonial-item swiper-slide">';
 
-                        if(get_field('testimonial_type', $id) == 'video') {
+                        if(get_field('testimonial_type', $id)) {
 
                             $video = get_field('video', $id);
                             $poster = get_field('video_poster', $id);
