@@ -32,7 +32,7 @@
         @include minBreakpoint('md'){display: flex;}
 
         & > li{
-            margin-right: 2.5rem;
+            margin-right: 1.5rem;
             @include minBreakpoint('lg'){margin-right: 2.5rem;}
 
             &:last-child{
@@ -41,10 +41,11 @@
 
             & > a{
                 opacity: 0.8;
-                font-size: 1.063rem;
+                font-size: 1rem;
                 font-weight: 400;
                 color: white;
-                padding: .5rem 0;
+                padding: .75rem 0;
+                @include minBreakpoint('lg'){font-size: 1.1rem;}
 
                 &:hover{
                     opacity: 1;
@@ -59,15 +60,18 @@
 
         //Submenus
         & > li.menu-item-has-children{
-
+            position: relative;
+            
             ul{
                 @include hiddenItem;
-                width: 14rem;
+                width: 16rem;
+                left: -.75rem;
                 transition: opacity .2s ease-out;
             }
 
             //First Level
             & > ul{
+                box-shadow: 3px 3px 8px rgba(0,0,0,0.2);
 
                 li{
                     margin: 0;
@@ -79,11 +83,15 @@
 
                     a{
                         padding: .75rem;
-                        color: white;
-                        background-color: map-get($colors, 'dark');
+                        color: rgba(#FFF, .85);
+                        background-color: map-get($colors, 'dark-slate-blue');
+                        font-size: 1.1rem;
+                        //text-transform: uppercase;
+                        display: block;
+                        font-family: $heading_font;
 
                         &:hover{
-                            background-color: map-get($colors, 'blue');
+                            background-color: map-get($colors, 'slate-grey');
                         }
                     }
 
@@ -123,7 +131,7 @@
         //Submenu indicator icon
          & > li.menu-item-has-children > a::after{
             content: "\f078";
-            font-family: 'Font Awesome 5 Free';
+            font-family: 'Font Awesome 6 Pro';
             font-weight: 900;
             padding-left: .3125rem;
             display: inline;

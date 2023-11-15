@@ -4,8 +4,9 @@ var swiper = new Swiper('.hero-slider', {
     direction: 'horizontal',
     loop: true,
     centeredSlides: true,
+    speed: 600,
     autoplay: {
-        delay: 2500,
+        delay: 3000,
         disableOnInteraction: false,
     },
     effect: "creative",

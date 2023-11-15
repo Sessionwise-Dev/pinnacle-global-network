@@ -30,10 +30,10 @@
             left: 0;
             right: 0;
             bottom: 0;
+            margin: 0 auto;
             @include containerXPad;
 
             @include minBreakpoint('xl'){
-                max-width: $site_container_width_xl;
                 padding-bottom: map-get($yPadLG,'xl');
             }
 

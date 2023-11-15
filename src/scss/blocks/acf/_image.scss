@@ -8,6 +8,14 @@
         @include fullAbsolute(2);
     }
 
+    &.br-md img{
+        border-radius: 1rem;
+    }
+
+    &.br-circle img{
+        border-radius: 50%;
+    }
+
     .force-aspect{
         position: relative;
         height: auto;

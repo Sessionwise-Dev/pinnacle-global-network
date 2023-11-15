@@ -83,6 +83,14 @@ add_action( 'admin_head', function(){ ?>
     <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500;6..96,600;6..96,700;6..96,800&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
 <?php });
 
+//Define rules for when the block editor should be disabled
+function _themename_block_editor_rules( $use_block_editor, $post_type ) {
+    $post_types_with_disabled_block_editor = ['faq'];
+    if( in_array( $post_type, $post_types_with_disabled_block_editor ) ) return false;
+    return $use_block_editor;
+}
+add_filter( 'use_block_editor_for_post_type', '_themename_block_editor_rules', 10, 2 );
+
 //Add wrappers around default blocks
 add_filter( 'render_block', '_pinnacle_block_wrapper', 10, 2 );
 function _pinnacle_block_wrapper( $block_content, $block ) {
@@ -119,6 +127,10 @@ function _pinnacle_core_block_styles(){
     register_block_style( 'core/paragraph', [
         'name' => 'xs',
         'label' => __( 'XS', '_pinnacle' )
+    ] );
+    register_block_style( 'core/list', [
+        'name' => 'checkmark-list',
+        'label' => __( 'Checkmarks', '_pinnacle' )
     ] );
     register_block_style( 'core/list', [
         'name' => 'xl',

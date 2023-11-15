@@ -19,7 +19,7 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: $heading_font;
     color: $color_heading;
     font-weight: 500;
-    line-height: 1.05;
+    line-height: 1.15;
     margin-bottom: 1rem;
     @include minBreakpoint('sm'){margin-bottom: 1.5rem;}
 
@@ -30,20 +30,22 @@ h1, h2, h3, h4, h5, h6 {
 
 h1{
 	font-size: 3rem;
-    @include minBreakpoint('sm'){font-size: 4rem;}
-    @include minBreakpoint('md'){font-size: 4.75rem;}
+    @include minBreakpoint('sm'){font-size: 3.5rem;}
+    @include minBreakpoint('md'){font-size: 4rem;}
+    @include minBreakpoint('lg'){font-size: 4.75rem;}
 }
 
 h2{
 	font-size: 2.5rem;
-    @include minBreakpoint('sm'){font-size: 3.25rem;}
-    @include minBreakpoint('md'){font-size: 3.75rem;}
+    @include minBreakpoint('sm'){font-size: 3rem;};
+    @include minBreakpoint('md'){font-size: 3.25rem;}
+    @include minBreakpoint('lg'){font-size: 3.75rem;}
 }
 
 h3{
 	font-size: 2.25rem;
-    @include minBreakpoint('sm'){font-size: 3rem;}
-    @include minBreakpoint('md'){font-size: 3.25rem;}
+    @include minBreakpoint('md'){font-size: 2.75rem;}
+    @include minBreakpoint('lg'){font-size: 3.25rem;}
 }
 
 h4{
@@ -110,6 +112,20 @@ p,ul,ol,li,div,span{
         font-size: 1.25rem !important;
         @include minBreakpoint('sm'){font-size: 1.5rem !important;}
         @include minBreakpoint('md'){font-size: 2rem !important;}
+    }
+}
+
+ul.is-style-checkmark-list{
+    padding-left: 0;
+    list-style: none;
+
+    li{
+        padding-left: 2.5rem;
+        background-image: url('../images/icon-check-blue.png');
+        background-size: 1.25rem;
+        background-position: 0px 4px;
+        background-repeat: no-repeat;
+        @include minBreakpoint('md'){background-size: 1.5rem;}
     }
 }
 

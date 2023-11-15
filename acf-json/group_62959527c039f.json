@@ -1,16 +1,8 @@
 {
-    "qef_simple_location_rules": false,
     "key": "group_62959527c039f",
     "title": "Block - Columns",
     "fields": [
         {
-            "allow_backendsearch": false,
-            "show_column_filter": false,
-            "allow_bulkedit": false,
-            "allow_quickedit": false,
-            "show_column": false,
-            "show_column_weight": 1000,
-            "show_column_sortable": false,
             "key": "field_645bb246243e4",
             "label": "Display Type",
             "name": "display_type",
@@ -24,6 +16,13 @@
                 "class": "",
                 "id": ""
             },
+            "allow_backendsearch": false,
+            "show_column_filter": false,
+            "allow_bulkedit": false,
+            "allow_quickedit": false,
+            "show_column": false,
+            "show_column_weight": 1000,
+            "show_column_sortable": false,
             "choices": {
                 "grid": "Grid",
                 "flex": "Flex"
@@ -34,13 +33,6 @@
             "layout": "horizontal"
         },
         {
-            "allow_backendsearch": false,
-            "show_column_filter": false,
-            "allow_bulkedit": false,
-            "allow_quickedit": false,
-            "show_column": false,
-            "show_column_weight": 1000,
-            "show_column_sortable": false,
             "key": "field_62959547ef71a",
             "label": "Columns Per Row",
             "name": "number_of_columns",
@@ -62,6 +54,13 @@
                 "class": "",
                 "id": ""
             },
+            "allow_backendsearch": false,
+            "show_column_filter": false,
+            "allow_bulkedit": false,
+            "allow_quickedit": false,
+            "show_column": false,
+            "show_column_weight": 1000,
+            "show_column_sortable": false,
             "choices": {
                 "2": "2",
                 "3": "3",
@@ -75,13 +74,6 @@
             "layout": "horizontal"
         },
         {
-            "allow_backendsearch": false,
-            "show_column_filter": false,
-            "allow_bulkedit": false,
-            "allow_quickedit": false,
-            "show_column": false,
-            "show_column_weight": 1000,
-            "show_column_sortable": false,
             "key": "field_62d5f177bc70e",
             "label": "Column Gap",
             "name": "column_gap",
@@ -95,6 +87,13 @@
                 "class": "",
                 "id": ""
             },
+            "allow_backendsearch": false,
+            "show_column_filter": false,
+            "allow_bulkedit": false,
+            "allow_quickedit": false,
+            "show_column": false,
+            "show_column_weight": 1000,
+            "show_column_sortable": false,
             "choices": {
                 "none": "None",
                 "xs": "XS",
@@ -109,13 +108,6 @@
             "return_format": "value"
         },
         {
-            "allow_backendsearch": false,
-            "show_column_filter": false,
-            "allow_bulkedit": false,
-            "allow_quickedit": false,
-            "show_column": false,
-            "show_column_weight": 1000,
-            "show_column_sortable": false,
             "key": "field_645bb286243e6",
             "label": "Justify Content",
             "name": "justify_content",
@@ -137,6 +129,13 @@
                 "class": "",
                 "id": ""
             },
+            "allow_backendsearch": false,
+            "show_column_filter": false,
+            "allow_bulkedit": false,
+            "allow_quickedit": false,
+            "show_column": false,
+            "show_column_weight": 1000,
+            "show_column_sortable": false,
             "choices": {
                 "start": "Start",
                 "center": "Center",
@@ -149,13 +148,40 @@
             "layout": "horizontal"
         },
         {
-            "allow_backendsearch": false,
-            "show_column_filter": false,
-            "allow_bulkedit": false,
-            "allow_quickedit": false,
-            "show_column": false,
-            "show_column_weight": 1000,
-            "show_column_sortable": false,
+            "key": "field_6553ef978fe43",
+            "label": "Wrap Point",
+            "name": "row_wrap",
+            "aria-label": "",
+            "type": "button_group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_645bb246243e4",
+                        "operator": "==",
+                        "value": "flex"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "wrap-none": "Never",
+                "wrap-mobile": "Mobile",
+                "wrap-sm": "SM",
+                "wrap-md": "MD",
+                "wrap-lg": "LG"
+            },
+            "default_value": "",
+            "return_format": "value",
+            "allow_null": 0,
+            "layout": "horizontal"
+        },
+        {
             "key": "field_62d5f074905b5",
             "label": "Vertical Alignment",
             "name": "vertical_alignment",
@@ -169,6 +195,13 @@
                 "class": "",
                 "id": ""
             },
+            "allow_backendsearch": false,
+            "show_column_filter": false,
+            "allow_bulkedit": false,
+            "allow_quickedit": false,
+            "show_column": false,
+            "show_column_weight": 1000,
+            "show_column_sortable": false,
             "choices": {
                 "Start": "Start",
                 "Center": "Center",
@@ -181,13 +214,6 @@
             "return_format": "value"
         },
         {
-            "allow_backendsearch": false,
-            "show_column_filter": false,
-            "allow_bulkedit": false,
-            "allow_quickedit": false,
-            "show_column": false,
-            "show_column_weight": 1000,
-            "show_column_sortable": false,
             "key": "field_62d5f08d905b6",
             "label": "Two Column Layout",
             "name": "two_column_layout",
@@ -214,6 +240,13 @@
                 "class": "",
                 "id": ""
             },
+            "allow_backendsearch": false,
+            "show_column_filter": false,
+            "allow_bulkedit": false,
+            "allow_quickedit": false,
+            "show_column": false,
+            "show_column_weight": 1000,
+            "show_column_sortable": false,
             "choices": {
                 "quarter": "25% 75%",
                 "third": "33% 66%",
@@ -233,13 +266,6 @@
             "placeholder": ""
         },
         {
-            "allow_backendsearch": false,
-            "show_column_filter": false,
-            "allow_bulkedit": false,
-            "allow_quickedit": false,
-            "show_column": false,
-            "show_column_weight": 1000,
-            "show_column_sortable": false,
             "key": "field_6303781e53e44",
             "label": "Collapse at Tablet Breakpoint?",
             "name": "collapse_tablet",
@@ -253,13 +279,6 @@
                 "class": "",
                 "id": ""
             },
-            "message": "",
-            "default_value": 0,
-            "ui": 1,
-            "ui_on_text": "",
-            "ui_off_text": ""
-        },
-        {
             "allow_backendsearch": false,
             "show_column_filter": false,
             "allow_bulkedit": false,
@@ -267,6 +286,13 @@
             "show_column": false,
             "show_column_weight": 1000,
             "show_column_sortable": false,
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
             "key": "field_62d648d2debec",
             "label": "Reverse on Mobile?",
             "name": "reverse_on_mobile",
@@ -288,6 +314,13 @@
                 "class": "",
                 "id": ""
             },
+            "allow_backendsearch": false,
+            "show_column_filter": false,
+            "allow_bulkedit": false,
+            "allow_quickedit": false,
+            "show_column": false,
+            "show_column_weight": 1000,
+            "show_column_sortable": false,
             "message": "",
             "default_value": 0,
             "ui": 1,
@@ -313,5 +346,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1699660246
+    "modified": 1700000516
 }

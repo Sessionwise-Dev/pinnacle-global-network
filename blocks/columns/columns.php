@@ -31,19 +31,23 @@ switch( get_field( 'vertical_alignment' ) ){
 
 if( $display == 'flex' ){
     $classes .= ' jc-' . get_field( 'justify_content' );
+    $classes .= get_field( 'row_wrap' ) ? ' ' . get_field( 'row_wrap' ) : ' wrap-lg';
+}
+
+else{
+    switch( $col_count ){
+        case 2:
+            $classes .= ' cols-2 ' . get_field( 'two_column_layout' ) . ( get_field( 'reverse_on_mobile' ) ? ' reverse-mobile' : '' );
+            break;
+    
+        default:
+            $classes .= ' cols-' . $col_count;
+            break;
+    }
 }
 
 $classes .= ' ' . $alignment;
 
-switch( $col_count ){
-    case 2:
-        $classes .= ' cols-2 ' . get_field( 'two_column_layout' ) . ( get_field( 'reverse_on_mobile' ) ? ' reverse-mobile' : '' );
-        break;
-
-    default:
-        $classes .= ' cols-' . $col_count;
-        break;
-}
 
 echo '<div ' . ( !empty( $id ) ? 'id="' . $id . '" ' : '') . 'class="block-columns' . $spacing . '">';
 

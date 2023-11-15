@@ -64,6 +64,7 @@ $contacts_and_location = get_field('contacts_and_location', 'options');
 
 		<div class="footer-copyright">
 			<?php if($copyright) { 
+				$copyright = str_replace('$year', date('Y'), $copyright );
 				echo '<p class="copyright-text">'.$copyright.'</p>';
 			} else {
 				echo '©2023 Pinnacle Global Network';

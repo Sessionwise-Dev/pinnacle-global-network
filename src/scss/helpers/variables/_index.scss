@@ -3,15 +3,15 @@
 @forward 'typography';
 
 //Site Content Containers
-$site_container_width: 100rem;
-$site_container_width_xl: 120rem;
+$site_container_width: 90rem;
+$site_container_width_xl: 100rem;
 
 //Media breakpoints used in mixins, 
 $minBreakpoints : (
     'xs' : 36rem,
     'sm' : 48rem,
     'md' : 64.0625rem,
-    'lg' : 80rem,
+    'lg' : 90rem,
     'xl' : 1921px
 );
 

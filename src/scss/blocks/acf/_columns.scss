@@ -29,7 +29,20 @@
 .block-columns-row{
 
     &.d-flex{
-        flex-flow: row wrap;
+        flex-flow: row nowrap;
+
+        &.wrap-mobile{
+            @include maxBreakpoint('sm'){flex-flow: row wrap;}
+        }
+        &.wrap-sm{
+            @include maxBreakpoint('md'){flex-flow: row wrap;}
+        }
+        &.wrap-md{
+            @include maxBreakpoint('lg'){flex-flow: row wrap;}
+        }
+        &.wrap-lg{
+            @include maxBreakpoint('xl'){flex-flow: row wrap;}
+        }
     }
     
     &.ai-stretch{

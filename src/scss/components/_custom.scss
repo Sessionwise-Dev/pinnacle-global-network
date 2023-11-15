@@ -2,23 +2,15 @@
 
 
 // Custom Classes
-
 .logo-section.block-section  {
-    padding: 2rem 4rem;
-
-    .block-section-content {
-        max-width: 100%;
-    }
-
     img {
+        @include maxBreakpoint('sm'){padding: .5rem .75rem;}
         opacity: 0.65;
     }
 }
 
 .separator {
 
-    
-    
     &.block-columns-row .block-column:not(:last-child):after {
         width: 1px;
         height: calc(100% - 6rem);
@@ -56,6 +48,10 @@
     }
 }
 
+.connector-arrow img{
+    @include maxBreakpoint('sm'){padding: 1.5rem; transform: translateX(-1rem);}
+}
+
 .center-mobile {
     text-align: center;
 
@@ -65,7 +61,7 @@
 }
 
 .light-on-mobile {
-    @include maxBreakpoint('sm') {
+    @include maxBreakpoint('md') {
         color: white!important;
     }
 }
@@ -94,6 +90,9 @@
 
 .rm-border-top-right img {
     border-top-right-radius: 0!important;
+}
+.rm-border-top-left img {
+    border-top-left-radius: 0!important;
 }
 
 .testimonial-slider h4 {
@@ -127,14 +126,22 @@
     }
 }
 
-.top-block-overlap-dark:before {
-    content: '';
-    height: 12rem;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    display: block;
-    background: map-get($colors, 'dark-2');
+.top-block-overlap-dark{
+    .block-fw-media-col{
+        @include minBreakpoint('md'){min-height: 400px;}
+        @include minBreakpoint('lg'){min-height: 500px;}
+    }
+
+    &:before{
+        content: '';
+        width: 100%;
+        position: absolute;
+        top: 0;
+        display: block;
+        background: map-get($colors, 'dark-2');
+        @include minBreakpoint('md'){height: 5rem;}
+        @include minBreakpoint('lg'){height: 10rem;}
+    }
 }
 
 .top-block-overlap-light:before {
