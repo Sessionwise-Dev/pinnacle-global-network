@@ -22,6 +22,14 @@
 	<?php 
     $custom_logo_id = get_theme_mod( 'custom_logo' );
 	include( locate_template( 'template-parts/components/mobile-navigation.php' ) );
+	//Homepage preloader animation
+	if( is_front_page() ){
+		echo '<div class="pgn-home-animation-wrap d-flex jc-center ai-center container-x-pad container-y-pad">';
+			echo '<div class="content-container">';
+				echo wp_get_attachment_image( $custom_logo_id, 'full', null, ['class'=>'animation-logo'] );
+			echo '</div>';
+		echo '</div>';
+	}
 	?>
 
 	<?php 
