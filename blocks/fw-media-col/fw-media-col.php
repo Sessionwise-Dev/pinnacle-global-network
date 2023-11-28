@@ -2,6 +2,7 @@
 
 $id = !empty( $block['anchor'] ) ? $block['anchor'] : '';
 $classes = !empty( $block['className'] ) ? ' ' . $block['className'] : ''; 
+$classes .= get_field( 'animation_type') ? ' ' . get_field( 'animation_type' ) : '';
 
 $allowed_blocks = [
     'acf/image',

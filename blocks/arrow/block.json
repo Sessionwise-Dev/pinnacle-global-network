@@ -1,0 +1,16 @@
+{
+    "name": "acf/arrow",
+    "title": "Arrow",
+    "description": "",
+    "apiVersion": 2,
+    "category": "theme",
+    "icon": "format-image",
+    "acf": {
+        "renderTemplate": "arrow.php",
+        "mode": "preview"
+    },
+    "supports": {
+        "align"    : false,
+        "anchor"   : true
+    }
+}

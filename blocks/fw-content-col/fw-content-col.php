@@ -2,6 +2,7 @@
 
 $id = !empty( $block['anchor'] ) ? $block['anchor'] : '';
 $classes = !empty( $block['className'] ) ? ' ' . $block['className'] : ''; 
+$animation = get_field( 'animation_type') ? ' ' . get_field( 'animation_type' ) : '';
 $bg = !empty( $context['acf/fields']['background_color'] ) ? $context['acf/fields']['background_color'] : 'transparent';
 
 $template = [
@@ -15,6 +16,8 @@ $template = [
 ];
 
 echo is_admin() ? '<div class="admin-block-label">Content Column</div>' : '';
-echo '<div class="block-fw-content-col' . $classes . '" style="background-color:' . $bg . ';">';
-    echo '<InnerBlocks template="' . esc_attr( wp_json_encode( $template ) ) . '" templateLock="false" />';
+echo '<div class="block-fw-content-col-wrap' . $animation . '">';
+    echo '<div class="block-fw-content-col' . $classes . '" style="background-color:' . $bg . ';">';
+        echo '<InnerBlocks template="' . esc_attr( wp_json_encode( $template ) ) . '" templateLock="false" />';
+    echo '</div>';
 echo '</div>';

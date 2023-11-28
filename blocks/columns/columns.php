@@ -10,6 +10,7 @@ $display = get_field( 'display_type' ) ?: 'grid';
 
 $classes .= ' d-' . $display;
 $classes .= ' gap-' . get_field( 'column_gap' ) ?: 'sm';
+$classes .= get_field( 'animation_type') ? ' ' . get_field( 'animation_type' ) : '';
 
 switch( get_field( 'vertical_alignment' ) ){
     case 'Center':

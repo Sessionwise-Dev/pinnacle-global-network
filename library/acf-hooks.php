@@ -8,14 +8,6 @@ $parent = acf_add_options_page(
         'capability'  => 'edit_posts',
     )
 );
-// acf_add_options_sub_page(
-//     array(
-//         'page_title'  => __( 'Global Settings' ),
-//         'menu_title'  => __( 'Global Settings' ),
-//         'menu_slug'   => 'theme-global-settings',
-//         'parent_slug' => $parent['menu_slug'] 
-//     )
-// );
 acf_add_options_sub_page(
     array(
         'page_title'  => __( 'Header Settings' ),
@@ -29,6 +21,14 @@ acf_add_options_sub_page(
         'page_title'  => __( 'Footer Settings' ),
         'menu_title'  => __( 'Footer Settings' ),
         'menu_slug'   => 'theme-footer-settings',
+        'parent_slug' => $parent['menu_slug'] 
+    )
+);
+acf_add_options_sub_page(
+    array(
+        'page_title'  => __( 'Blog Settings' ),
+        'menu_title'  => __( 'Blog Settings' ),
+        'menu_slug'   => 'theme-blog-settings',
         'parent_slug' => $parent['menu_slug'] 
     )
 );

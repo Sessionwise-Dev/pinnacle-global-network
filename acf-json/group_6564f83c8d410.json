@@ -1,0 +1,95 @@
+{
+    "key": "group_6564f83c8d410",
+    "title": "Block Entrance Animation",
+    "fields": [
+        {
+            "key": "field_6564f83d40479",
+            "label": "Entrance Animation",
+            "name": "animation_type",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "none": "None",
+                "fade-in": "Fade In",
+                "fade-up": "Fade Up",
+                "fade-down": "Fade Down",
+                "fade-left": "Fade Left",
+                "fade-right": "Fade Right"
+            },
+            "default_value": "none",
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "all"
+            },
+            {
+                "param": "block",
+                "operator": "!=",
+                "value": "acf\/button"
+            },
+            {
+                "param": "block",
+                "operator": "!=",
+                "value": "acf\/slide"
+            },
+            {
+                "param": "block",
+                "operator": "!=",
+                "value": "acf\/column"
+            },
+            {
+                "param": "block",
+                "operator": "!=",
+                "value": "acf\/fw-text-media-cols"
+            },
+            {
+                "param": "block",
+                "operator": "!=",
+                "value": "acf\/hero-slider"
+            },
+            {
+                "param": "block",
+                "operator": "!=",
+                "value": "acf\/team-members"
+            },
+            {
+                "param": "block",
+                "operator": "!=",
+                "value": "acf\/team-members"
+            },
+            {
+                "param": "block",
+                "operator": "!=",
+                "value": "acf\/section"
+            }
+        ]
+    ],
+    "menu_order": -1,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1701117309
+}

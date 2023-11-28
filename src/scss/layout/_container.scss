@@ -15,3 +15,54 @@
 .bg-white{
     background-color: white !important;
 }
+
+.pgn-home-animation{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    z-index: -1;
+    opacity: 0;
+    transform: translateY(-100%);
+    overflow-y: scroll;
+    pointer-events: none;
+    
+
+    &.active{
+        z-index: 9998;
+        opacity: 1;
+        transform: none;
+        visibility: visible;
+    }
+
+    &-bg{
+        @include fullAbsolute(1);
+        background: map-get($colors, 'navy-dark');
+    }
+
+    &-logo-wrap{
+        @include fullAbsolute(2);
+    }
+
+    &-logo{
+        position: relative;
+
+        .overlay{
+            background: map-get($colors, 'navy-dark');
+            @include fullAbsolute(2);
+            transform-origin: top center;
+        }
+    
+        img{
+            visibility: hidden;
+            z-index: 1;
+            display: block;
+            margin: 0 auto;
+            transform: translateY(2rem);
+            max-width: calc(100% - 6rem);
+            @include minBreakpoint('sm'){max-width: 25rem;}
+        }
+    }
+}

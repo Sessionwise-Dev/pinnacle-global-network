@@ -12,4 +12,5 @@ import './components/custom-select';
 import './components/select-filter';
 
 import './animations/animations';
+import './animations/homepage-preload';
  

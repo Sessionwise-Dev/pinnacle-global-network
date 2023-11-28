@@ -2,6 +2,7 @@
 
 $classes = isset( $block['className'] ) ? ' ' . $block['className'] : ''; 
 $classes .= get_field( 'spacing_size' ) ? ' mt-' . get_field( 'spacing_size' ) : ' mt-md'; 
+$classes .= get_field( 'animation_type') ? ' ' . get_field( 'animation_type' ) : '';
 $classes .= get_field( 'padding' ) ? ' pad-' . get_field( 'padding' ) : '';
 
 $id = isset( $block['anchor'] ) ? $block['anchor'] : '';

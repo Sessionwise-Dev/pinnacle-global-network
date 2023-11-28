@@ -4,9 +4,9 @@ var swiper = new Swiper('.hero-slider', {
     direction: 'horizontal',
     loop: true,
     centeredSlides: true,
-    speed: 600,
+    speed: 750,
     autoplay: {
-        delay: 3000,
+        delay: 4000,
         disableOnInteraction: false,
     },
     effect: "creative",
@@ -18,4 +18,4 @@ var swiper = new Swiper('.hero-slider', {
             translate: ["100%", 0, 0],      
         }, 
     },
-})
+});

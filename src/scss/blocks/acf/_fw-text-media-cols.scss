@@ -85,9 +85,12 @@
     }
 
     &.overlapping-content{
+        
+        .block-fw-content-col-wrap{
+            z-index: 6;
+        }
 
         .block-fw-content-col{
-            z-index: 6;
             @include minBreakpoint('md'){transform: translateX(-3rem);}
             @include minBreakpoint('lg'){transform: translateX(-5rem);}
         }

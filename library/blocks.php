@@ -6,6 +6,7 @@ add_action( 'init', '_pinnacle_acf_init_block_types' );
 
 function _pinnacle_acf_init_block_types(){
     register_block_type( get_template_directory() . '/blocks/accordion/block.json' );
+    register_block_type( get_template_directory() . '/blocks/arrow/block.json' );
     register_block_type( get_template_directory() . '/blocks/button/block.json' );
     register_block_type( get_template_directory() . '/blocks/button-group/block.json' );
     register_block_type( get_template_directory() . '/blocks/column/block.json' );
@@ -37,6 +38,7 @@ add_filter( 'allowed_block_types_all', '_pinnacle_allowed_block_types' );
 function _pinnacle_allowed_block_types( $allowed_blocks ) {
 	return apply_filters( '_pinnacle_allowed_block_types', [
         'acf/accordion',
+        'acf/arrow',
         'acf/button',
         'acf/button-group',
         'acf/column',

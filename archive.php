@@ -17,4 +17,5 @@ get_template_part ( 'template-parts/content/blog-hero' );
 
 get_template_part( 'template-parts/content/blog-archive' );
 
+
 get_footer();

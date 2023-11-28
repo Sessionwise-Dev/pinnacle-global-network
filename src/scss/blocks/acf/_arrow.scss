@@ -1,0 +1,23 @@
+@use 'helpers' as *;
+
+.block-arrow{
+
+    svg{
+        width: 100%;
+        height: auto;
+    }
+
+    #template, #path {
+        fill: none;
+      }
+
+      #path {
+        stroke: map-get($colors, 'sky-blue-2');
+        stroke-width: 6px;
+        visibility: hidden;
+      }
+
+      .st0{
+        visibility:hidden;
+      }
+}

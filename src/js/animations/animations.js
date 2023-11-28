@@ -1,42 +1,54 @@
-import '../vendor/gsap.min.js';
-import '../vendor/ScrollTrigger.min.js';
-import '../vendor/ScrollToPlugin.min.js';
 import $ from 'jquery';
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+import { DrawSVGPlugin } from "gsap/DrawSVGPlugin";
 
-gsap.registerPlugin('ScrollTrigger');
-gsap.registerPlugin('ScrollToPlugin');
+gsap.registerPlugin(ScrollTrigger,ScrollToPlugin,DrawSVGPlugin);
 
 const scrollBasedAnimations = () => {
 
-    let elementsToFade = document.querySelectorAll('.fade-in, .fade-up, .fade-down, .fade-in-grow');
+    let elementsToFade = document.querySelectorAll('.fade-in, .fade-up, .fade-down, .fade-left, .fade-right');
     let elementsToCount = gsap.utils.toArray('.count-up');
     let elementsToRotate = gsap.utils.toArray('.rotation-animation');
+    let arrows = gsap.utils.toArray('.block-arrow');
 
     let mm = gsap.matchMedia();
 
     //Fade animations as elements enter viewport
     elementsToFade.forEach(el => {
-        let y = 0;
-        let x = 0;
-        let scale = 1;
-        let delay = 0;
-        y = el.classList.contains('fade-up') ? 50 : y;
-        y = el.classList.contains('fade-down') ? -50 : y;
-        scale = el.classList.contains('fade-in-grow') ? .9 : scale;
-        delay = el.dataset.delay ? el.dataset.delay : 0;
-        gsap.from(el, {
-            y: y,
-            x: x,
-            scale: scale,
-            autoAlpha: 0,
+        gsap.to(el, {
+            y: 0,
+            x: 0,
+            autoAlpha: 1,
             scrollTrigger: {
                 trigger: el,
                 start: 'top 85%',
             },
             duration: .625,
-            ease: 'power2.out',
-            delay: delay
+            ease: 'power2.out'
         });
+    });
+
+    arrows.forEach(el => {
+        const path = el.querySelector('#path');
+        const ends = gsap.utils.toArray(el.querySelectorAll('.st0'));
+        gsap.set(path, {visibility:"visible", drawSVG: "0%"});
+        let tl = gsap.timeline({
+            scrollTrigger: {
+                trigger: el,
+                start: 'top 85%',
+            },
+        });
+        tl.to(path, {
+            drawSVG:"100%", 
+            duration: 1.25, 
+            ease:"power2.out"
+          });
+         tl.to(ends, {
+           duration: .15,
+           autoAlpha: 1
+         }, "<.9");
     });
 
     //Add box shadow to header on scroll

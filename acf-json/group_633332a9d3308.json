@@ -1,16 +1,8 @@
 {
-    "qef_simple_location_rules": 0,
     "key": "group_633332a9d3308",
     "title": "Block Spacing",
     "fields": [
         {
-            "allow_backendsearch": false,
-            "show_column_filter": false,
-            "allow_bulkedit": false,
-            "allow_quickedit": false,
-            "show_column": false,
-            "show_column_weight": 1000,
-            "show_column_sortable": false,
             "key": "field_633332ab54a4a",
             "label": "Space Above",
             "name": "spacing_size",
@@ -24,6 +16,13 @@
                 "class": "",
                 "id": ""
             },
+            "allow_backendsearch": false,
+            "show_column_filter": false,
+            "allow_bulkedit": false,
+            "allow_quickedit": false,
+            "show_column": false,
+            "show_column_weight": 1000,
+            "show_column_sortable": false,
             "choices": {
                 "none": "None",
                 "xs": "XS",
@@ -62,7 +61,7 @@
             }
         ]
     ],
-    "menu_order": -1,
+    "menu_order": -2,
     "position": "normal",
     "style": "default",
     "label_placement": "top",
@@ -71,5 +70,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1699660246
+    "modified": 1701117491
 }

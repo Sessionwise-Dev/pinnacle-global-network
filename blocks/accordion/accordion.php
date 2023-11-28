@@ -1,7 +1,8 @@
 <?php
 
 $id = isset( $block['anchor'] ) ? $block['anchor'] : '';
-
+$classes = isset( $block['className'] ) ? ' ' . $block['className'] : '';
+$classes .= get_field( 'animation_type') ? ' ' . get_field( 'animation_type' ) : '';
 $accordion_items = get_field('accordion_items');
 
 

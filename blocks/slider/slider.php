@@ -2,7 +2,7 @@
 
 $classes = !empty( $block['className'] ) ? ' ' . $block['className'] : ''; 
 $classes .= get_field( 'spacing_size' ) ? ' mt-' . get_field( 'spacing_size' ) : ' mt-md'; 
-
+$classes .= get_field( 'animation_type') ? ' ' . get_field( 'animation_type' ) : '';
 $id = !empty( $block['anchor'] ) ? $block['anchor'] : '';
 
 $animation = get_field( 'slide_animation' ) ?: 'default';

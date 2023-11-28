@@ -5,6 +5,7 @@ $classes = isset( $block['className'] ) ? ' ' . $block['className'] : '';
 $height = get_field( 'height' ) ? 'height:' . get_field( 'height' ) . 'px;' : 'height: 2px;';
 
 $classes .= ' ' . get_field( 'space_size' ) ?: 'space-md';
+$classes .= get_field( 'animation_type') ? ' ' . get_field( 'animation_type' ) : '';
 
 $units = get_field( 'max_width_units' );
 
