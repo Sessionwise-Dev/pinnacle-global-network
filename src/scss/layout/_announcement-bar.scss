@@ -12,6 +12,14 @@
         justify-content: center;
         align-items: center;
         gap: 10px;
+        @include maxBreakpoint('sm'){display: block; text-align: center;}
+    }
+
+    .announcement-cta{
+        display: block;
+        text-decoration: underline;
+        font-weight: 700;
+        @include maxBreakpoint('sm'){display: inline;}
     }
 
     p, a {
@@ -23,5 +31,9 @@
         text-align: center;
         font-weight: 600;
         margin-bottom: 0;
+    }
+
+    .announcement-cta,p{
+        @include maxBreakpoint('sm'){display: inline;}
     }
 }

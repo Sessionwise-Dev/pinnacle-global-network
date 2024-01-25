@@ -1,4 +1,12 @@
 <?php
+acf_add_options_page(
+    array(
+        'page_title'  => __( 'Announcement Banner' ),
+        'menu_title'  => __( 'Announcement Banner' ),
+        'menu_slug'   => 'announcement-banner',
+        'capability'  => 'edit_posts',
+    )
+);
 
 $parent = acf_add_options_page(
     array(

@@ -1,16 +1,8 @@
 {
-    "qef_simple_location_rules": 0,
     "key": "group_654e80fb837d2",
     "title": "Testimonial Fields",
     "fields": [
         {
-            "allow_backendsearch": false,
-            "show_column_filter": false,
-            "allow_bulkedit": false,
-            "allow_quickedit": false,
-            "show_column": false,
-            "show_column_weight": 1000,
-            "show_column_sortable": false,
             "key": "field_654e80fb6513a",
             "label": "Testimonial Type",
             "name": "testimonial_type",
@@ -24,6 +16,13 @@
                 "class": "",
                 "id": ""
             },
+            "allow_backendsearch": false,
+            "show_column_filter": false,
+            "allow_bulkedit": false,
+            "allow_quickedit": false,
+            "show_column": false,
+            "show_column_weight": 1000,
+            "show_column_sortable": false,
             "choices": {
                 "video": "Video",
                 "text": "Text"
@@ -37,20 +36,13 @@
             "placeholder": ""
         },
         {
-            "allow_backendsearch": false,
-            "show_column_filter": false,
-            "allow_bulkedit": false,
-            "allow_quickedit": false,
-            "show_column": false,
-            "show_column_weight": 1000,
-            "show_column_sortable": false,
-            "key": "field_654e813e6513b",
-            "label": "Video",
-            "name": "video",
+            "key": "field_657c9b3e8c186",
+            "label": "Video Host",
+            "name": "video_host",
             "aria-label": "",
-            "type": "oembed",
+            "type": "button_group",
             "instructions": "",
-            "required": 1,
+            "required": 0,
             "conditional_logic": [
                 [
                     {
@@ -65,17 +57,79 @@
                 "class": "",
                 "id": ""
             },
+            "choices": {
+                "youtube": "Youtube\/Vimeo",
+                "file": "Media Library File"
+            },
+            "default_value": "youtube",
+            "return_format": "value",
+            "allow_null": 0,
+            "layout": "horizontal"
+        },
+        {
+            "key": "field_654e813e6513b",
+            "label": "Video",
+            "name": "video",
+            "aria-label": "",
+            "type": "oembed",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_654e80fb6513a",
+                        "operator": "==",
+                        "value": "video"
+                    },
+                    {
+                        "field": "field_657c9b3e8c186",
+                        "operator": "!=",
+                        "value": "file"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
             "width": "",
             "height": ""
         },
         {
-            "allow_backendsearch": false,
-            "show_column_filter": false,
-            "allow_bulkedit": false,
-            "allow_quickedit": false,
-            "show_column": false,
-            "show_column_weight": 1000,
-            "show_column_sortable": false,
+            "key": "field_657c9bab8c188",
+            "label": "Video File",
+            "name": "video_file",
+            "aria-label": "",
+            "type": "file",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_654e80fb6513a",
+                        "operator": "==",
+                        "value": "video"
+                    },
+                    {
+                        "field": "field_657c9b3e8c186",
+                        "operator": "==",
+                        "value": "file"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "id",
+            "library": "all",
+            "min_size": "",
+            "max_size": "",
+            "mime_types": "mp4, webm"
+        },
+        {
             "key": "field_654e93238011c",
             "label": "Video Poster",
             "name": "video_poster",
@@ -97,6 +151,13 @@
                 "class": "",
                 "id": ""
             },
+            "allow_backendsearch": false,
+            "show_column_filter": false,
+            "allow_bulkedit": false,
+            "allow_quickedit": false,
+            "show_column": false,
+            "show_column_weight": 1000,
+            "show_column_sortable": false,
             "return_format": "id",
             "library": "all",
             "min_width": "",
@@ -109,13 +170,6 @@
             "preview_size": "medium"
         },
         {
-            "allow_backendsearch": false,
-            "show_column_filter": false,
-            "allow_bulkedit": false,
-            "allow_quickedit": false,
-            "show_column": false,
-            "show_column_weight": 1000,
-            "show_column_sortable": false,
             "key": "field_654e81a86513c",
             "label": "Content",
             "name": "content",
@@ -137,6 +191,13 @@
                 "class": "",
                 "id": ""
             },
+            "allow_backendsearch": false,
+            "show_column_filter": false,
+            "allow_bulkedit": false,
+            "allow_quickedit": false,
+            "show_column": false,
+            "show_column_weight": 1000,
+            "show_column_sortable": false,
             "default_value": "",
             "tabs": "all",
             "toolbar": "full",
@@ -144,13 +205,6 @@
             "delay": 0
         },
         {
-            "allow_backendsearch": 0,
-            "show_column_filter": false,
-            "allow_bulkedit": 0,
-            "allow_quickedit": 0,
-            "show_column": 0,
-            "show_column_weight": 1000,
-            "show_column_sortable": false,
             "key": "field_654e81e06513d",
             "label": "Position",
             "name": "position",
@@ -164,6 +218,13 @@
                 "class": "",
                 "id": ""
             },
+            "allow_backendsearch": 0,
+            "show_column_filter": false,
+            "allow_bulkedit": 0,
+            "allow_quickedit": 0,
+            "show_column": 0,
+            "show_column_weight": 1000,
+            "show_column_sortable": false,
             "default_value": "",
             "maxlength": "",
             "placeholder": "",
@@ -181,7 +242,7 @@
         ]
     ],
     "menu_order": 0,
-    "position": "normal",
+    "position": "acf_after_title",
     "style": "default",
     "label_placement": "top",
     "instruction_placement": "label",
@@ -189,5 +250,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1699660246
+    "modified": 1702665242
 }

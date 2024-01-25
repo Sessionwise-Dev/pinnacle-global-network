@@ -7,18 +7,21 @@
     left: 0;
     z-index: 998;
     width: 100%;
-    @include containerXPad;
-    padding-top: 1.25rem;
-    padding-bottom: 1.25rem;
 }
 
 .header-inner{
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: $site_container_width;
-    @include columnGap($gapMD);
+    @include containerXPad;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+
+    .header-inner-container{
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: $site_container_width;
+        @include columnGap($gapSM);
+    }
 
     .site-logo{
         line-height: 1;

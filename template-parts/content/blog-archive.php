@@ -2,7 +2,7 @@
 	<div class="content-container">
 		<div class="blog-inner">
             <?php if( have_posts() ) : ?>
-                <div class="blog-posts d-grid cols-2 gap-sm">
+                <div class="blog-posts d-grid cols-2 gap-md">
                 <?php while( have_posts() ) : the_post(); ?>
                     <?php get_template_part('template-parts/content/content', 'post-item'); ?>
                 <?php endwhile; ?>
@@ -13,8 +13,12 @@
                     </nav>
                 <?php endif; ?>
                 </div>
-            <?php endif; ?>
-			<?php get_template_part( 'template-parts/content/blog-sidebar' ); ?>
+            <?php endif;
+            if( is_post_type_archive( 'podcast' ) ){
+                get_template_part( 'template-parts/content/podcast-sidebar' );
+            } else {
+                get_template_part( 'template-parts/content/blog-sidebar' );
+            } ?>
 		</div>
 	</div>
 </div>

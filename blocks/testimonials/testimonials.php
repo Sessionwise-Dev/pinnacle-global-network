@@ -239,12 +239,21 @@ if($style == 'style3') {
 
                         if(get_field('testimonial_type', $id)) {
 
-                            $video = get_field('video', $id);
-                            $poster = get_field('video_poster', $id);
+                            $poster = get_field( 'video_poster', $id );
 
-                            preg_match('/src="(.+?)"/', $video , $matches);
-                            $src = $matches[1];
+                            if( get_field( 'video_host', $id ) == 'file' ){
+                                $src = wp_get_attachment_url( get_field( 'video_file', $id ) );
+                                $meta = wp_get_attachment_metadata( get_field( 'video_file', $id ) );
+                                $video = '<video controls poster="' . ( wp_get_attachment_image_url( $poster, 'large' ) ?: '' ) . '" onclick="console.log(this.paused); this.paused ? this.play() : this.pause(); arguments[0].preventDefault();">';
+                                $video .= '<source src="' . $src . '" type="video/' . $meta['fileformat'] . '">';
+                                $video .= '</video>';
+                            }
 
+                            else{
+                                $video = get_field( 'video', $id );
+                                preg_match('/src="(.+?)"/', $video , $matches);
+                                $src = $matches[1];
+                            }
 
                             echo '<a href="#" class="custom-modal-trigger lightbox-poster" data-modal="' . $src . '">';
                                 echo '<div class="overlay"></div>';

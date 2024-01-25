@@ -2,21 +2,14 @@
 
 
 $id = !empty( $block['anchor'] ) ? $block['anchor'] : '';
-
 $classes = isset( $block['className'] ) ? ' ' . $block['className'] : ''; 
-$classes .= get_field( 'section_vertical_padding' ) ? ' ' . get_field( 'section_vertical_padding' ) : ' container-y-pad';
-$color = ' background-color:' . get_field( 'background_color' ) . ';';
+$classes .= get_field( 'spacing_size' ) ? ' mt-' . get_field( 'spacing_size' ) : ' mt-md';
 
-$randomID = rand(0000, 9999);
-
-
-echo '<section ' . ( isset( $id ) ? 'id="' . $id . '" ' : '') . 'style="position: relative;' . ( isset( $color ) ? $color : '' ) . '" class="block-section team-members' . $classes . '">';
+echo '<section ' . ( isset( $id ) ? 'id="' . $id . '" ' : '') . 'style="position: relative;" class="team-members' . $classes . '">';
     echo is_admin() ? '<div class="admin-block-label">Team Members</div>' : '';    
-
-    echo '<div class="block-section-content" style="position: relative; z-index: 3;">';
     $template = [['acf/wrapper']];
     $allowed_blocks = ['acf/wrapper'];
-
+        if( get_field( 'show_filtering' ) ):
         echo '<div class="team-members-top-content">';
                 echo '<div class="team-members-inner">';
                     echo '<InnerBlocks template="' . esc_attr( wp_json_encode( $template ) ) . '" templateLock="false" />';
@@ -25,10 +18,7 @@ echo '<section ' . ( isset( $id ) ? 'id="' . $id . '" ' : '') . 'style="position
                 echo '<div class="team-members-filter">';
                         echo '<label for="department-filter">Filter by:</label>';
 
-                        $terms = get_terms( array( 
-                            'taxonomy' => 'department',
-                            'hide_empty' => true,
-                        ) );
+                        $terms = get_field( 'specify_category' );
                         
                         if(!empty($terms)) {
                             echo '<div class="filter">';
@@ -40,7 +30,8 @@ echo '<section ' . ( isset( $id ) ? 'id="' . $id . '" ' : '') . 'style="position
                                 echo '<ul class="dropdown-menu">';
                                         echo '<li value="all">All Teams</li>';
                                     foreach($terms as $term) {
-                                        echo '<li id="department-'.$term->term_id.'" value="'.$term->slug.'">'.$term->name.'</li>';
+                                        $term_obj = get_term_by( 'term_id', $term, 'department' );
+                                        echo '<li id="department-'.$term_obj->term_id.'" value="'.$term_obj->slug.'">'.$term_obj->name.'</li>';
                                     }
                                 echo '</ul>';
                             echo '</div>';
@@ -48,16 +39,30 @@ echo '<section ' . ( isset( $id ) ? 'id="' . $id . '" ' : '') . 'style="position
                         
                 echo '</div>';
         echo '</div>';
+        endif;
 
         echo '<div class="team-members-wrapper">';
         
-            $team_members = get_posts([
+            $team_members_args = [
                 'post_type' => 'team-member',
                 'post_status' => 'published',
                 'numberposts' => '-1',
                 'fields' => 'ids',
+                'orderby' => 'menu_order',
                 'order' => 'ASC'    
-            ]);
+            ];
+
+            if( get_field( 'specify_category' ) ):
+                $team_members_args['tax_query'] = [
+                    [
+                        'taxonomy' => 'department',
+                        'field' => 'term_id',
+                        'terms' => get_field( 'specify_category' )
+                    ]
+                ];
+            endif;
+
+            $team_members = get_posts( $team_members_args );
 
             $initialColumns = 5;
 
@@ -73,7 +78,7 @@ echo '<section ' . ( isset( $id ) ? 'id="' . $id . '" ' : '') . 'style="position
                 $headshot = get_the_post_thumbnail($memberID, 'full', array('class' => 'team-headshot'));
 
                 $memberPost = get_post($memberID);
-                $bio = $memberPost->post_content ? $memberPost->post_content : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque accumsan enim sed facilisis viverra. Sed ante elit, ultrices eu hendrerit sed, ornare tincidunt nulla. Aliquam ultricies vehicula porttitor. Aliquam hendrerit nibh vel efficitur egestas. Vivamus a felis congue, ultrices purus et, imperdiet felis. Sed venenatis at quam sed cursus. Nulla ut mauris massa. Aenean ut gravida libero. Duis eget lectus lacus. Integer ultrices augue vel purus luctus vehicula. Suspendisse venenatis eu ligula quis fermentum. Morbi elementum sodales dui vitae efficitur. Mauris nibh est, auctor quis dolor et, accumsan tempor quam.';
+                $bio = $memberPost->post_content ?: '';
                 $departments = get_the_terms($memberID, 'department');
 
                 $dept_class = '';
@@ -114,5 +119,4 @@ echo '<section ' . ( isset( $id ) ? 'id="' . $id . '" ' : '') . 'style="position
 
 
         echo '</div>';
-    echo '</div>';
 echo '</section>';

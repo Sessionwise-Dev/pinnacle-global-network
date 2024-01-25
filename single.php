@@ -3,6 +3,8 @@
 get_header();
 $prev = get_previous_post();
 $next = get_next_post();
+if( get_post_type() == 'post' ) $categories = get_the_category();
+
 ?>
 
 <div id="primary" class="blog-post-container container-x-pad container-y-pad">
@@ -16,7 +18,7 @@ $next = get_next_post();
 				<h1 class="blog-post-title wp-block-heading mt-none"><?php the_title(); ?></h1>
 				<div class="blog-post-meta mt-sm">
 					<p class="wp-block-paragraph post-date"><i class="fa-solid fa-calendar"></i><?php echo get_the_date( 'F j, Y' ); ?></p>
-					<?php $categories = get_the_category();
+					<?php
 					if( !empty( $categories ) ){
 						echo '<span class="divider">|</span>';
 						echo '<div class="post-categories">';

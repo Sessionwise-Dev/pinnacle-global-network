@@ -18,6 +18,7 @@ $contacts_and_location = get_field('contacts_and_location', 'options');
 
 	</main><!-- #content -->
 
+	<?php if( !is_page_template( 'page-landing-page.php' ) ): ?>
 	<footer id="colophon" class="site-footer">
 		<div class="footer-inner">
 			<div class="site-info">
@@ -78,6 +79,19 @@ $contacts_and_location = get_field('contacts_and_location', 'options');
 		</div>
 		
 	</footer><!-- #colophon -->
+
+	<?php else: ?>
+	<footer id="colophon" class="site-footer">
+		<div style="width: 100%" class="footer-copyright">
+			<?php if($copyright) { 
+				$copyright = str_replace('$year', date('Y'), $copyright );
+				echo '<p class="copyright-text text-center wp-block-paragraph is-style-md">'.$copyright.'</p>';
+			} else {
+				echo '©2023 Pinnacle Global Network';
+			} ?>
+		</div>
+	</footer><!-- #colophon -->	
+	<?php endif; ?>
 
 <?php wp_footer(); ?>
 

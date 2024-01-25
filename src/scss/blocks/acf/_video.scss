@@ -1,5 +1,9 @@
 @use 'helpers' as *;
 
+.block-video{
+    position: relative;
+}
+
 .block-video-embed{
     position: relative;
     width: 100%;
@@ -46,9 +50,11 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 80px;
+        width: 60px;
         z-index: 3;
         pointer-events: none;
+        max-width: 18.5%;
+        @include minBreakpoint('sm'){width: 80px;}
         @include minBreakpoint('md'){width: 100px;}
     }
 }

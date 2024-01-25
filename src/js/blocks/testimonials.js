@@ -15,14 +15,16 @@ document.querySelectorAll('.block-testimonials').forEach(el => {
 
     let args = {
         loop: true,
-        slidesPerView: parseInt(slidesPerView),
-        slidesPerGroup: parseInt(slidesPerView),
         spaceBetween: 50,
         speed: speed,
         autoHeight: mobileAutoHeight,
+        slidesPerView: 1,
+        slidesPerGroup: 1,
         breakpoints: {
             768: {
-                autoHeight: false
+                autoHeight: false,
+                slidesPerView: parseInt(slidesPerView),
+                slidesPerGroup: parseInt(slidesPerView),
             }
         },
         ...(dots && {

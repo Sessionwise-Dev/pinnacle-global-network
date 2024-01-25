@@ -1,7 +1,7 @@
 <div class="blog-post pgn-post-item">
 <a href="<?php the_permalink(); ?>" class="full-link"></a>
     <div class="featured-image-container">
-        <?php echo has_post_thumbnail() ? the_post_thumbnail( 'medium_large' ) : '<img style="background: #bbb;" src="'.get_template_directory_uri().'/src/images/placeholder-image.png">'; ?>
+        <?php echo has_post_thumbnail() ? the_post_thumbnail( 'medium_large' ) : '<img src="'.get_template_directory_uri().'/dist/images/blog-placeholder.jpg">'; ?>
     </div>
     <div class="blog-post-content">
         <h3 class="blog-post-title"><?php the_title(); ?></h3>

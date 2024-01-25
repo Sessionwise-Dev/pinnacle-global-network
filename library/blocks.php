@@ -87,7 +87,7 @@ add_action( 'admin_head', function(){ ?>
 
 //Define rules for when the block editor should be disabled
 function _themename_block_editor_rules( $use_block_editor, $post_type ) {
-    $post_types_with_disabled_block_editor = ['faq'];
+    $post_types_with_disabled_block_editor = ['faq', 'team-member'];
     if( in_array( $post_type, $post_types_with_disabled_block_editor ) ) return false;
     return $use_block_editor;
 }

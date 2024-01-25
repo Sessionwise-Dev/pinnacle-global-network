@@ -2,19 +2,22 @@
 
 .drop-cap-block {
     display: flex;
-    gap: 20px;
+    gap: 1rem;
     align-items: flex-start;
+    @include minBreakpoint('sm'){gap: 1.25rem;}
 
     h3 {
         color: map-get($colors, 'sky-blue');
         font-family: $body_font;
 
         &.drop-cap {
-            font-size: 7.5rem;
+            font-size: 5rem;
             font-weight: 700;
             line-height: 0.8;
             text-transform: uppercase;
             margin-bottom: 0;
+            @include minBreakpoint('sm'){font-size: 6.5rem;}
+            @include minBreakpoint('md'){font-size: 7.5rem;}
         }
 
         &.drop-cap-cont {

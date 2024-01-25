@@ -72,4 +72,6 @@ echo '<div ' . ( !empty( $id ) ? 'id="' . $id . '" ' : '') . 'class="block-image
 
     echo !empty( $fixed_aspect_ratio ) ? '</div></div>' : '';
 
+    echo get_field( 'caption' ) ? '<p class="media-caption ' . get_field( 'caption_style' ) . '">' . get_field( 'caption' ) . '</p>' : '';
+
 echo '</div>';

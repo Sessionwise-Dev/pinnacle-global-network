@@ -1,21 +1,13 @@
 {
-    "qef_simple_location_rules": false,
     "key": "group_6542bd86b5482",
     "title": "Block - Team Members",
     "fields": [
         {
-            "allow_backendsearch": false,
-            "show_column_filter": false,
-            "allow_bulkedit": false,
-            "allow_quickedit": false,
-            "show_column": false,
-            "show_column_weight": 1000,
-            "show_column_sortable": false,
-            "key": "field_6542bfc71e11b",
-            "label": "",
-            "name": "",
+            "key": "field_659d8b3719b61",
+            "label": "Specify Categories",
+            "name": "specify_category",
             "aria-label": "",
-            "type": "message",
+            "type": "taxonomy",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -24,66 +16,50 @@
                 "class": "",
                 "id": ""
             },
-            "message": "This block will display all team members from all departments.",
-            "new_lines": "wpautop",
-            "esc_html": 0
-        },
-        {
-            "allow_backendsearch": false,
-            "show_column_filter": false,
-            "allow_bulkedit": false,
-            "allow_quickedit": false,
-            "show_column": false,
-            "show_column_weight": 1000,
-            "show_column_sortable": false,
-            "key": "field_6542c0c02546a",
-            "label": "Section Vertical Padding",
-            "name": "section_vertical_padding",
-            "aria-label": "",
-            "type": "button_group",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "choices": {
-                "container-y-pad": "Default",
-                "container-y-pad-xs": "XS",
-                "container-y-pad-sm": "SM",
-                "container-y-pad-lg": "LG"
-            },
-            "default_value": "container-y-pad",
-            "return_format": "value",
+            "taxonomy": "department",
+            "add_term": 0,
+            "save_terms": 0,
+            "load_terms": 0,
+            "return_format": "id",
+            "field_type": "checkbox",
+            "bidirectional": 0,
+            "multiple": 0,
             "allow_null": 0,
-            "layout": "horizontal"
+            "bidirectional_target": []
         },
         {
-            "allow_backendsearch": false,
-            "show_column_filter": false,
-            "allow_bulkedit": false,
-            "allow_quickedit": false,
-            "show_column": false,
-            "show_column_weight": 1000,
-            "show_column_sortable": false,
-            "key": "field_6542c1072546b",
-            "label": "Background Color",
-            "name": "background_color",
+            "key": "field_65a061b6e5153",
+            "label": "Show Filtering?",
+            "name": "show_filtering",
             "aria-label": "",
-            "type": "color_picker",
+            "type": "true_false",
             "instructions": "",
-            "required": 1,
-            "conditional_logic": 0,
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_659d8b3719b61",
+                        "operator": ">",
+                        "value": "1"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_659d8b3719b61",
+                        "operator": "==empty"
+                    }
+                ]
+            ],
             "wrapper": {
                 "width": "",
                 "class": "",
                 "id": ""
             },
-            "default_value": "#FFFFFF",
-            "enable_opacity": 0,
-            "return_format": "string"
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
         }
     ],
     "location": [
@@ -104,5 +80,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1699660246
+    "modified": 1705010006
 }

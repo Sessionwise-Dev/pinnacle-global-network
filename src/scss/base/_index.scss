@@ -16,10 +16,7 @@ body{
 
     &.hide-content{
         header, main,.announcement-bar{
-            visibility: hidden;
-        }
-        header{
-            transform: translateY(-100%);
+            @media screen and (min-width: 768px){visibility: hidden;}
         }
     }
 }

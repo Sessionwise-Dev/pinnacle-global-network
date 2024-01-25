@@ -9,7 +9,8 @@
     .member-modal-inner {
         display: grid;
         column-gap: 30px;
-        grid-template-columns: 30% 1fr;
+        grid-template-columns: 1fr;
+        @include minBreakpoint('sm'){grid-template-columns: 30% 1fr;}
 
         .member-modal-info {
 
@@ -34,38 +35,36 @@
 }
 
 .team-members {
-    @include containerXPad;
 
     .team-members-top-content {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
+        gap: 2rem;
+        margin-bottom: 4rem;
 
         @include maxBreakpoint('sm') {
             flex-direction: column;
+            margin-bottom: 2rem;
         }
 
         .team-members-filter {
-            display: flex;
+            display: grid;
+            grid-template-columns: 5rem 1fr;
             align-items: center;
 
             @include maxBreakpoint('sm') {
-                flex-direction: column;
-                text-align: center;
-                justify-content: center;
-                width: 100%;
-                margin-top: 30px;
+                grid-template-columns: 1fr;
+                grid-gap: .5rem;
             }
 
             label {
                 font-size: 0.875rem;
-                margin-right: 2.5rem;
                 font-weight: 500;
                 color: map-get($colors, 'black');
 
                 @include maxBreakpoint('sm') {
                     margin-right: 0;
-                    line-height: 3em;
                 }
             }
 
@@ -91,7 +90,6 @@
                     padding: 10px;
                     display: flex;
                     align-items: center;
-                    justify-content: center;
                 }
                 .select > i {
                     font-size: 14px;
@@ -143,7 +141,6 @@
         flex-wrap: wrap;
         align-content: flex-start;
         justify-content: space-between;
-        margin-top: 4rem;
 
         /* 2 Columns */
         .mix,

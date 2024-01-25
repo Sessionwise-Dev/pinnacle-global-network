@@ -7,7 +7,7 @@
     }
 
     .gform_confirmation_message{
-        color: forestgreen;
+        color: map-get($colors, 'navy-dark');
         font-size: 1.125rem;
         font-weight: 700;
         @include minBreakpoint('sm'){font-size: 1.25rem;}
@@ -16,10 +16,13 @@
     .gform_wrapper.gravity-theme{
 
         .gform_fields{
-            grid-row-gap: 1.25rem;
 
             .gfield{
                 position: relative;
+
+                &.gfield_visibility_hidden{
+                    position: absolute;
+                }
 
                 .gfield_description{
                     padding: 5px 0 0;

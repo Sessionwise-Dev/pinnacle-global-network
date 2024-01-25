@@ -37,7 +37,7 @@ const scrollBasedAnimations = () => {
         let tl = gsap.timeline({
             scrollTrigger: {
                 trigger: el,
-                start: 'top 85%',
+                start: 'top 85%'
             },
         });
         tl.to(path, {

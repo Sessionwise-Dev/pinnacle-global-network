@@ -9,7 +9,7 @@ $body_class = is_front_page() ? 'hide-content' : '';
 <html <?php language_attributes(); ?>>
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,16 +35,19 @@ $body_class = is_front_page() ? 'hide-content' : '';
 		echo '</div>';
 	}
 	?>
-
-	<?php 
-		if($announcement = get_field('announcement_text', 'option')) {
-			$announcement_link = get_field('announcement_link','option');
-			echo '<div class="announcement-bar"><a href="'.$announcement_link['url'].'" target="'.$announcement_link['target'].'">'.$announcement.' <span>'.$announcement_link['title'].'</span></a></div>';
-		}
-	?>
+	<?php if( !is_page_template( 'page-landing-page.php' ) ): ?>
 	<header id="masthead" class="site-header">
 
+		<?php 
+			if(get_field('announcement_text', 'option') && get_field( 'display_announcement_banner' ) ) {
+				$announcement_link = get_field('announcement_link','option');
+				echo '<div class="announcement-bar"><a href="'.$announcement_link['url'].'" target="'.$announcement_link['target'].'">'.get_field('announcement_text', 'option').' <span class="announcement-cta">'.$announcement_link['title'].'</span></a></div>';
+			}
+		?>
+
 		<div class="header-inner">
+
+			<div class="header-inner-container">
 
 			<a class="site-logo" href="<?php echo get_home_url(); ?>">
 				<?php echo wp_get_attachment_image( $custom_logo_id ) ? wp_get_attachment_image( $custom_logo_id ) : '<span class="text-white font-300">' . get_bloginfo( 'name' ) . '</span>'; ?>
@@ -62,14 +65,20 @@ $body_class = is_front_page() ? 'hide-content' : '';
 						echo '<a class="theme-button header" href="'.$header_cta['url'].'" target="'.$header_cta['target'].'" ">'.$header_cta['title'].'</a>';
 					}
 				?>
+				<?php 
+					if($header_phone = get_field('header_phone','option')) {
+						echo '<a class="primary-phone" href="' . $header_phone['url'] . '">' . $header_phone['title'] . '</a>';
+					}
+				?>
 				<div class="menu-icon"><i class="fa-regular fa-bars"></i></div>
 				
 			</nav>
 
-			
+			</div>
 
 		</div>
 		 
 	</header>
+	<?php endif; ?>
 
 	<main id="content" class="site-content">

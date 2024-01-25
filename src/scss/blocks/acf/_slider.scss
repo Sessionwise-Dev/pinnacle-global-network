@@ -18,10 +18,15 @@
         flex-flow: row nowrap;
         overflow: hidden;
         gap: .5rem;
+        @include minBreakpoint('sm'){gap: .75rem;}
 
         .swiper-pagination-bullet{
             border-radius: 0;
-            margin: 0;
+            margin: 0 !important;
+            width: .5rem;
+            height: .5rem;
+            @include minBreakpoint('sm'){width: .625rem; height: .625rem;}
+            
         }
 
         &.dark{

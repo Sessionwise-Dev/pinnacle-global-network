@@ -3,6 +3,7 @@ $id = !empty( $block['anchor'] ) ? $block['anchor'] : '';
 $block_class = isset( $block['className'] ) ? ' ' . $block['className'] : ''; 
 $classes = '';
 $classes .= get_field( 'image_position' ) ? ' ' . get_field( 'image_position' ) : ' img-left';
+$classes .= get_field( 'image_position_mobile' ) ? ' ' . get_field( 'image_position_mobile' ) : ' img-mobile-top';
 $classes .= get_field( 'image_direction' ) ? ' ' . get_field( 'image_direction' ) : '';
 $classes .= get_field( 'overlapping_content' ) ? ' overlapping-content': '';
 $classes .= get_field( 'vertical_content_alignment' ) ? ' ' . get_field( 'vertical_content_alignment' ) : '';

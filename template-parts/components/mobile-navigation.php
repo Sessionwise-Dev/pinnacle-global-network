@@ -24,5 +24,10 @@
             echo '<a class="theme-button header" href="'.$header_cta['url'].'" target="'.$header_cta['target'].'" ">'.$header_cta['title'].'</a>';
         }
     ?>
+    <?php 
+        if($header_phone = get_field('header_phone','option')) {
+            echo '<a class="primary-phone mt-md text-sky-blue-3" href="' . $header_phone['url'] . '">' . $header_phone['title'] . '</a>';
+        }
+    ?>
 
 </nav>

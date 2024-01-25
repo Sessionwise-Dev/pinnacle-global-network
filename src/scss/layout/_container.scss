@@ -28,6 +28,7 @@
     transform: translateY(-100%);
     overflow-y: scroll;
     pointer-events: none;
+    @include maxBreakpoint('sm'){display: none !important;}
     
 
     &.active{

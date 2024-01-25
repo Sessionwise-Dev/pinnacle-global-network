@@ -4,21 +4,21 @@
 
     .accordion-item {
         &:not(:last-child) {
-            margin-bottom: 2rem;
+            margin-bottom: 1rem;
+            @include minBreakpoint('sm'){margin-bottom: 1.5rem;}
         }
 
         .accordion-title {
             display: flex;
             align-items: center;
             justify-content: space-between;
-
-            font-size: 1.75rem;
-
+            font-size: 1.125rem;
             background: map-get($colors, 'dark-2');
             color: map-get($colors, 'white');
-            padding: 20px;
+            padding: 1rem;
             cursor: pointer;
             margin-bottom: 0;
+            @include minBreakpoint('sm'){font-size: 1.375rem; padding: 1.25rem;}
         }
 
         .accordion-content {

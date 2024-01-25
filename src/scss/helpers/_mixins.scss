@@ -198,7 +198,7 @@
 
 @mixin defaultInputStyling{
     border-width: 1px;
-    border-color: #F5F5F5;
+    border-color: #E2E2E2;
     border-style: solid;
     background: #F5F5F5;
     padding: .5rem .75rem;
@@ -207,7 +207,7 @@
 
     &:focus,
     &:active{
-        border-color: cornflowerblue;
+        border-color: map-get($colors, 'sky-blue-2');
         outline: none;
     }
 }

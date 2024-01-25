@@ -5,19 +5,24 @@
     svg{
         width: 100%;
         height: auto;
+        @include maxBreakpoint('sm'){max-width: 115px !important; transform :translateX(-1rem); padding-top: 2rem;}
+
+        &.rtl-arrow{
+          @include maxBreakpoint('sm'){transform :translateX(1rem);}
+        }
     }
 
     #template, #path {
-        fill: none;
-      }
+      fill: none;
+    }
 
-      #path {
+    #path {
         stroke: map-get($colors, 'sky-blue-2');
         stroke-width: 6px;
         visibility: hidden;
-      }
+    }
 
-      .st0{
+    .st0{
         visibility:hidden;
-      }
+    }
 }

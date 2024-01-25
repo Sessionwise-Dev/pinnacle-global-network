@@ -140,7 +140,7 @@
         display: block;
         background: map-get($colors, 'dark-2');
         @include minBreakpoint('md'){height: 5rem;}
-        @include minBreakpoint('lg'){height: 10rem;}
+        @include minBreakpoint('lg'){height: 8rem;}
     }
 }
 

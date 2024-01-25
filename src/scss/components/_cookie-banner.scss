@@ -1,0 +1,31 @@
+@use 'helpers' as *;
+
+.cky-consent-container{
+
+    .cky-consent-bar{
+        box-shadow: none !important;
+        border-width: 1px 0 0 !important;
+        border-style: solid !important;
+        border-color: rgba(white, .15) !important;
+    }
+
+    .cky-notice-group{
+        justify-content: center;
+
+        .cky-notice-des a{
+            font-weight: 700;
+            color: white;
+            text-decoration: underline;
+        }
+    }
+    
+    .cky-btn-accept{
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: .75rem;
+        padding: 0.75rem 1rem;
+        line-height: normal;
+        border-radius: 0.25rem;
+        font-weight: 600;
+    }
+}

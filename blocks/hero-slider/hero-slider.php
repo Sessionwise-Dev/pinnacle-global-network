@@ -28,7 +28,10 @@ echo '<section class="hero-slider-block'. $classes .'"' . (!empty($id) ? 'id="'.
 
                         foreach( $slideshow_images as $image ): 
                             echo '<div class="swiper-slide">';
-                                echo '<img src="'. esc_url($image['url']) .'" alt="'. esc_attr($image['alt']) .'" />';
+                                echo '<picture>';
+                                echo '<img class="no-lazy-load" src="'. esc_url($image['url']) .'" alt="'. esc_attr($image['alt']) .'" />';
+                                echo '<source media="(max-width: 767px)" srcset="' . wp_get_attachment_image_url( $image['id'], 'medium_large' ) . '">';
+                                echo '</picture>';
                             echo '</div>';
                         endforeach; 
 
