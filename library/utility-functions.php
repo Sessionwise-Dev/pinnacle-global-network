@@ -9,12 +9,14 @@
  * @since 1.0.0
  */
 
- function _pinnacle_acf_button( $link, $classes = array( 'theme-button' ), $id = '', $icon = false ){
+ function pgn_acf_button( $link, $classes = array( 'theme-button' ), $id = '', $icon = false, $subtext = '' ){
 
     //Immediately return if this is not a link array
     if( empty( $link ) || ( is_array( $link ) && !$link['url'] ) ){
         return;
     }
+	 
+	
 
     else{
         if( is_array($classes ) ){
@@ -25,6 +27,10 @@
         if( !empty( $icon ) ){
             $button_text .= '<i class="fa-light fa-long-arrow-right"></i>';
         }
+		
+		if( $subtext != '' ) {
+			$button_text .= '<span class="btn-subtext">'.$subtext.'</span>';
+		}
 
         $target = $link['target'] ? ' target="' . $link['target'] . '"' : '';
 		$button = '<a  ' . ( !empty( $id ) ? 'id="' . $id . '" ' : '') . 'href="' . esc_url( $link['url'] ) . '" class="' . $class . '"' . $target . '">' . $button_text . '</a>';
@@ -37,7 +43,7 @@
  * @param int  - post ID
  * @return array The category name, slug, and URL.
  */
-function _pinnacle_get_primary_parent_category( $post = null ) {
+function pgn_get_primary_parent_category( $post = null ) {
     
 	if( empty( $post ) ) $post = get_the_ID();
 
@@ -85,7 +91,7 @@ function _pinnacle_get_primary_parent_category( $post = null ) {
 }
 
 // Numbered pagination
-function _pinnacle_numbered_pagination( $custom_query ) {
+function pgn_numbered_pagination( $custom_query ) {
 
     if( empty( $custom_query ) ) return;
 

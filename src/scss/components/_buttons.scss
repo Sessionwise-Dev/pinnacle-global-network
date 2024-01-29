@@ -70,3 +70,16 @@
         width: 100%;
     }
 }
+
+.with-subtext.theme-button {
+	display:inline;
+}
+
+.with-subtext .btn-subtext {
+    display: block;
+    text-transform: none;
+    letter-spacing: 0;
+    font-weight: 400;
+    font-style: italic;
+	margin-top:5px;
+}

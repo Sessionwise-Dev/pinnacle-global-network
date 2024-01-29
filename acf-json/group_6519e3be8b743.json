@@ -1,16 +1,8 @@
 {
-    "qef_simple_location_rules": false,
     "key": "group_6519e3be8b743",
     "title": "Block - Button",
     "fields": [
         {
-            "allow_backendsearch": false,
-            "show_column_filter": false,
-            "allow_bulkedit": false,
-            "allow_quickedit": false,
-            "show_column": false,
-            "show_column_weight": 1000,
-            "show_column_sortable": false,
             "key": "field_6519e3bfa3237",
             "label": "Button",
             "name": "button",
@@ -24,9 +16,6 @@
                 "class": "",
                 "id": ""
             },
-            "return_format": "array"
-        },
-        {
             "allow_backendsearch": false,
             "show_column_filter": false,
             "allow_bulkedit": false,
@@ -34,6 +23,57 @@
             "show_column": false,
             "show_column_weight": 1000,
             "show_column_sortable": false,
+            "return_format": "array"
+        },
+        {
+            "key": "field_65b3f09ac3684",
+            "label": "Sub-text?",
+            "name": "sub-text",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "ui": 1
+        },
+        {
+            "key": "field_65b3f0b6c3685",
+            "label": "Button sub-text",
+            "name": "button_sub-text",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_65b3f09ac3684",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
             "key": "field_6519eecce46b4",
             "label": "Button Style",
             "name": "button_style",
@@ -47,6 +87,13 @@
                 "class": "",
                 "id": ""
             },
+            "allow_backendsearch": false,
+            "show_column_filter": false,
+            "allow_bulkedit": false,
+            "allow_quickedit": false,
+            "show_column": false,
+            "show_column_weight": 1000,
+            "show_column_sortable": false,
             "choices": {
                 "primary": "Primary",
                 "secondary": "Secondary",
@@ -60,13 +107,6 @@
             "layout": "horizontal"
         },
         {
-            "allow_backendsearch": false,
-            "show_column_filter": false,
-            "allow_bulkedit": false,
-            "allow_quickedit": false,
-            "show_column": false,
-            "show_column_weight": 1000,
-            "show_column_sortable": false,
             "key": "field_6519ef00e46b5",
             "label": "Button Size",
             "name": "button_size",
@@ -80,6 +120,13 @@
                 "class": "",
                 "id": ""
             },
+            "allow_backendsearch": false,
+            "show_column_filter": false,
+            "allow_bulkedit": false,
+            "allow_quickedit": false,
+            "show_column": false,
+            "show_column_weight": 1000,
+            "show_column_sortable": false,
             "choices": {
                 "size-md": "Default",
                 "size-sm": "SM",
@@ -91,13 +138,6 @@
             "layout": "horizontal"
         },
         {
-            "allow_backendsearch": false,
-            "show_column_filter": false,
-            "allow_bulkedit": false,
-            "allow_quickedit": false,
-            "show_column": false,
-            "show_column_weight": 1000,
-            "show_column_sortable": false,
             "key": "field_65381dd0c4db9",
             "label": "Arrow Icon?",
             "name": "arrow_icon",
@@ -111,13 +151,6 @@
                 "class": "",
                 "id": ""
             },
-            "message": "",
-            "default_value": 1,
-            "ui_on_text": "",
-            "ui_off_text": "",
-            "ui": 1
-        },
-        {
             "allow_backendsearch": false,
             "show_column_filter": false,
             "allow_bulkedit": false,
@@ -125,6 +158,13 @@
             "show_column": false,
             "show_column_weight": 1000,
             "show_column_sortable": false,
+            "message": "",
+            "default_value": 1,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "ui": 1
+        },
+        {
             "key": "field_654031c248ff0",
             "label": "Full Width?",
             "name": "full_width",
@@ -138,6 +178,13 @@
                 "class": "",
                 "id": ""
             },
+            "allow_backendsearch": false,
+            "show_column_filter": false,
+            "allow_bulkedit": false,
+            "allow_quickedit": false,
+            "show_column": false,
+            "show_column_weight": 1000,
+            "show_column_sortable": false,
             "message": "",
             "default_value": 0,
             "ui_on_text": "",
@@ -163,5 +210,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1699660246
+    "modified": 1706567573
 }
