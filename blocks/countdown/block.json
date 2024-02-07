@@ -1,0 +1,16 @@
+{
+    "name": "acf/countdown",
+    "title": "Countdown Timer",
+    "description": "",
+    "apiVersion": 2,
+    "category": "theme",
+    "icon": "clock",
+    "acf": {
+        "renderTemplate": "countdown.php",
+        "mode": "preview"
+    },
+    "supports": {
+        "align" : false,
+        "anchor" : false
+    }
+}

@@ -1,0 +1,139 @@
+@use 'helpers' as *;
+  
+.block-countdown-timer {
+    .pgn-countdown-container {
+      background: linear-gradient(90deg, #404eaa, #fb2c59);
+      padding: 2rem;
+      border-radius: 3px;
+      display: grid;
+      align-items: center;
+      grid-template-columns: 1fr 3fr;
+      grid-gap: 1rem;
+
+      @include maxBreakpoint('md') {
+        grid-template-columns: 1fr;
+      }
+  
+      h3 {
+        text-align: right;
+        font-size: 2rem;
+        font-family: map-get($fonts,'raleway');
+
+        @include maxBreakpoint('md') {
+            text-align: center;
+        }
+      }
+  
+      .pgn-timer-tiles {
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        grid-gap: 1rem;
+        
+        @include maxBreakpoint('md') {
+            margin: 0;
+            padding: 0;
+        }
+  
+        li {
+          text-align: center;
+          color: inherit;
+  
+          span {
+            font-size: 4rem;
+            display: block;
+            text-align: center;
+            margin: 0 auto;
+            font-weight: 700;
+
+            @include maxBreakpoint('sm') {
+                font-size: 2rem;
+            }
+          }
+          margin: 0;
+          line-height: normal;
+        }
+      }
+    }
+  }
+  
+  .block-progress-bar {
+    position: relative;
+    margin-top: 0.5rem;
+    line-height: 0!important;
+  
+    .progress-text,
+    .progress-percentage {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 1rem;
+      font-weight: 600;
+      line-height: normal;
+      z-index: 2;
+    }
+    
+    .progress-percentage{
+      padding-right: .5rem;
+
+      @include maxBreakpoint('md') {
+        top: 60%;
+        transform: translateY(0);
+      }
+    }
+  
+    .progress-text {
+      left: 1rem;
+      display: none;
+
+      @include minBreakpoint('md') {
+        display: block;
+      }
+    }
+
+    .progress-text-mobile {
+        text-align: center;
+        line-height: 2em;
+        font-size: 1rem;
+        font-weight: bold!important;
+        display: none;
+  
+        @include maxBreakpoint('md') {
+          display: block;
+        }
+      }
+    progress {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 100%;
+      height: 1.75rem;
+     
+  
+      &::-webkit-progress-bar {
+        background-color: #ccc;
+        border-radius: 1rem;
+      }
+  
+      &::-webkit-progress-value {
+        background-color: #07a5db;
+        border-radius: 1rem 0 0 1rem;
+      }
+
+      &[value="100"]::-webkit-progress-value {
+        border-radius: 1rem;
+      }
+
+      &.bg-yellow {
+        &::-webkit-progress-value {
+            background-color: #ffcc00;
+        }
+      }
+
+      &.bg-blue {
+        &::-webkit-progress-value {
+            background-color: #07a5db;
+        }
+      }
+    }
+  }
+  

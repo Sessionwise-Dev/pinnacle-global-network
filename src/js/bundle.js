@@ -4,6 +4,7 @@ import './blocks/slider';
 import './blocks/hero-slider';
 import './blocks/testimonials';
 import './blocks/accordion';
+import './blocks/countdown';
 
 import './components/navigation';
 import './components/modals';

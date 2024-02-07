@@ -12,6 +12,7 @@ function _pinnacle_acf_init_block_types(){
     register_block_type( get_template_directory() . '/blocks/column/block.json' );
     register_block_type( get_template_directory() . '/blocks/columns/block.json' );
     register_block_type( get_template_directory() . '/blocks/count-up/block.json' );
+    register_block_type( get_template_directory() . '/blocks/countdown/block.json' );
     register_block_type( get_template_directory() . '/blocks/divider/block.json' );
     register_block_type( get_template_directory() . '/blocks/drop-cap/block.json' );
     register_block_type( get_template_directory() . '/blocks/fw-content-col/block.json' );
@@ -30,6 +31,7 @@ function _pinnacle_acf_init_block_types(){
     register_block_type( get_template_directory() . '/blocks/video/block.json' );
     register_block_type( get_template_directory() . '/blocks/wrapper/block.json' );
     register_block_type( get_template_directory() . '/blocks/wysiwyg/block.json' );
+   
 }
 
 //Remove most of core blocks and define allowed block types
@@ -44,6 +46,7 @@ function _pinnacle_allowed_block_types( $allowed_blocks ) {
         'acf/column',
         'acf/columns',
         'acf/count-up',
+        'acf/countdown',
         'acf/divider',
         'acf/drop-cap',
         'acf/fw-content-col',
