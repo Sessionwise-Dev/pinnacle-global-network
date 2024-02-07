@@ -11,6 +11,6 @@
         <div class="blog-post-excerpt">
             <?php echo wp_trim_words( get_the_excerpt(), 30, '...' ); ?>
         </div>
-        <a href="<?php the_permalink(); ?>" class="read-more theme-button primary">Read More</a>
+        <a href="<?php the_permalink(); ?>" class="read-more theme-button hero">Read More</a>
     </div>
 </div>

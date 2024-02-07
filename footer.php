@@ -56,7 +56,7 @@ $contacts_and_location = get_field('contacts_and_location', 'options');
 			<?php if($partners = get_field('partner_logos', 'options')) { ?>
 				<div class="partner-logos">
 					<?php foreach($partners as $partner) { 
-						echo wp_get_attachment_image($partner, 'medium');
+						echo '<div>' . wp_get_attachment_image($partner, 'medium') . '</div>';
 					} ?>
 				</div>
 			<?php } ?>
@@ -81,7 +81,7 @@ $contacts_and_location = get_field('contacts_and_location', 'options');
 	</footer><!-- #colophon -->
 
 	<?php else: ?>
-	<footer id="colophon" class="site-footer">
+	<footer id="colophon" class="site-footer container-y-pad-xs lp-footer">
 		<div style="width: 100%" class="footer-copyright">
 			<?php if($copyright) { 
 				$copyright = str_replace('$year', date('Y'), $copyright );

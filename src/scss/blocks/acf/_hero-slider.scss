@@ -22,6 +22,9 @@
             @include minBreakpoint('xl'){
                 padding-bottom: map-get($yPadLG,'xl');
             }
+            @include maxBreakpoint('sm'){
+                padding-bottom: 2rem;
+            }
 
             .hero-wrap {
                 max-width: $site_container_width;
@@ -33,6 +36,10 @@
                 margin-top: 0;
                 margin-bottom: 3rem;
                 color: map-get($colors, 'white');
+                @include maxBreakpoint('sm'){
+                    font-size: 2.3rem;
+                    margin-bottom: 1.5rem;
+                }
             }
         }
 
@@ -48,11 +55,7 @@
                 }
 
                 @include maxBreakpoint('sm') {
-                    height: calc(80vh - 8rem);
-
-                    img {
-                        height: calc(80vh - 8rem);
-                    }
+                    height: calc(90vh - 4.625rem);
                 }
             }
         }

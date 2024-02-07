@@ -97,23 +97,27 @@
         .partner-logos {
             display: flex;
             align-items: center;
+            flex-shrink: 1;
+            @include minBreakpoint('sm'){padding-left: 2rem;}
+
+            & > div{
+                margin-right: 1.25rem;
+
+                &:last-child{
+                    margin-right: 0;
+                }
+            }
 
             img {
                 max-height: 90px;
                 width: 100%;
-                margin-right: 60px;
-
-                @include maxBreakpoint('sm') {
-                    margin-right: 40px;   
-                }
-
-                &:last-child {
-                    @include maxBreakpoint('sm') {
-                        margin-right: 0;
-                    }
-                }
+                object-fit: contain;
             }
         }
+    }
+
+    &.lp-footer .footer-copyright{
+        justify-content: center !important;
     }
 
     .footer-copyright {

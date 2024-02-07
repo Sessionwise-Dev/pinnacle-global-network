@@ -87,18 +87,11 @@
                 "class": "",
                 "id": ""
             },
-            "allow_backendsearch": false,
-            "show_column_filter": false,
-            "allow_bulkedit": false,
-            "allow_quickedit": false,
-            "show_column": false,
-            "show_column_weight": 1000,
-            "show_column_sortable": false,
             "choices": {
                 "primary": "Primary",
                 "secondary": "Secondary",
                 "tertiary": "Tertiary",
-                "hero": "Hero",
+                "hero": "Light Blue",
                 "text-cta": "Text CTA"
             },
             "default_value": "",
@@ -210,5 +203,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1706567573
+    "modified": 1706655766
 }
