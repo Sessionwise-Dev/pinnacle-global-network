@@ -11,18 +11,18 @@ const initializeCountdown = () => {
       const seconds_tile = block.querySelector('.seconds-tile');
       
       const startCountdown = () => {
-        var current_date = new Date().getTime();
-        var seconds_left = (target_date - current_date) / 1000;
+        let current_date = new Date().getTime();
+        let seconds_left = (target_date - current_date) / 1000;
         if(seconds_left <= 0) stopCountdown();
-        days = leadingZeroes(parseInt(seconds_left / 86400));
+        let days = leadingZeroes(parseInt(seconds_left / 86400));
         seconds_left = seconds_left % 86400;
-  
-        hours = leadingZeroes(parseInt(seconds_left / 3600));
+    
+        let hours = leadingZeroes(parseInt(seconds_left / 3600));
         seconds_left = seconds_left % 3600;
-  
-        minutes = leadingZeroes(parseInt(seconds_left / 60));
-        seconds = leadingZeroes(parseInt(seconds_left % 60));
-   
+    
+        let minutes = leadingZeroes(parseInt(seconds_left / 60));
+        let seconds = leadingZeroes(parseInt(seconds_left % 60));
+    
         days_tile.innerHTML = days;
         hours_tile.innerHTML = hours;
         minutes_tile.innerHTML = minutes;

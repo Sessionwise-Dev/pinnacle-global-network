@@ -1,0 +1,16 @@
+{
+    "name": "acf/progress-bar",
+    "title": "Progress Bar",
+    "description": "",
+    "apiVersion": 2,
+    "category": "theme",
+    "icon": "block-default",
+    "acf": {
+        "renderTemplate": "progress-bar.php",
+        "mode": "preview"
+    },
+    "supports": {
+        "align" : false,
+        "anchor" : false
+    }
+}

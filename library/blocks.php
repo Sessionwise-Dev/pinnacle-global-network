@@ -22,6 +22,7 @@ function _pinnacle_acf_init_block_types(){
     register_block_type( get_template_directory() . '/blocks/image/block.json' );
     register_block_type( get_template_directory() . '/blocks/image-gallery/block.json' );
     register_block_type( get_template_directory() . '/blocks/posts-grid/block.json' );
+    register_block_type( get_template_directory() . '/blocks/progress-bar/block.json' );
     register_block_type( get_template_directory() . '/blocks/section/block.json' );
     register_block_type( get_template_directory() . '/blocks/slide/block.json' );
     register_block_type( get_template_directory() . '/blocks/slider/block.json' );
@@ -56,6 +57,7 @@ function _pinnacle_allowed_block_types( $allowed_blocks ) {
         'acf/image',
         'acf/image-gallery',
         'acf/posts-grid',
+        'acf/progress-bar',
         'acf/section',
         'acf/slide',
         'acf/slider',
