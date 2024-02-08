@@ -18,7 +18,7 @@ switch ($progress_bar_color) {
         $progress_bar_color_class = 'bg-blue';
 } ?>
 
-<div class="block-progress-bar"<?= $id; ?>>
+<div class="block-progress-bar<?= $classes; ?>"<?= $id; ?>>
     <span class="progress-text"><?= !empty($progress_bar_text) ? $progress_bar_text : 'Time is running out!'; ?></span>
     <span class="progress-text-mobile"><?= !empty($progress_bar_text) ? $progress_bar_text : 'Time is running out!'; ?></span>
     <span class="progress-percentage" style="right: <?= !empty($progress_bar_percentage) ? (100 - $progress_bar_percentage).'%' : '5%'; ?>;"><?= !empty($progress_bar_percentage) ? $progress_bar_percentage.'%' : '0%'; ?></span>
