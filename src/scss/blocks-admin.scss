@@ -80,6 +80,16 @@
     }
 }
 
+.block-admin-warning{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #aa0000;
+    background: rgba(#aa0000, .15);
+    font-weight: 500;
+    padding: 2rem;
+}
+
 .admin-block-label{
     position: absolute;
     top: 0;

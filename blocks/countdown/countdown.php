@@ -8,7 +8,10 @@ $id = !empty( $block['anchor'] ) ? ' id="' . $block['anchor'] . '"' : '';
 
 //Do not display if no date is set
 $date_of_event = get_field('date_of_event');
-if( empty( $date_of_event ) ) return;
+if( empty( $date_of_event ) ){
+    echo is_admin() ? '<p class="block-admin-warning">A date must be selected for this block to display correctly.</p>' : ''; 
+    return;
+}
 
 $timer_text = get_field('timer_text');
 $text_color = get_field('text_color');

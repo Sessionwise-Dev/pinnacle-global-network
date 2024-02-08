@@ -29,9 +29,8 @@ $(document).on('ready', () => {
         });
         window.acf.addAction('render_block_preview/type=countdown', ($block) => {
             const block = $block[0].querySelector('.block-countdown-timer');
-            console.log(block);
-            const target = block.dataset.targetDate;
-            console.log(target);
+            if(!block) return false;
+            const target = block.dataset.targetDate ? block.dataset.targetDate : null;
             if(!target) return false; 
             const target_date = new Date(target).getTime();
             //Make sure timer stops at 0
