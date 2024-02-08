@@ -76,6 +76,21 @@
                     "name": "Black",
                     "slug": "black",
                     "color": "#000000"
+                },
+                {
+                    "name": "Red",
+                    "slug": "red",
+                    "color": "#e43b2c"
+                },
+                {
+                    "name": "Orange",
+                    "slug": "orange-yellow",
+                    "color": "#ffbe27"
+                },
+                {
+                    "name": "Lime Green",
+                    "slug": "lime-green",
+                    "color": "#43de00"
                 }
             ]
         }

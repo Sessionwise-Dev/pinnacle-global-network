@@ -67,7 +67,7 @@ function _pinnacle_custom_color_picker_palette(){ ?>
 <script type="text/javascript">
     (function($) {
         acf.add_filter('color_picker_args', function( args, $field ){
-            args.palettes = ['#FFFFFF', '#fcfbf8', '#f7e4d6', '#07a5db', '#7ed4f1', '#757575', '#353434', '#031122', '#070504'];
+            args.palettes = ['#FFFFFF', '#fcfbf8', '#f7e4d6', '#07a5db', '#7ed4f1', '#757575', '#353434', '#031122', '#070504', '#e43b2c', '#ffbe27', '#43de00'];
             return args;
         });
     })(jQuery);
